@@ -712,7 +712,7 @@ HANDLE16 create_window_1040_8bea(globals: &mut Globals,
 }
 
 
-void mixed_struct_op_1040_8fb8(Globals  *globals,
+void mixed_struct_op_1040_8fb8(globals: &mut Globals,
                                param_1: *mut Struct65,
                                param_2: u16,
                                char     *param_3,

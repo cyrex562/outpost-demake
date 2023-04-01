@@ -15,7 +15,7 @@
 void unk_win_op_1020_65cc(param_1: *mut Struct60, param_2: i16, param_3: u16);
 
 
-void unk_win_ui_op_1020_67ce(Globals  *globals,
+void unk_win_ui_op_1020_67ce(globals: &mut Globals,
                              in_struct_1: *mut Struct20,
                              param_2: u16,
                              u32       param_3);

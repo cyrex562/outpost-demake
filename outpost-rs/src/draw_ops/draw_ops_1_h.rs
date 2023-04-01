@@ -113,11 +113,11 @@ u32 set_text_bk_color_1040_0cc0(globals: &mut Globals,
                                 param_3: u16,
                                param_4: u16);
 
-pub fn draw_op_1038_9dcc(Globals  *globals,
+pub fn draw_op_1038_9dcc(globals: &mut Globals,
                        in_struct_1: *mut Struct10,
                        param_2: i16,
                        param_3: u16,
-                       COLORREF  in_colorref_4,
+                       in_colorref_4: COLORREF,
                       param_5: u16);
 
 u16 call_fn_ptr_1038_9ffa(win_handle: HWND16, param_2: u16, struct_1: *mut Struct733, param_4: u16);

@@ -125,7 +125,7 @@ void get_dc_1018_4db0(param_1: u32, param_2: u16, param_3: HWND16);
 
 void create_dc_1018_4e04(param_1: *mut Struct8, param_2: u16, param_3: i16, param_4: i16, LPCSTR in_string_5, in_string_6: u16);
 
-void struct_1018_5840(Globals  *globals,
+void struct_1018_5840(globals: &mut Globals,
                       struct param_1: &mut Struct20,
                       param_2: u16,
                       param_3: u16,

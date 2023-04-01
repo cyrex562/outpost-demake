@@ -39,7 +39,7 @@ Struct18 * pass1_1020_96a2(param_1: *mut Struct18, param_2: u8, param_3: u16);
 
 Struct18 * pass1_1020_7526(param_1: *mut Struct18, param_2: u8, param_3: u16);
 
-void struct_1020_7554(Globals  *globals,
+void struct_1020_7554(globals: &mut Globals,
                       param_1: u16,
                       struct param_2: *mut Struct20,
                       param_3: u16,

@@ -1691,11 +1691,11 @@ pub fn set_text_bk_color_1040_0cc0(globals: &mut Globals,
 }
 
 
-pub fn draw_op_1038_9dcc(Globals  *globals,
+pub fn draw_op_1038_9dcc(globals: &mut Globals,
                        in_struct_1: *mut Struct10,
                        param_2: i16,
                        param_3: u16,
-                       COLORREF  in_colorref_4,
+                       in_colorref_4: COLORREF,
                       param_5: u16)
 
 {
@@ -1715,7 +1715,7 @@ pub fn draw_op_1038_9dcc(Globals  *globals,
 //    var5           = (in_struct_1 >> 0x10);
 //    local_struct_5 = in_struct_1;
     hdc            = in_colorref_4;
-    if(in_struct_1->brush_handle_field_0x8e == 0x0)
+    if(in_struct_1.brush_handle_field_0x8e == 0x0)
     {
         hdc                                     = LAST_SEGMENT;
         local_brush_handle                      = CreateSolidBrush16(in_colorref_4);

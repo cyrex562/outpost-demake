@@ -470,7 +470,7 @@ Struct18 *pass1_1020_7526(param_1: *mut Struct18, param_2: u8, param_3: u16)
     return param_1;
 }
 
-void struct_1020_7554(Globals  *globals,
+void struct_1020_7554(globals: &mut Globals,
                       param_1: u16,
                       param_2: *mut Struct20,
                       param_3: u16,
@@ -1376,7 +1376,7 @@ pub fn draw_rect_1020_40ce(param_1: u32, param_2: i16, param_3: i16, param_4: u1
 
 // WARNING: Globals starting with '_' overlap smaller symbols at the same address
 
-void unk_draw_op_1020_41c8(Globals  *globals,
+void unk_draw_op_1020_41c8(globals: &mut Globals,
                            param_1: &mut Struct20,
                            param_2: u16,
                            param_3: u16,

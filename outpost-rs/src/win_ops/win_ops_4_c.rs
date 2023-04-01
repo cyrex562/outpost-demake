@@ -49,7 +49,7 @@ void def_win_proc_1008_5632(globals: &mut Globals,
 }
 
 
-void window_op_1008_3bd6(Globals  *globals,
+void window_op_1008_3bd6(globals: &mut Globals,
                      param_1: *mut Struct65,
                      param_2: u16,
                      param_3: u16,

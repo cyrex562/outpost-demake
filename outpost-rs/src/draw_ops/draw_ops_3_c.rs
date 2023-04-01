@@ -356,7 +356,7 @@ pub fn draw_op_1020_1674(globals: &mut Globals, param_1: u32, param_2: u16)
     }
 }
 
-void pass1_1018_e5dc(Globals  *globals,
+void pass1_1018_e5dc(globals: &mut Globals,
                      param_1: u16,
                      param_2: *mut Struct20,
                      param_3: u16,
@@ -1587,7 +1587,7 @@ void create_dc_1018_4e04(param_1: *mut Struct8, param_2: u16, param_3: i16, para
     return;
 }
 
-void struct_1018_5840(Globals  *globals,
+void struct_1018_5840(globals: &mut Globals,
                       param_1: &mut Struct20,
                       param_2: u16,
                       param_3: u16,

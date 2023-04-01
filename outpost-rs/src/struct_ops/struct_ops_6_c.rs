@@ -11,13 +11,13 @@
 // #include "structs/structs_5xx/structs_51x.h"
 // #include "ui_ops/ui_ops_6.h"
 
-void struct_op_1040_ca16(Globals  *globals,
+void struct_op_1040_ca16(globals: &mut Globals,
                      param_1: *mut Struct57,
                      param_2: u16,
                      param_3: u16,
                      param_4: i16,
                     param_5: u16);
-void struct_op_1040_ca16(Globals  *globals,
+void struct_op_1040_ca16(globals: &mut Globals,
                      param_1: *mut Struct57,
                      param_2: u16,
                      param_3: u16,

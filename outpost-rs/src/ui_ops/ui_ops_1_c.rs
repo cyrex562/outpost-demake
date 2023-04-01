@@ -2055,7 +2055,7 @@ void mov_update_win_1040_93aa(param_1: *mut Struct65, param_2: u32, param_4: u16
 }
 
 
-i16 string_1040_8520(Globals  *globals,
+i16 string_1040_8520(globals: &mut Globals,
                      param_1: *mut Struct57,
                      param_2: u16,
                      param_3: u16,

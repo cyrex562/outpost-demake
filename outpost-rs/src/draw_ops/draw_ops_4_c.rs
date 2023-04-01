@@ -293,7 +293,7 @@ void  create_palette_1008_4e38(in_struct_1: *mut Struct13, LOGPALETTE *in_log_pa
 
 // WARNING: Globals starting with '_' overlap smaller symbols at the same address
 
-void file_and_draw_op_1008_4f20(Globals  *globals,
+void file_and_draw_op_1008_4f20(globals: &mut Globals,
                                 param_1: *mut Struct76,
                                 param_2: u32,
                                 param_3: u16,
@@ -500,7 +500,7 @@ u16  palette_op_1008_46e4(param_1: u32, param_2: u16, param_3: u16, param_4: HDC
 }
 
 
-void set_sys_color_1008_357e(Globals  *globals,
+void set_sys_color_1008_357e(globals: &mut Globals,
                              param_1: &mut Struct20,
                              param_2: i16,
                              in_index_3: u16,

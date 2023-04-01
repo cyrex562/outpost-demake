@@ -126,7 +126,7 @@ u32 pass1_1010_0eac(globals: &mut Globals,
     return param_1;
 }
 
-void pass1_1010_0f24(Globals  *globals,
+void pass1_1010_0f24(globals: &mut Globals,
                      param_1: *mut Struct79,
                      param_2: *mut Struct79,
                      param_3: u16,

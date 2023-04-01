@@ -29,7 +29,7 @@ HPALETTE16  palette_op_1008_4e08(param_1: *mut Struct13, BOOL16 param_2, param_3
 
 void  create_palette_1008_4e38(in_struct_1: *mut Struct13, LOGPALETTE *in_log_palette_2, u8 *param_3);
 
-void file_and_draw_op_1008_4f20(Globals  *globals,
+void file_and_draw_op_1008_4f20(globals: &mut Globals,
                                 param_1: *mut Struct76,
                                 param_2: u32,
                                 param_3: u16,
@@ -44,7 +44,7 @@ void  stretch_di_bits_1008_465a(param_1: *mut Struct76, param_2: HDC16);
 
 u16  palette_op_1008_46e4(param_1: u32, param_2: u16, param_3: u16, param_4: HDC16);
 
-void set_sys_color_1008_357e(Globals  *globals,
+void set_sys_color_1008_357e(globals: &mut Globals,
                              param_1: &mut Struct20,
                              param_2: i16,
                              in_index_3: u16,

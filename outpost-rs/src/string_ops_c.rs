@@ -1151,7 +1151,7 @@ void pass1_1008_e320(Globals   *globals,
     param_1.field_0x20 = uVar4;
 }
 
-void load_str_and_spri16f_1008_b69c(Globals  *globals,
+void load_str_and_spri16f_1008_b69c(globals: &mut Globals,
                                     param_1: *mut Struct25,
                                     WORD     *param_2,
                                     u8       *param_3)
