@@ -1,0 +1,41 @@
+word16 fn0045_54AA(segptr32 ds_si, word16 cx, word16 dx, word16 di, selector fs, word16 wArg0A)
+// stackDelta: 14; fpuStackDelta: 0; fpuMaxParam: -1
+// Called from:
+//      fn0015_23BE
+// MayUse:  cx:[0..15] di:[0..15] dx:[0..15] fs:[0..15] Sequence ds:si:[0..31] ss:[0..15] Stack +000A:[0..15]
+// LiveOut: ax:[0..15]-fn0015_23BE
+// Trashed: SCZO ax Top
+// Preserved: bp di si sp
+fn0045_54AA_entry:
+	si = SLICE(ds_si, word16, 0)
+l0045_54AA:
+	branch wArg0A == 0<16> l0045_54BE
+l0045_54B6:
+	return 0<16>
+l0045_54BE:
+	fn0015_4D0C(fn0015_435C(cx, dx, SEQ(si, 0<16>)))
+	fn0015_1FEA()
+	es_di_191 = fn0015_1902(0<16>, 0<16>, di, wLoc16, out ax_59, out dx_64, out bx_60, out si_66)
+	ds_63 = <invalid>
+	Mem73[ds_63:0x3A0<16>:word16] = ax_59
+	Mem74[ds_63:0x3A2<16>:word16] = dx_64
+	bl_82 = SLICE(bx_60, byte, 0) (alias)
+	v20_83 = Mem80[fs:fp + 0x1900<16> + si_66:byte] + bl_82
+	Mem84[fs:fp + 0x1900<16> + si_66:byte] = v20_83
+	al_100 = SLICE(ax_59, byte, 0) + CONVERT(v20_83 <u 0<8>, bool, byte) (alias)
+	v26_v25_165 = SEQ(Mem102[ds_63:bx_60 + si_66:byte], Mem95[ds_63:bx_60 + si_66:byte]) + SEQ(al_100, al_100)
+	Mem102[ds_63:bx_60 + si_66:byte] = SLICE(v26_v25_165, byte, 0)
+	Mem106[ds_63:bx_60 + si_66:byte] = SLICE(v26_v25_165, byte, 8)
+	Mem110[fs:fp + 0x1900<16> + si_66:byte] = Mem108[fs:fp + 0x1900<16> + si_66:byte] + bl_82
+	Mem129[ds_63:bx_60 + si_66:byte] = Mem126[ds_63:bx_60 + si_66:byte] + 0x4F<8>
+	v31_130 = Mem129[fs:fp + 0x1900<16> + si_66:byte] + bl_82
+	Mem131[fs:fp + 0x1900<16> + si_66:byte] = v31_130
+	al_135 = (cond(v31_130) & 2<8>) + 0x4F<8> (alias)
+	Mem136[ds_63:0x8968<16>:byte] = al_135
+	Mem140[es_di_191:byte] = Mem138[ds_63:si_66:byte]
+	Mem146[ds_63:bx_60 + (si_66 + 1<i16>):byte] = Mem144[ds_63:bx_60 + (si_66 + 1<i16>):byte] + al_135
+	Mem152[ds_63:bx_60 + (si_66 + 1<i16>):byte] = Mem150[ds_63:bx_60 + (si_66 + 1<i16>):byte] + al_135
+	__halt()
+fn0045_54AA_exit:
+
+

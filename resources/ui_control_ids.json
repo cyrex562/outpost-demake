@@ -1,0 +1,42 @@
+{
+  "dialog_d8c4": {
+    "type": "UI_SubDialog_TypeD8C4",
+    "description": "Command handler for specialized sub-dialogs (Add/Remove links, Building Management).",
+    "controls": {
+      "0x1847": {
+        "symbol": "IDC_LINKS_LIST",
+        "description": "The primary list or container control displaying linkable objects. Handled via SendDlgItemMessage with custom WM_USER messages (0x403, 0x405, 0x40c)."
+      },
+      "0x1848": {
+        "symbol": "IDC_ADD_LINK",
+        "description": "Button to add a link. Triggers UI_Vector_Tracker_Replace_Object_at_Offset_4_Logic."
+      },
+      "0x1849": {
+        "symbol": "IDC_REMOVE_LINK",
+        "description": "Button to remove a selected link. Queries selection from 0x1847 and triggers Collection_Notify_Update_if_NotEmpty_Logic."
+      },
+      "0x00eb": {
+        "symbol": "IDC_FULL_REFRESH",
+        "description": "Triggers a full refresh of the sub-dialog via UI_SubDialog_TypeD8C4_Full_Refresh_Logic_d79c."
+      },
+      "0x1841": {
+        "symbol": "IDC_COLONY_STATUS_REPORT",
+        "description": "Button or trigger to display the Colony Status Report message box."
+      },
+      "0x184a": {
+        "symbol": "IDC_BUILDING_MANAGER_UPDATE",
+        "description": "Updates the building manager state and posts a notification message (0x203) to the parent window."
+      },
+      "0x184b": {
+        "symbol": "IDC_DIALOG_FACTORY_SPAWN",
+        "description": "Spawns a new sub-dialog factory with ID 0x27 (UI_SubDialog_Factory_Create_and_Show_by_ID_af40)."
+      }
+    },
+    "messages": {
+      "0x0203": "ID_BUILDING_MANAGER_NOTIFICATION",
+      "0x0403": "MSG_LIST_DELETE_ITEM",
+      "0x0405": "MSG_LIST_REFRESH_OR_ADD",
+      "0x040c": "MSG_LIST_GET_SELECTION"
+    }
+  }
+}

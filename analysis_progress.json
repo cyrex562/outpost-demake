@@ -1,0 +1,434 @@
+{
+    "completed_functions": [
+        "1000:0000", "1000:0016", "1000:0e08", "1000:17e8", "1000:1e73", "1000:1f7e", "1000:201c", "1000:2068", "1000:206c", "1000:24ea",
+        "1000:24fb", "1000:25d2", "1000:2891", "1000:3491", "1000:34cf", "1000:34d8", "1000:34e6", "1000:3503", "1000:3534", "1000:3552",
+        "1000:356e", "1000:359f", "1000:3722", "1000:3c51", "1000:3cb7", "1000:3cd8", "1000:4f1a", "1000:4f20", "1000:4f54", "1000:5198",
+        "1000:5224", "1000:53f0", "1008:016e", "1008:04f8", "1008:0536", "1008:06c0", "1008:0932", "1008:0984", "1008:09ba", "1008:0a92",
+        "1008:1246", "1008:37aa", "1008:37e4", "1008:3a10", "1008:3a14", "1008:3a40", "1008:3a7a", "1008:4426", "1008:45d6", "1008:4b5e",
+        "1008:4c26", "1008:5634", "1008:570e", "1008:58a6", "1008:593c", "1008:5ab8", "1008:5b6e", "1008:5b9a", "1008:5fa2", "1008:62c0",
+        "1008:6324", "1008:6328", "1008:632c", "1008:6330", "1008:6814", "1008:681a", "1008:681e", "1008:6822", "1008:6828", "1008:682e",
+        "1000:0052", "1000:010c", "1000:01b0", "1000:0308", "1000:0368", "1000:03c6", "1000:0510", "1000:05b4", "1000:05e2",
+        "1000:0670", "1000:0782", "1000:07ac", "1000:07fc", "1000:0838", "1000:093a", "1000:09ca", "1000:0a48", "1000:0b20",
+        "1000:0c32", "1000:0dc6", "1000:0ed4", "1000:0fb8", "1000:115c", "1000:1284", "1000:131c", "1000:13ce", "1000:1408",
+        "1000:14f2", "1000:1432", "1000:1558", "1000:15ce", "1000:160a", "1000:167a", "1000:16aa", "1000:16ee", "1000:1708",
+        "1000:179c", "1000:17ce", "1000:180c",
+        "1000:183c", "1000:188e", "1000:18d2", "1000:18ec", "1000:1902", "1000:1a54", "1000:1ab0", "1000:1afe", "1000:1b68", "1000:1b9a",
+        "1000:1dfa", "1000:1e61", "1000:1e70", "1000:1f24", "1000:1f68", "1000:1fd2", "1000:1fea", "1000:20a2",
+        "1000:2146", "1000:214a", "1000:214c", "1000:21b6", "1000:21d2", "1000:2242", "1000:22c0", "1000:22f8", "1000:2300",
+        "1000:23be", "1000:23ea", "1000:24cd", "1000:24db", "1000:250a", "1000:256b",
+        "1000:2594", "1000:25a8", "1000:25cc", "1000:25f2", "1000:262c", "1000:27d6", "1000:289a", "1000:28dc", "1000:2913",
+        "1000:2950", "1000:297e", "1000:298b", "1000:299d", "1000:29af", "1000:29b5", "1000:29dc", "1000:29ec",
+        "1000:2a00", "1000:2b02", "1000:2b3c", "1000:2b5c", "1000:2ba0", "1000:2bb6", "1000:2cb0", "1000:2ce8", "1000:2d34",
+        "1000:2e74", "1000:2f00", "1000:2f48", "1000:2fa4", "1000:3024", "1000:3038", "1000:30b4",
+        "1000:35aa", "1000:35fe", "1000:3636", "1000:370a", "1000:39f2", "1000:3ad9", "1000:3b48", "1000:3b59", "1000:3bac",
+        "1000:3cea", "1000:3d3e", "1000:3d7a", "1000:3da4", "1000:3dbe", "1000:3de8", "1000:3e82", "1000:3e9e", "1000:3ec0",
+        "1000:3f5c", "1000:3f9c", "1000:400a", "1000:407a", "1000:40af", "1000:41e0", "1000:422a", "1000:42de", "1000:435c",
+        "1000:43f0", "1000:440c", "1000:455a",
+        "1000:462e", "1000:472c", "1000:475e", "1000:47a4", "1000:484c", "1000:48a8", "1000:4906", "1000:495b", "1000:49b2",
+        "1000:49c6", "1000:4aea", "1000:4ceb", "1000:4d0c", "1000:4d24", "1000:4d58", "1000:4f2e", "1000:4f94", "1000:4fbe",
+        "1000:5008", "1000:5026", "1000:514e", "1000:5174", "1000:51aa",
+        "1000:52be", "1000:52f0", "1000:5390", "1000:54a0",
+        "1008:0000", "1008:0036", "1008:049c", "1008:04d2", "1008:0618", "1008:07d8", "1008:087e", "1008:0a3c", "1008:0af8",
+        "1008:12dc", "1008:1414", "1008:15d4", "1008:2c4e",
+        "1008:2d22", "1008:2dcc", "1008:2e9a", "1008:3018", "1008:30cc", "1008:3178",
+        "1008:357e", "1008:3714", "1008:372c", "1008:377e", "1008:392e", "1008:397a", "1008:39ac", "1008:3ab8", "1008:3afe",
+        "1008:3bd6", "1008:3c34", "1008:3cd6", "1008:3d44",
+        "1008:3f92", "1008:4016", "1008:405c", "1008:41bc", "1008:4214", "1008:4274", "1008:431c", "1008:43cc", "1008:4480",
+        "1008:4544", "1008:465a", "1008:46e4", "1008:4772", "1008:47cc", "1008:4834", "1008:48aa", "1008:48b8", "1008:48fe",
+        "1008:496c", "1008:49e8", "1008:4b8e", "1008:4c58", "1008:4c98", "1008:4cdc", "1008:4d26", "1008:4d72", "1008:4d84",
+        "1008:4e08", "1008:4e38", "1008:4ef6",
+        "1008:4f20", "1008:5068", "1008:507c", "1008:50c2", "1008:5118", "1008:5134", "1008:5236", "1008:52fc", "1008:5394",
+        "1008:53aa", "1008:53ae",
+        "1008:54aa", "1008:56b4", "1008:56e2", "1008:574a", "1008:5784", "1008:57a4", "1008:57c4", "1008:57f0", "1008:5830",
+        "1008:59f4", "1008:5b12", "1008:5bdc", "1008:5c34",
+        "1008:64a2", "1008:64c8", "1008:6562", "1008:6604", "1008:6732", "1008:676e", "1008:687a", "1008:68c6", "1008:68ea",
+        "1008:6978", "1008:6a04", "1008:6a4a", "1008:6b2e", "1008:6b5a", "1008:6bb4",
+        "1008:6d8a", "1008:6dd0", "1008:6e02", "1008:6e78", "1008:6eee", "1008:6f7a", "1008:7006", "1008:7056", "1008:70a6",
+        "1008:7146", "1008:71a0", "1008:726c", "1008:72bc", "1008:7c2a", "1008:7c6e",
+        "1008:7cac", "1008:7cfe", "1008:7dee", "1008:7e1c", "1008:7e4a", "1008:7f62", "1008:7ffa", "1008:80ee",
+        "1008:87cc", "1008:8aa2", "1008:8b20", "1008:8bc6", "1008:8c4e", "1008:8d8a", "1008:932a",
+        "1008:8e9e", "1008:8f24", "1008:91ba", "1008:921c", "1008:9498", "1008:9584",
+        "1008:9d36", "1008:a086", "1008:a0e4", "1008:a1f0", "1008:a930", "1008:aa28",
+        "1008:b69c", "1008:b85c", "1008:b8fa", "1008:b9ce", "1008:bde0",
+        "1008:c882", "1008:da12", "1008:dc90", "1008:dd4e", "1008:de58", "1008:df4a", "1008:dfa6",
+        "1008:e10c", "1008:e164", "1008:e2a4", "1008:e3ec", "1008:e586",
+        "1010:0000", "1010:0052", "1010:01f8", "1010:02e0", "1010:038e", "1010:043a", "1010:089e",
+        "1010:08c0", "1010:08e2", "1010:0946", "1010:09b4",
+        "1010:0f24", "1010:0f76", "1010:1146", "1010:11c6",
+        "1010:20ba", "1010:3702", "1010:37d4", "1010:383a", "1010:3b7a",
+        "1010:3c9e", "1010:4674", "1010:4a8a", "1010:5404", "1010:6700", "1010:6846", "1010:6abc",
+        "1010:830a", "1010:8b14", "1010:887a", "1010:71d6", "1010:7300", "1010:8ef2",
+        "1010:a1d8", "1010:a50c", "1010:95aa", "1010:9794",
+        "1018:0412", "1018:0570", "1010:c3c2",
+        "1018:0b1e", "1018:0dc6", "1018:18b8", "1018:229c",
+        "1018:331c", "1018:3710", "1018:3d6c",
+        "1018:4aaa", "1018:4b78", "1018:56e6", "1018:4720", "1018:4790", "1018:43ec",
+        "1018:5840", "1018:6198", "1018:5e26", "1018:66cc", "1018:6a0e", "1018:6adc",
+        "1018:702c", "1018:71dc", "1018:7896", "1018:7938",
+        "1018:eada", "1018:ec74", "1018:e6c6", "1018:e834", "1018:e230",
+        "1020:0dc4", "1020:1294", "1020:1418",
+        "1020:e652", "1020:e39c", "1020:e044",
+        "1028:134a", "1028:1416", "1028:1cca",
+        "1028:2e84", "1028:3246", "1028:3c32", "1028:3fa2",
+        "1028:d81c", "1028:dc52", "1028:e4ec",
+        "1030:2068", "1030:1be2", "1030:23e2", "1030:2a2c",
+        "1030:314c", "1030:4f5a", "1030:5044",
+        "1030:615a", "1030:627e", "1030:6fd4", "1030:701c",
+        "1038:af40", "1038:bc30", "1038:a89e", "1038:b72e", "1038:de20", "1038:df5c", "1038:cd88",
+        "1040:1d7a", "1040:1696", "1040:0acc", "1040:2a64", "1040:5dc4", "1040:5eaa", "1040:3966", "1040:64ca",
+        "1040:9948", "1040:ad24", "1040:ad66", "1040:a85a", "1040:b54a", "1040:bfde", "1040:c630",
+        "1040:840c", "1040:7728", "1040:78e2", "1040:826c"
+    ],
+    "unnamed_functions": {
+        "1000:0000": {
+            "name": "memcpy_words_near",
+            "arguments": "AX: src, BX: dst, DX: count_bytes",
+            "description": "Copies words from source to destination using near pointers. Count is provided in bytes."
+        },
+        "1000:0016": {
+            "name": "heap_validate_and_sweep",
+            "arguments": "param_1: heap_ptr",
+            "description": "Validates the heap structure by checking for a magic value (0xBEAD) and then performs a sweep of the free lists."
+        },
+        "1000:0e08": {
+            "name": "heap_free_block_internal",
+            "arguments": "param_1: block_ptr",
+            "description": "Internal routine to free a memory block. Handles block coalescing, updates free lists, and adjusts global flags."
+        },
+        "1000:17e8": {
+            "name": "heap_set_allocation_hook",
+            "arguments": "param_1: hook_off, param_2: hook_seg",
+            "description": "Sets a global allocation retry hook and returns the previously registered hook."
+        },
+        "1000:1e73": {
+            "name": "heap_dispatch_error_handler",
+            "arguments": "p1: code, p2: sub, p3: v1, p4: v2",
+            "description": "Dispatches an error to the registered global heap error handler. Handles callback validation and reference counting."
+        },
+        "1000:1f7e": {
+            "name": "heap_default_error_dialog_handler",
+            "arguments": "param_1: error_struct_ptr",
+            "description": "Default error handler that displays a message box. Maps specific error codes to retry/abort dialog options."
+        },
+        "1000:201c": {
+            "name": "heap_pool_cleanup_list",
+            "arguments": "param_1: flags, param_2: list_ptr",
+            "description": "Iterates through a linked list of memory pools and destroys each one using internal cleanup routines."
+        },
+        "1000:2068": {
+            "name": "heap_validate_pool_magic_internal",
+            "arguments": "None (uses stack)",
+            "description": "Internal helper to validate memory access and the 0xBEAD magic value for a pool header."
+        },
+        "1000:206c": {
+            "name": "heap_is_valid_pool_ptr",
+            "arguments": "param_1: pool_off, param_2: pool_seg",
+            "description": "Validates if a far pointer points to a valid memory pool by checking access and the 0xBEAD magic value."
+        },
+        "1000:24ea": {
+            "name": "app_exit_wrapper",
+            "arguments": "None",
+            "description": "A simple wrapper function that calls the Win16 application exit and cleanup routine."
+        },
+        "1000:24fb": {
+            "name": "app_terminate_with_dos",
+            "arguments": "None",
+            "description": "Terminates the application using Win16 and then falls back to a manual DOS 0x21 interrupt if necessary."
+        },
+        "1000:25d2": {
+            "name": "stack_guarded_indirect_call",
+            "arguments": "p1: proc, p2: err, p3: res",
+            "description": "Executes an indirect call after verifying stack space. Triggers fatal exit on exhaustion."
+        },
+        "1000:2891": {
+            "name": "fatal_runtime_error_handler",
+            "arguments": "p1: code, p2: msg_ptr",
+            "description": "Handles fatal runtime errors by looking up messages, logging, and performing a fatal exit."
+        },
+        "1000:3491": {
+            "name": "fmt_print_dispatch_logic",
+            "arguments": "param_1: format_char_ptr",
+            "description": "Dispatches formatted output based on a format character. Handles padding and zero flags."
+        },
+        "1000:34cf": {
+            "name": "fmt_get_next_word_arg",
+            "arguments": "None (uses BP)",
+            "description": "Retrieves the next word argument from the caller's stack frame and increments the arg pointer."
+        },
+        "1000:34d8": {
+            "name": "fmt_get_next_dword_arg",
+            "arguments": "None",
+            "description": "Retrieves the next double-word argument from the caller's stack frame and increments the arg pointer."
+        },
+        "1000:34e6": {
+            "name": "fmt_get_arg_by_size_flag",
+            "arguments": "param_1: default_val",
+            "description": "Retrieves an argument from the stack, choosing between word or dword size based on internal flags."
+        },
+        "1000:3503": {
+            "name": "fmt_write_buffered_char",
+            "arguments": "param_1: char_to_write",
+            "description": "Writes a character to a buffered file handle, flushing the buffer on overflow."
+        },
+        "1000:3534": {
+            "name": "fmt_write_buffered_string",
+            "arguments": "param_1: length",
+            "description": "Writes a string of characters to a buffered file handle in a loop."
+        },
+        "1000:3552": {
+            "name": "fmt_write_padding_chars",
+            "arguments": "p1: count, p2: char",
+            "description": "Writes a character multiple times to a buffered handle, used for output padding."
+        },
+        "1000:356e": {
+            "name": "fmt_itoa_internal",
+            "arguments": "val_lo, base, val_hi",
+            "description": "Internal routine for converting an integer to a string in a given base. Handles 16 and 32-bit values."
+        },
+        "1000:359f": {
+            "name": "far_noop_stub",
+            "arguments": "None",
+            "description": "A far pointer no-op stub function."
+        },
+        "1000:3722": {
+            "name": "dos_file_open_create_logic",
+            "arguments": "p1: off, p2: seg, p3: mode, p4: act",
+            "description": "A complex DOS-level file interaction routine that handles opening, creating, and locking files."
+        },
+        "1000:3c51": {
+            "name": "global_realloc_guarded",
+            "arguments": "err: code, size: sz, p3: wrap",
+            "description": "A guarded wrapper for GlobalRealloc16 that performs error checking and triggers a fatal exit if reallocation fails."
+        },
+        "1000:3cb7": {
+            "name": "memory_find_marker_fffe",
+            "arguments": "param_1: table_ptr",
+            "description": "Iterates through a custom memory structure or table to find the terminal 0xFFFE marker."
+        },
+        "1000:3cd8": {
+            "name": "global_free_far_wrapper",
+            "arguments": "param_1: ptr",
+            "description": "A simple far pointer wrapper for the global memory free routine."
+        },
+        "1000:4f1a": {
+            "name": "fatal_exit_wrapper",
+            "arguments": "err_code: err",
+            "description": "A wrapper for the fatal application exit and termination routine."
+        },
+        "1000:4f20": {
+            "name": "error_sync_with_dos",
+            "arguments": "err_code: err",
+            "description": "Synchronizes the internal error state with the result of a DOS interrupt call."
+        },
+        "1000:4f54": {
+            "name": "file_error_sync_with_dos",
+            "arguments": "p1: r1, p2: r2, p3: err",
+            "description": "Synchronizes the file error state with DOS results, including validation for wildcard characters in filenames."
+        },
+        "1000:5198": {
+            "name": "dos_multi_call_sync_error",
+            "arguments": "param_1: arg",
+            "description": "Performs multiple DOS calls and synchronizes the final error state based on the composite results."
+        },
+        "1000:5224": {
+            "name": "div_32bit_signed",
+            "arguments": "num_lo, num_hi, den_lo, den_hi",
+            "description": "Performs 32-bit signed division. Handles sign conversion and uses bit-shifting for long division."
+        },
+        "1000:53f0": {
+            "name": "mod_32bit",
+            "arguments": "num_lo, num_hi, den_lo, den_hi",
+            "description": "Performs 32-bit modulo operation using bit-shifting and division logic."
+        },
+        "1008:016e": {
+            "name": "main_engine_initialization",
+            "arguments": "p1: app_ptr, p2: instance",
+            "description": "Primary engine initialization routine. Validates the Windows environment, instantiates all core singleton managers, and creates the main application window and container."
+        },
+        "1008:04f8": {
+            "name": "Simulator_dtor_Scalar_Deleting",
+            "arguments": "this, res, flags",
+            "description": "Scalar deleting destructor for the Simulator class. Calls the destructor and optionally frees the memory."
+        },
+        "1008:0536": {
+            "name": "UI_MainWindow_ctor",
+            "arguments": "param_1: this",
+            "description": "Constructor for the main application window. Sets the window vtable, loads icons and cursors, and initializes the application title and system colors."
+        },
+        "1008:06c0": {
+            "name": "UI_Handle_Run_Turn_Command",
+            "arguments": "p1: app, p2: ticks, p3: res, p4: msg",
+            "description": "Handles the 'Run Turn' command from the UI. Executes the requested number of simulation ticks and synchronizes the UI state."
+        },
+        "1008:0932": {
+            "name": "heap_global_sweep_all_pools",
+            "arguments": "None",
+            "description": "Performs a comprehensive sweep and validation of all specialized memory pools (Event, Component, Sprite, Timer, Entity)."
+        },
+        "1008:0984": {
+            "name": "UI_Refresh_Colors_and_Components",
+            "arguments": "this, res",
+            "description": "Refreshes system colors and triggers an update for the nested UI component at offset 0xE8."
+        },
+        "1008:09ba": {
+            "name": "UI_Show_Main_Popup_Menu",
+            "arguments": "this, x, y",
+            "description": "Loads the primary application popup menu ('OPPOPMENU') and displays it at the specified client coordinates."
+        },
+        "1008:0a92": {
+            "name": "UI_Shutdown_Application",
+            "arguments": "param_1: this",
+            "description": "Orchestrates the application shutdown sequence. Triggers cleanup for primary UI components and posts the quit message to the Windows event loop."
+        },
+        "1008:1246": {
+            "name": "UI_Trigger_Child_Component_Event_4C",
+            "arguments": "this, p2, p3",
+            "description": "Triggers a virtual event callback (vcall 0x4C) on the primary nested UI component at offset 0xE8."
+        },
+        "1008:37aa": {
+            "name": "UI_Window_dtor_Scalar_Deleting",
+            "arguments": "this, flags",
+            "description": "Scalar deleting destructor for the base UI Window class. Resets vtables and optionally frees memory."
+        },
+        "1008:37e4": {
+            "name": "UI_Window_Base_dtor_Scalar_Deleting",
+            "arguments": "this, res, flags",
+            "description": "Scalar deleting destructor for the UI_Window_Base class. Calls the destructor and optionally frees the memory."
+        },
+        "1008:3a10": {
+            "name": "far_noop_stub_1008",
+            "arguments": "None",
+            "description": "A far pointer no-op stub function in segment 1008."
+        },
+        "1008:3a14": {
+            "name": "UI_Window_dtor_Alt_Scalar_Deleting",
+            "arguments": "this, flags",
+            "description": "An alternative scalar deleting destructor for the base UI Window class."
+        },
+        "1008:3a40": {
+            "name": "UI_GenericPanel_Step_dtor_Scalar_Deleting",
+            "arguments": "this, flags",
+            "description": "Scalar deleting destructor for the generic panel's stepping state. Resets vtables and optionally frees memory."
+        },
+        "1008:3a7a": {
+            "name": "UI_GenericPanel_dtor_Scalar_Deleting",
+            "arguments": "this, res, flags",
+            "description": "Scalar deleting destructor for the generic UI panel class. Calls the internal destructor and optionally frees memory."
+        },
+        "1008:4426": {
+            "name": "Bitmap_Object_Ensure_Initialized",
+            "arguments": "param_1: this",
+            "description": "Ensures that a Bitmap_Object is fully initialized by checking and potentially loading its metadata and palette. Returns the combined palette and secondary metadata field."
+        },
+        "1008:45d6": {
+            "name": "Bitmap_Object_Render_to_DC",
+            "arguments": "this, coords, hdc_ptr",
+            "description": "Renders a fully initialized Bitmap_Object to a Windows device context at the specified coordinates using the SetDiBitsToDevice16 API."
+        },
+        "1008:4b5e": {
+            "name": "UI_Component_Get_Active_Resource_Ptr",
+            "arguments": "param_1: this",
+            "description": "Retrieves the active resource pointer from a UI component, potentially triggering a lazy initialization through a virtual callback if necessary."
+        },
+        "1008:4c26": {
+            "name": "File_Object_dtor_Scalar_Deleting",
+            "arguments": "this, res, flags",
+            "description": "Scalar deleting destructor for the File_Object class. Calls the destructor and optionally frees the memory."
+        },
+        "1008:5634": {
+            "name": "UI_Element_WndProc_Dispatcher",
+            "arguments": "msg, wparam, llo, lhi, hwnd",
+            "description": "Generic window procedure dispatcher for UI elements. Retrieves the C++ object pointer from window extra bytes and dispatches the message to a virtual event handler (vcall 0x1C)."
+        },
+        "1008:570e": {
+            "name": "UI_Window_dtor_Alt2_Scalar_Deleting",
+            "arguments": "this, flags",
+            "description": "Another variant of the scalar deleting destructor for the base UI Window class."
+        },
+        "1008:58a6": {
+            "name": "UI_Component_Add_Window_to_List",
+            "arguments": "list_ptr, window_ptr",
+            "description": "Allocates a new UI component descriptor, initializes it as a window object, and appends it to the specified component list."
+        },
+        "1008:593c": {
+            "name": "UI_Component_Append_Window_to_List",
+            "arguments": "list_ptr, window_ptr",
+            "description": "Allocates a new UI component descriptor and appends it to the tail of the specified component list."
+        },
+        "1008:5ab8": {
+            "name": "UI_Component_Pop_Window_from_List",
+            "arguments": "param_1: list_ptr",
+            "description": "Removes the head element from a UI component list, destroys the node descriptor, and returns the pointer to the window object it contained."
+        },
+        "1008:5b6e": {
+            "name": "UI_Window_dtor_Alt3_Scalar_Deleting",
+            "arguments": "this, flags",
+            "description": "A third variant of the scalar deleting destructor for the base UI Window class."
+        },
+        "1008:5b9a": {
+            "name": "UI_Control_Sub_dtor_Scalar_Deleting",
+            "arguments": "this, res, flags",
+            "description": "Scalar deleting destructor for UI control sub-components. Calls the internal destructor and optionally frees memory."
+        },
+        "1008:5fa2": {
+            "name": "UI_Event_Manager_dtor_Scalar_Deleting",
+            "arguments": "this, res, flags",
+            "description": "Scalar deleting destructor for the UI_Event_Manager class. Calls the destructor and optionally frees memory."
+        },
+        "1008:62c0": {
+            "name": "UI_Window_OnPaint_Fill_Background",
+            "arguments": "param_1: this",
+            "description": "A standard WM_PAINT handler that fills the window's client area with a solid background color."
+        },
+        "1008:6324": {
+            "name": "far_noop_stub_1008_2",
+            "arguments": "None",
+            "description": "A second far pointer no-op stub function in segment 1008."
+        },
+        "1008:6328": {
+            "name": "far_noop_stub_1008_3",
+            "arguments": "None",
+            "description": "A third far pointer no-op stub function in segment 1008."
+        },
+        "1008:632c": {
+            "name": "far_noop_stub_1008_4",
+            "arguments": "None",
+            "description": "A fourth far pointer no-op stub function in segment 1008."
+        },
+        "1008:6330": {
+            "name": "UI_Window_With_Control_dtor_Scalar_Deleting",
+            "arguments": "this, flags",
+            "description": "Scalar deleting destructor for a window object that contains a sub-control at offset 0x69. Resets vtables and optionally frees memory."
+        },
+        "1008:6814": {
+            "name": "far_noop_stub_1008_5",
+            "arguments": "None",
+            "description": "A fifth far pointer no-op stub function in segment 1008."
+        },
+        "1008:681a": {
+            "name": "far_noop_stub_1008_6",
+            "arguments": "None",
+            "description": "A sixth far pointer no-op stub function in segment 1008."
+        },
+        "1008:681e": {
+            "name": "far_noop_stub_1008_7",
+            "arguments": "None",
+            "description": "A seventh far pointer no-op stub function in segment 1008."
+        },
+        "1008:6822": {
+            "name": "far_return_zero_stub_1008",
+            "arguments": "None",
+            "description": "A far pointer stub function that consistently returns zero."
+        },
+        "1008:6828": {
+            "name": "far_noop_stub_1008_8",
+            "arguments": "None",
+            "description": "An eighth far pointer no-op stub function in segment 1008."
+        },
+        "1008:682e": {
+            "name": "far_return_zero_stub_1008_2",
+            "arguments": "None",
+            "description": "A second far pointer stub function that consistently returns zero."
+        }
+    }
+}
