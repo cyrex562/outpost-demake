@@ -1,4 +1,9 @@
-#define IDC_REMOVE_LINK 0x1849
+#ifndef OUTPOST_H
+#define OUTPOST_H
+
+#include "ghidra.h"
+
+
 #define IDC_ADD_LINK 0x1848
 #define IDC_COLONY_STATUS_REPORT 0x1841
 #define IDC_FULL_REFRESH 0xeb
