@@ -1,0 +1,4575 @@
+{
+  "schema_version": 1,
+  "artifact": "register_args",
+  "source_root": "C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/src",
+  "summary": {
+    "functions_with_register_args": 448,
+    "unique_register_tokens": 17,
+    "register_function_frequency": {
+      "in_DX": 402,
+      "in_AX": 60,
+      "in_BX": 28,
+      "in_CX": 5,
+      "in_AF": 4,
+      "in_EDX": 3,
+      "in_AL": 1,
+      "in_BL": 1,
+      "in_CH": 1,
+      "in_DH": 1,
+      "in_DL": 1,
+      "in_EAX": 1,
+      "in_ECX": 1,
+      "in_FS": 1,
+      "in_OF": 1,
+      "in_SF": 1,
+      "in_ZF": 1
+    }
+  },
+  "findings": [
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part001.c",
+      "function": "heap_get_error_message",
+      "address_suffix": null,
+      "line": 175,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part001.c",
+      "function": "win16_init_env_and_interrupts",
+      "address_suffix": null,
+      "line": 194,
+      "registers": [
+        "in_BX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part001.c",
+      "function": "fatal_app_exit_with_message_lookup_and_terminate",
+      "address_suffix": null,
+      "line": 733,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part001.c",
+      "function": "fmt_itoa_internal",
+      "address_suffix": null,
+      "line": 855,
+      "registers": [
+        "in_CH",
+        "in_DH"
+      ],
+      "register_count": 9
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part002.c",
+      "function": "handle_buffered_write_internal_logic",
+      "address_suffix": null,
+      "line": 171,
+      "registers": [
+        "in_AF"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part002.c",
+      "function": "handle_buffered_write_chunk_internal",
+      "address_suffix": null,
+      "line": 379,
+      "registers": [
+        "in_AF",
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 9
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part003.c",
+      "function": "parse_tz_environment_variable_internal_far",
+      "address_suffix": null,
+      "line": 161,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part003.c",
+      "function": "ltoa_integer_to_string_optimized",
+      "address_suffix": null,
+      "line": 420,
+      "registers": [
+        "in_AX",
+        "in_BL",
+        "in_CX",
+        "in_DX"
+      ],
+      "register_count": 24
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part003.c",
+      "function": "dos_multi_call_sync_error",
+      "address_suffix": null,
+      "line": 608,
+      "registers": [
+        "in_AF"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part003.c",
+      "function": "dos_multiple_interrupt_call_wrapper",
+      "address_suffix": null,
+      "line": 682,
+      "registers": [
+        "in_AF"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part004.c",
+      "function": "Bitmap_Object_Blit_Transparent_Logic",
+      "address_suffix": null,
+      "line": 224,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part004.c",
+      "function": "File_Object_ctor",
+      "address_suffix": null,
+      "line": 280,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part004.c",
+      "function": "UI_Component_Add_Window_to_List",
+      "address_suffix": null,
+      "line": 366,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part004.c",
+      "function": "UI_Component_Append_Window_to_List",
+      "address_suffix": null,
+      "line": 410,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part004.c",
+      "function": "res_concatenate_strings_by_id",
+      "address_suffix": null,
+      "line": 470,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part004.c",
+      "function": "log_debug_message_v",
+      "address_suffix": null,
+      "line": 512,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part004.c",
+      "function": "strdup_allocate",
+      "address_suffix": null,
+      "line": 544,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part004.c",
+      "function": "file_context_init_logic",
+      "address_suffix": null,
+      "line": 578,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part004.c",
+      "function": "UI_Element_Subclass_Replace_String_at_Offset_16",
+      "address_suffix": null,
+      "line": 817,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part005.c",
+      "function": "res_init_string_property_table_logic",
+      "address_suffix": null,
+      "line": 92,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part005.c",
+      "function": "UI_Relationship_Manager_Get_Link_Status_Code_Logic",
+      "address_suffix": null,
+      "line": 748,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part005.c",
+      "function": "UI_Relationship_Manager_Report_Link_Status_Logic",
+      "address_suffix": null,
+      "line": 800,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part006.c",
+      "function": "UI_Report_List_Internal_Grouping_Engine_Logic",
+      "address_suffix": null,
+      "line": 250,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part006.c",
+      "function": "String_Wrapper_Object_Set_String_Logic",
+      "address_suffix": null,
+      "line": 702,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part007.c",
+      "function": "Configuration_Manager_ctor_init_6312_Logic",
+      "address_suffix": null,
+      "line": 16,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 13
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part007.c",
+      "function": "UI_Component_Set_String_at_Offset_16_Logic",
+      "address_suffix": null,
+      "line": 495,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part007.c",
+      "function": "UI_Component_Set_String_at_Offset_12_Logic_2",
+      "address_suffix": null,
+      "line": 510,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part007.c",
+      "function": "UI_Component_Set_String_at_Offset_68_Logic",
+      "address_suffix": null,
+      "line": 530,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part007.c",
+      "function": "UI_Component_Set_String_at_Offset_6C_Logic",
+      "address_suffix": null,
+      "line": 548,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part007.c",
+      "function": "UI_Component_Set_String_at_Offset_1A_Logic",
+      "address_suffix": null,
+      "line": 566,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part007.c",
+      "function": "Configuration_Manager_Read_Indexed_Values_Logic",
+      "address_suffix": null,
+      "line": 585,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 8
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part007.c",
+      "function": "Resource_Manager_Update_Path_by_Type_Logic",
+      "address_suffix": null,
+      "line": 795,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part008.c",
+      "function": "Resource_Manager_Report_File_Error_Logic",
+      "address_suffix": null,
+      "line": 64,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part009.c",
+      "function": "UI_Generate_Formatted_Label_Logic",
+      "address_suffix": null,
+      "line": 19,
+      "registers": [
+        "in_ECX",
+        "in_FS"
+      ],
+      "register_count": 12
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part010.c",
+      "function": "Resource_Manager_Get_String_with_Context_Validation",
+      "address_suffix": null,
+      "line": 8,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part010.c",
+      "function": "Resource_Manager_Set_String_with_Context_Validation",
+      "address_suffix": null,
+      "line": 26,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part010.c",
+      "function": "Entity_Format_Full_Name_Label_Logic",
+      "address_suffix": null,
+      "line": 51,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part010.c",
+      "function": "Entity_Format_Detailed_Status_Label_Logic",
+      "address_suffix": null,
+      "line": 87,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part010.c",
+      "function": "UI_Report_List_Add_Empty_Entry_Logic",
+      "address_suffix": null,
+      "line": 337,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part012.c",
+      "function": "UI_Ship_View_Set_Search_Filter_Logic",
+      "address_suffix": null,
+      "line": 88,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part012.c",
+      "function": "UI_Trade_Manager_Is_Entity_Link_Active_Logic_maybe",
+      "address_suffix": null,
+      "line": 273,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part012.c",
+      "function": "UI_Trade_Manager_Get_or_Init_List_by_Type_Logic",
+      "address_suffix": null,
+      "line": 418,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part012.c",
+      "function": "Build_Site_Object_Setup_GDI_Context",
+      "address_suffix": null,
+      "line": 651,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part012.c",
+      "function": "Build_Site_Object_Process_Selection_and_Notify",
+      "address_suffix": null,
+      "line": 699,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part013.c",
+      "function": "UI_Panel_Initialize_Text_Controls_from_Resource_Batch",
+      "address_suffix": null,
+      "line": 446,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part013.c",
+      "function": "UI_Build_Item_Draw_Text_Logic",
+      "address_suffix": null,
+      "line": 506,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part013.c",
+      "function": "UI_Grid_Control_Action_Dispatcher_0ec4",
+      "address_suffix": "0ec4",
+      "line": 674,
+      "registers": [
+        "in_BX",
+        "in_DX"
+      ],
+      "register_count": 8
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part013.c",
+      "function": "UI_Panel_Initialize_Text_Controls_from_Params_2488",
+      "address_suffix": "2488",
+      "line": 808,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part014.c",
+      "function": "UI_VrMode_PopupMenu_Process_Command_Logic_2ae4",
+      "address_suffix": "2ae4",
+      "line": 15,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part015.c",
+      "function": "Simulator_Object_Clone_Logic_6ef6",
+      "address_suffix": "6ef6",
+      "line": 73,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part015.c",
+      "function": "Simulator_Object_Clone_Logic_737e",
+      "address_suffix": "737e",
+      "line": 120,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part015.c",
+      "function": "Simulator_Object_Clone_Logic_752e",
+      "address_suffix": "752e",
+      "line": 167,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part015.c",
+      "function": "Simulator_Object_Clone_Logic_9dee",
+      "address_suffix": "9dee",
+      "line": 214,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part015.c",
+      "function": "Simulator_Object_Clone_Logic_a0fa",
+      "address_suffix": "a0fa",
+      "line": 264,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part015.c",
+      "function": "Simulator_Object_Clone_Logic_a79c",
+      "address_suffix": "a79c",
+      "line": 311,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part015.c",
+      "function": "Simulator_Object_Clone_Logic_a8f4",
+      "address_suffix": "a8f4",
+      "line": 358,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part015.c",
+      "function": "Simulator_Object_Clone_Logic_aa68",
+      "address_suffix": "aa68",
+      "line": 405,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part015.c",
+      "function": "Simulator_Object_Clone_Logic_abec",
+      "address_suffix": "abec",
+      "line": 452,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part016.c",
+      "function": "Simulator_Context_Load_Entity_Collection_from_File_e628",
+      "address_suffix": "e628",
+      "line": 20,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part016.c",
+      "function": "Colony_Set_Internal_Object_Name_Logic",
+      "address_suffix": null,
+      "line": 829,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part017.c",
+      "function": "Parser_Parse_CSV_Line_to_Int_Array_4c52",
+      "address_suffix": "4c52",
+      "line": 14,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part017.c",
+      "function": "Parser_Parse_CSV_Line_to_Short_Array_4d3a",
+      "address_suffix": "4d3a",
+      "line": 87,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part017.c",
+      "function": "UI_Production_Item_Set_Object_Name_Logic_5b6c",
+      "address_suffix": "5b6c",
+      "line": 202,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part017.c",
+      "function": "Simulator_Log_Debug_Message_to_File_840a",
+      "address_suffix": "840a",
+      "line": 232,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part017.c",
+      "function": "UI_Component_Type_B932_ctor_ae6c",
+      "address_suffix": "ae6c",
+      "line": 641,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part017.c",
+      "function": "UI_Component_Type_B932_ctor_with_Params_aefa",
+      "address_suffix": "aefa",
+      "line": 686,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part017.c",
+      "function": "Simulator_Object_Clone_Logic_e98e",
+      "address_suffix": "e98e",
+      "line": 771,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part017.c",
+      "function": "Simulator_Object_Clone_Logic_ebf8",
+      "address_suffix": "ebf8",
+      "line": 837,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part018.c",
+      "function": "UI_Component_Set_String_at_1FA",
+      "address_suffix": null,
+      "line": 60,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part018.c",
+      "function": "UI_Show_Resource_Distribution_Summary_Dialog_81be",
+      "address_suffix": "81be",
+      "line": 143,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 9
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part018.c",
+      "function": "UI_Show_Colony_Status_Summary_MessageBox_8a3a",
+      "address_suffix": "8a3a",
+      "line": 207,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part018.c",
+      "function": "UI_Show_Final_Status_Report_MessageBox_8dda",
+      "address_suffix": "8dda",
+      "line": 250,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 9
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part018.c",
+      "function": "UI_Window_Subclass_Prop_Redirector_WindowProc",
+      "address_suffix": null,
+      "line": 361,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part018.c",
+      "function": "UI_Show_Resource_Detail_Summary_MessageBox_64ca",
+      "address_suffix": "64ca",
+      "line": 556,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/core/text/outpost.strings_text.part019.c",
+      "function": "UI_Show_Summary_Report_MessageBox_a85a",
+      "address_suffix": "a85a",
+      "line": 242,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/generated/misc/outpost.misc.part001.c",
+      "function": "validate_ptr_range_access",
+      "address_suffix": null,
+      "line": 275,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/generated/misc/outpost.misc.part002.c",
+      "function": "search_array_for_value",
+      "address_suffix": null,
+      "line": 460,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part001.c",
+      "function": "UI_Prompt_Save_Game_Dialog",
+      "address_suffix": null,
+      "line": 470,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part001.c",
+      "function": "File_Object_Load_Bitmap_File_Logic",
+      "address_suffix": null,
+      "line": 526,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part002.c",
+      "function": "file_context_deserialize_resource_object_logic",
+      "address_suffix": null,
+      "line": 198,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part002.c",
+      "function": "file_context_deserialize_list_logic",
+      "address_suffix": null,
+      "line": 242,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part002.c",
+      "function": "file_context_deserialize_map_logic",
+      "address_suffix": null,
+      "line": 305,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part002.c",
+      "function": "file_context_find_footer_marker_logic",
+      "address_suffix": null,
+      "line": 691,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part002.c",
+      "function": "file_read_check",
+      "address_suffix": null,
+      "line": 751,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part002.c",
+      "function": "file_write_check",
+      "address_suffix": null,
+      "line": 769,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part002.c",
+      "function": "UI_Component_Init_SubSystems_from_File_Logic",
+      "address_suffix": null,
+      "line": 806,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part002.c",
+      "function": "UI_Component_Show_File_Status_Message_Logic",
+      "address_suffix": null,
+      "line": 848,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part003.c",
+      "function": "UI_Object_Collection_Deserialize_from_File_bb5e",
+      "address_suffix": "bb5e",
+      "line": 77,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part003.c",
+      "function": "UI_Component_Collection_Deserialize_from_File_e70e",
+      "address_suffix": "e70e",
+      "line": 306,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part003.c",
+      "function": "UI_Report_List_Deserialize_from_File_Logic",
+      "address_suffix": null,
+      "line": 500,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part003.c",
+      "function": "UI_Component_Build_Hierarchy_Path_Elements_Logic",
+      "address_suffix": null,
+      "line": 666,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part004.c",
+      "function": "UI_Global_Data_Deserialize_from_File_5e56",
+      "address_suffix": "5e56",
+      "line": 8,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part004.c",
+      "function": "UI_Object_Collection_Remap_and_Deserialize_68c6",
+      "address_suffix": "68c6",
+      "line": 147,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part004.c",
+      "function": "Resource_Manager_Load_Resource_Object_Logic",
+      "address_suffix": null,
+      "line": 251,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part005.c",
+      "function": "UI_MultiList_Collection_Deserialize_from_File_9b72",
+      "address_suffix": "9b72",
+      "line": 8,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 21
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part005.c",
+      "function": "UI_Build_Item_Complex_Deserialize_from_File_0374",
+      "address_suffix": "0374",
+      "line": 546,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part005.c",
+      "function": "UI_Build_Item_Complex_Resource_Deserialize_from_File_24a2",
+      "address_suffix": "24a2",
+      "line": 758,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part006.c",
+      "function": "UI_Build_Item_Complex_Resource_Deserialize_from_File_65e2",
+      "address_suffix": "65e2",
+      "line": 176,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part006.c",
+      "function": "Simulator_Context_Load_from_File_Comprehensive_def2",
+      "address_suffix": "def2",
+      "line": 800,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 12
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part007.c",
+      "function": "UI_Window_Complex_List_Deserialize_from_File_2c8a",
+      "address_suffix": "2c8a",
+      "line": 392,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part008.c",
+      "function": "UI_Window_Complex_Building_Deserialize_from_File_581e",
+      "address_suffix": "581e",
+      "line": 13,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part008.c",
+      "function": "UI_Window_Massive_Object_State_Deserialize_from_File_778c",
+      "address_suffix": "778c",
+      "line": 464,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 9
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part008.c",
+      "function": "Simulator_Complex_List_Load_from_File_Logic_b836",
+      "address_suffix": "b836",
+      "line": 750,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part009.c",
+      "function": "UI_SubDialog_Type5E16_Deserialize_from_File",
+      "address_suffix": null,
+      "line": 411,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part009.c",
+      "function": "Simulator_Resource_List_Save_to_File_Logic_75ca",
+      "address_suffix": "75ca",
+      "line": 565,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/io/outpost.file_io.part009.c",
+      "function": "Simulator_Complex_Collection_Load_from_File_7c02",
+      "address_suffix": "7c02",
+      "line": 773,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 11
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/media/outpost.graphics_media.part001.c",
+      "function": "Bitmap_Object_Select_And_Realize_Palette",
+      "address_suffix": null,
+      "line": 70,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/media/outpost.graphics_media.part001.c",
+      "function": "Palette_Object_Select_And_Realize_Wrapper_Far",
+      "address_suffix": null,
+      "line": 235,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/media/outpost.graphics_media.part001.c",
+      "function": "Palette_Object_Create_HPALETTE_Logic",
+      "address_suffix": null,
+      "line": 256,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/media/outpost.graphics_media.part001.c",
+      "function": "media_mci_play_file_logic",
+      "address_suffix": null,
+      "line": 351,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/media/outpost.graphics_media.part001.c",
+      "function": "Gameplay_Object_Draw_Logic",
+      "address_suffix": null,
+      "line": 454,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/media/outpost.graphics_media.part001.c",
+      "function": "Gameplay_Object_Manage_Background_Cache_Logic",
+      "address_suffix": null,
+      "line": 495,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/media/outpost.graphics_media.part001.c",
+      "function": "UI_Main_View_Load_Bitmap_and_Palette_Logic_2978",
+      "address_suffix": "2978",
+      "line": 597,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/media/outpost.graphics_media.part001.c",
+      "function": "Build_Site_Object_Load_Paletted_Bitmap_Resource",
+      "address_suffix": null,
+      "line": 739,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/media/outpost.graphics_media.part003.c",
+      "function": "UI_Custom_Dialog_OnPaint_Logic_8a06",
+      "address_suffix": "8a06",
+      "line": 16,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/media/outpost.graphics_media.part003.c",
+      "function": "UI_GDI_Set_Brush_and_Palette_Colors_b372",
+      "address_suffix": "b372",
+      "line": 205,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_sweep_free_lists",
+      "address_suffix": null,
+      "line": 59,
+      "registers": [
+        "in_BX"
+      ],
+      "register_count": 9
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_extend_free_list",
+      "address_suffix": null,
+      "line": 167,
+      "registers": [
+        "in_BX"
+      ],
+      "register_count": 21
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_pop_free_list_to_bucket",
+      "address_suffix": null,
+      "line": 278,
+      "registers": [
+        "in_AX",
+        "in_BX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_push_bucket_to_free_list",
+      "address_suffix": null,
+      "line": 318,
+      "registers": [
+        "in_AX",
+        "in_BX",
+        "in_DX"
+      ],
+      "register_count": 19
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_alloc_block",
+      "address_suffix": null,
+      "line": 352,
+      "registers": [
+        "in_AX",
+        "in_BX",
+        "in_DL"
+      ],
+      "register_count": 19
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 408,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_try_release_block",
+      "address_suffix": null,
+      "line": 443,
+      "registers": [
+        "in_AX",
+        "in_BX"
+      ],
+      "register_count": 10
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_alloc_strategy3",
+      "address_suffix": null,
+      "line": 496,
+      "registers": [
+        "in_AL",
+        "in_BX"
+      ],
+      "register_count": 8
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_alloc_large",
+      "address_suffix": null,
+      "line": 515,
+      "registers": [
+        "in_BX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_try_resize_block",
+      "address_suffix": null,
+      "line": 554,
+      "registers": [
+        "in_AX",
+        "in_BX",
+        "in_DX"
+      ],
+      "register_count": 16
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_init_strategy1",
+      "address_suffix": null,
+      "line": 635,
+      "registers": [
+        "in_AX",
+        "in_BX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_init_free_lists",
+      "address_suffix": null,
+      "line": 655,
+      "registers": [
+        "in_AX",
+        "in_BX",
+        "in_DX"
+      ],
+      "register_count": 12
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_alloc_small",
+      "address_suffix": null,
+      "line": 707,
+      "registers": [
+        "in_BX"
+      ],
+      "register_count": 14
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_free_small_block_09a0",
+      "address_suffix": "09a0",
+      "line": 816,
+      "registers": [
+        "in_BX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part001.c",
+      "function": "heap_alloc_strategy2",
+      "address_suffix": null,
+      "line": 842,
+      "registers": [
+        "in_AX",
+        "in_BX"
+      ],
+      "register_count": 14
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part002.c",
+      "function": "heap_alloc_medium",
+      "address_suffix": null,
+      "line": 92,
+      "registers": [
+        "in_AX",
+        "in_BX",
+        "in_DX"
+      ],
+      "register_count": 18
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part002.c",
+      "function": "heap_search_free_blocks",
+      "address_suffix": null,
+      "line": 174,
+      "registers": [
+        "in_AX",
+        "in_BX",
+        "in_DX"
+      ],
+      "register_count": 31
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part002.c",
+      "function": "heap_query_block_size",
+      "address_suffix": null,
+      "line": 468,
+      "registers": [
+        "in_AX",
+        "in_BX",
+        "in_DX"
+      ],
+      "register_count": 29
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part002.c",
+      "function": "heap_prepare_inplace_resize",
+      "address_suffix": null,
+      "line": 600,
+      "registers": [
+        "in_AX",
+        "in_BX"
+      ],
+      "register_count": 12
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part002.c",
+      "function": "heap_try_alloc_block",
+      "address_suffix": null,
+      "line": 859,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part003.c",
+      "function": "heap_alloc_bytes",
+      "address_suffix": null,
+      "line": 89,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part003.c",
+      "function": "heap_alloc_bytes_public",
+      "address_suffix": null,
+      "line": 270,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part003.c",
+      "function": "heap_create_pool",
+      "address_suffix": null,
+      "line": 389,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part003.c",
+      "function": "heap_round_up_size",
+      "address_suffix": null,
+      "line": 512,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 14
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part003.c",
+      "function": "heap_check_pool_count_limit",
+      "address_suffix": null,
+      "line": 751,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part004.c",
+      "function": "stack_guarded_indirect_call",
+      "address_suffix": null,
+      "line": 63,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part004.c",
+      "function": "heap_alloc_safe",
+      "address_suffix": null,
+      "line": 95,
+      "registers": [
+        "in_AX",
+        "in_BX",
+        "in_CX",
+        "in_DX"
+      ],
+      "register_count": 8
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part004.c",
+      "function": "Palette_Object_Copy_From_Other_Logic",
+      "address_suffix": null,
+      "line": 305,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part004.c",
+      "function": "win16_main_init_and_run_loop",
+      "address_suffix": null,
+      "line": 360,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 11
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part004.c",
+      "function": "Bitmap_Object_Subclass_Clone_Logic",
+      "address_suffix": null,
+      "line": 511,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part004.c",
+      "function": "UI_Specialized_Manager_ctor",
+      "address_suffix": null,
+      "line": 807,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part005.c",
+      "function": "UI_Relationship_Manager_ctor",
+      "address_suffix": null,
+      "line": 207,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part005.c",
+      "function": "UI_Subclass_EFC4_factory",
+      "address_suffix": null,
+      "line": 295,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part005.c",
+      "function": "UI_Event_List_Manager_ctor",
+      "address_suffix": null,
+      "line": 338,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part005.c",
+      "function": "UI_Element_Create_with_Custom_Data_Logic_maybe",
+      "address_suffix": null,
+      "line": 417,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part005.c",
+      "function": "UI_Container_Add_Item_at_Offset_4_Logic",
+      "address_suffix": null,
+      "line": 442,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part006.c",
+      "function": "Resource_Manager_Get_Resource_by_ID_Logic",
+      "address_suffix": null,
+      "line": 17,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 93
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part006.c",
+      "function": "Collection_Object_Subclass_3B3E_factory",
+      "address_suffix": null,
+      "line": 619,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part006.c",
+      "function": "Collection_Object_Base_Factory_394a",
+      "address_suffix": "394a",
+      "line": 644,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part006.c",
+      "function": "UI_Component_Set_Indexed_Rect_at_Offset_1A_Logic",
+      "address_suffix": null,
+      "line": 704,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part006.c",
+      "function": "Collection_Object_Subclass_958E_factory",
+      "address_suffix": null,
+      "line": 838,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part007.c",
+      "function": "UI_Object_Add_Type_Value_Pair_to_Collection_at_Offset_12_Logic",
+      "address_suffix": null,
+      "line": 88,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part007.c",
+      "function": "UI_Ship_View_Extract_ID_List_from_History_Logic",
+      "address_suffix": null,
+      "line": 372,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part007.c",
+      "function": "UI_Build_3Point_Triangle_Coordinate_Array_from_Offset",
+      "address_suffix": null,
+      "line": 674,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part007.c",
+      "function": "Gameplay_Object_Factory_Create_From_Type_ID",
+      "address_suffix": null,
+      "line": 818,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part007.c",
+      "function": "UI_Build_3Point_Triangle_Coordinate_Array_Alternative_23f2",
+      "address_suffix": "23f2",
+      "line": 852,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part008.c",
+      "function": "UI_Calculate_Object_Polygon_Coordinates_3540",
+      "address_suffix": "3540",
+      "line": 71,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part008.c",
+      "function": "UI_Sorted_Linked_List_Insert_Item_c872",
+      "address_suffix": "c872",
+      "line": 410,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part008.c",
+      "function": "Simulator_Object_Clone_Logic_69cc",
+      "address_suffix": "69cc",
+      "line": 572,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part008.c",
+      "function": "Simulator_Object_Clone_Logic_82b4",
+      "address_suffix": "82b4",
+      "line": 637,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part008.c",
+      "function": "Simulator_Object_Clone_Logic_8400",
+      "address_suffix": "8400",
+      "line": 684,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part008.c",
+      "function": "Simulator_Object_Clone_Logic_858c",
+      "address_suffix": "858c",
+      "line": 731,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part008.c",
+      "function": "Simulator_Object_Clone_Logic_86f4",
+      "address_suffix": "86f4",
+      "line": 784,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part008.c",
+      "function": "Simulator_Object_Clone_Logic_8c46",
+      "address_suffix": "8c46",
+      "line": 837,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "Simulator_Object_Clone_Logic_8ea6",
+      "address_suffix": "8ea6",
+      "line": 26,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "Simulator_Object_Clone_Logic_8fea",
+      "address_suffix": "8fea",
+      "line": 80,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "Simulator_Object_Clone_Logic_9264",
+      "address_suffix": "9264",
+      "line": 133,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "Simulator_Object_Clone_Logic_94e4",
+      "address_suffix": "94e4",
+      "line": 183,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "Simulator_Object_Clone_Logic_9b48",
+      "address_suffix": "9b48",
+      "line": 258,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "Simulator_Object_Clone_Logic_ad9c",
+      "address_suffix": "ad9c",
+      "line": 376,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "Simulator_Object_Clone_Logic_afce",
+      "address_suffix": "afce",
+      "line": 439,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "Simulator_Object_Clone_Logic_b108",
+      "address_suffix": "b108",
+      "line": 508,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "Data_History_Object_Clear_All_Nodes_Logic_d01a",
+      "address_suffix": "d01a",
+      "line": 631,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "UI_Sorted_Linked_List_Manager_ctor_init_d59c",
+      "address_suffix": "d59c",
+      "line": 672,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part009.c",
+      "function": "Simulator_Context_ctor_init_Global_d81c",
+      "address_suffix": "d81c",
+      "line": 722,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 11
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part010.c",
+      "function": "Simulator_Object_Alloc_and_Init_from_Manager_e100",
+      "address_suffix": "e100",
+      "line": 15,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part010.c",
+      "function": "UI_Build_Item_Factory_Create_Wrapper_0016",
+      "address_suffix": "0016",
+      "line": 78,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 107
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part011.c",
+      "function": "UI_Build_Item_Factory_Create_with_Params_07ac",
+      "address_suffix": "07ac",
+      "line": 15,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 57
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part011.c",
+      "function": "UI_Window_Simple_List_Deserialize_from_File_1b18",
+      "address_suffix": "1b18",
+      "line": 749,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part012.c",
+      "function": "Colony_Process_Special_Departure_Logic_3694",
+      "address_suffix": "3694",
+      "line": 16,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part012.c",
+      "function": "Simulator_Context_Load_bldgbld_dat_Logic_4f5a",
+      "address_suffix": "4f5a",
+      "line": 100,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part012.c",
+      "function": "Simulator_Context_Load_bldgops_dat_Logic_5044",
+      "address_suffix": "5044",
+      "line": 163,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part012.c",
+      "function": "Simulator_Object_Clone_Logic_5290",
+      "address_suffix": "5290",
+      "line": 228,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part012.c",
+      "function": "Simulator_Object_Clone_Logic_54f8",
+      "address_suffix": "54f8",
+      "line": 278,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part012.c",
+      "function": "UI_Window_Complex_Resource_Deserialize_from_File_5e70",
+      "address_suffix": "5e70",
+      "line": 346,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part012.c",
+      "function": "Simulator_Object_Clone_Logic_e1f4",
+      "address_suffix": "e1f4",
+      "line": 743,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part012.c",
+      "function": "Simulator_Object_Clone_Logic_e34e",
+      "address_suffix": "e34e",
+      "line": 790,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part012.c",
+      "function": "Simulator_Object_Clone_Logic_e564",
+      "address_suffix": "e564",
+      "line": 856,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part013.c",
+      "function": "Simulator_Object_Clone_Logic_e6c2",
+      "address_suffix": "e6c2",
+      "line": 8,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part013.c",
+      "function": "Simulator_Object_Clone_Logic_e7d6",
+      "address_suffix": "e7d6",
+      "line": 59,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part013.c",
+      "function": "Simulator_Object_Clone_Logic_0000",
+      "address_suffix": "0000",
+      "line": 106,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/memory/outpost.memory_heap.part013.c",
+      "function": "Simulator_Turn_Manager_ctor_init_78e2",
+      "address_suffix": "78e2",
+      "line": 210,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part001.c",
+      "function": "Simulator_init_or_exit_on_fail",
+      "address_suffix": null,
+      "line": 447,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part001.c",
+      "function": "Simulator_allocate_and_init_internal",
+      "address_suffix": null,
+      "line": 486,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part001.c",
+      "function": "UI_Main_Window_Command_Dispatcher_0c60",
+      "address_suffix": "0c60",
+      "line": 524,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part002.c",
+      "function": "UI_Prompt_Load_Game_and_Init_World_Logic",
+      "address_suffix": null,
+      "line": 19,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part002.c",
+      "function": "UI_Show_Message_Box_Generic_with_Simulator_Check",
+      "address_suffix": null,
+      "line": 119,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part003.c",
+      "function": "Text_Bitmap_Object_ctor_and_render",
+      "address_suffix": null,
+      "line": 18,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part003.c",
+      "function": "Sprite_Object_Clip_To_Bitmap_Bounds",
+      "address_suffix": null,
+      "line": 200,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part003.c",
+      "function": "Bitmap_Object_Create_SubBitmap_Logic",
+      "address_suffix": null,
+      "line": 489,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part003.c",
+      "function": "Bitmap_Object_Copy_Region_To_New_Bitmap",
+      "address_suffix": null,
+      "line": 539,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part004.c",
+      "function": "Gameplay_Object_ctor",
+      "address_suffix": null,
+      "line": 235,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part004.c",
+      "function": "Gameplay_Object_Draw_With_Offset_Logic",
+      "address_suffix": null,
+      "line": 430,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part004.c",
+      "function": "Simulator_Add_Resource_Tracker",
+      "address_suffix": null,
+      "line": 516,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part004.c",
+      "function": "UI_Manager_ctor",
+      "address_suffix": null,
+      "line": 665,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part006.c",
+      "function": "UI_Populate_Standard_Option_List_Logic",
+      "address_suffix": null,
+      "line": 19,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part006.c",
+      "function": "UI_Populate_Numbered_Slot_List_Logic",
+      "address_suffix": null,
+      "line": 155,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part006.c",
+      "function": "UI_Add_New_Numbered_Slot_Entry_Logic",
+      "address_suffix": null,
+      "line": 234,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part006.c",
+      "function": "res_find_first_available_string_index_logic",
+      "address_suffix": null,
+      "line": 307,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part007.c",
+      "function": "UI_Element_Subclass_ctor_D98E",
+      "address_suffix": "d98e",
+      "line": 308,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part007.c",
+      "function": "UI_Relationship_Manager_Add_Link_and_Check_Status_Logic",
+      "address_suffix": null,
+      "line": 481,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part007.c",
+      "function": "UI_Relationship_Manager_Establish_Link_and_Notify_Logic",
+      "address_suffix": null,
+      "line": 535,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part008.c",
+      "function": "Simulation_Update_BitFlags_Logic",
+      "address_suffix": null,
+      "line": 168,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part008.c",
+      "function": "Path_Manager_Construct_Resource_Path",
+      "address_suffix": null,
+      "line": 471,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part009.c",
+      "function": "UI_Option_Selection_Dialog_ctor",
+      "address_suffix": null,
+      "line": 191,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part009.c",
+      "function": "Resource_Category2_Object_ctor",
+      "address_suffix": null,
+      "line": 557,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part010.c",
+      "function": "UI_Colony_Morale_Dialog_ctor",
+      "address_suffix": null,
+      "line": 484,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part010.c",
+      "function": "UI_Component_Update_Layout_and_Bounds_Logic",
+      "address_suffix": null,
+      "line": 595,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part010.c",
+      "function": "UI_Find_Entity_ID_by_Formatted_Name_Logic",
+      "address_suffix": null,
+      "line": 880,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part011.c",
+      "function": "UI_Component_Init_State_Logic_6034",
+      "address_suffix": "6034",
+      "line": 36,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part011.c",
+      "function": "Bitmap_Object_Apply_Border_Color_Logic",
+      "address_suffix": null,
+      "line": 835,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part012.c",
+      "function": "Resource_Manager_Composite_SubBitmap_Logic",
+      "address_suffix": null,
+      "line": 15,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part012.c",
+      "function": "UI_Vector_Tracker_Object_ctor",
+      "address_suffix": null,
+      "line": 264,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part013.c",
+      "function": "UI_Get_Entity_Name_by_Type_and_Index_Logic",
+      "address_suffix": null,
+      "line": 136,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part013.c",
+      "function": "UI_Find_Entity_Index_by_Name_and_Type_Logic",
+      "address_suffix": null,
+      "line": 176,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part013.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 198,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part013.c",
+      "function": "Resource_Manager_Bulk_Load_Entity_Icons_Logic",
+      "address_suffix": null,
+      "line": 445,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part013.c",
+      "function": "Entity_Get_Category_Name_Logic",
+      "address_suffix": null,
+      "line": 641,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part013.c",
+      "function": "UI_Entity_Summary_Object_ctor_init",
+      "address_suffix": null,
+      "line": 701,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part014.c",
+      "function": "Simulator_Object_Subclass_ctor_0558",
+      "address_suffix": "0558",
+      "line": 451,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part015.c",
+      "function": "UI_Report_Grid_Bulk_Load_Item_Bitmaps_Logic",
+      "address_suffix": null,
+      "line": 791,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part015.c",
+      "function": "UI_Construction_Manager_ctor_init_2ADA_Logic",
+      "address_suffix": null,
+      "line": 820,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 8
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part016.c",
+      "function": "UI_Ship_View_Get_Mapping_Logic",
+      "address_suffix": null,
+      "line": 309,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part016.c",
+      "function": "UI_Trade_Manager_Check_Route_Validity_Logic",
+      "address_suffix": null,
+      "line": 505,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part016.c",
+      "function": "UI_Component_Factory_Create_Transaction_Item_Logic",
+      "address_suffix": null,
+      "line": 545,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 15
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part016.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 637,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part016.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 674,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part016.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 684,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part016.c",
+      "function": "UI_Trade_Manager_Generate_Random_Log_Entry_Logic",
+      "address_suffix": null,
+      "line": 808,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part019.c",
+      "function": "UI_Colony_View_Open_Morale_Dialog_Logic_25c0",
+      "address_suffix": "25c0",
+      "line": 163,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part020.c",
+      "function": "UI_Lab_View_Execute_Command_Dispatcher_493c",
+      "address_suffix": "493c",
+      "line": 13,
+      "registers": [
+        "in_BX",
+        "in_DX"
+      ],
+      "register_count": 29
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part021.c",
+      "function": "UI_Calculate_Rect_from_Base_and_Bitmap_Logic_8712",
+      "address_suffix": "8712",
+      "line": 106,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part021.c",
+      "function": "UI_Complex_Control_OnPaint_Manage_4_Sprites_8908",
+      "address_suffix": "8908",
+      "line": 180,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part029.c",
+      "function": "Simulator_Check_Entity_State_Value_vcall_8_740c",
+      "address_suffix": "740c",
+      "line": 733,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part030.c",
+      "function": "Simulator_Check_Neighbor_Proximity_Status_7742",
+      "address_suffix": "7742",
+      "line": 45,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part030.c",
+      "function": "Simulator_Process_Batch_Entity_Callbacks_780c",
+      "address_suffix": "780c",
+      "line": 118,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part032.c",
+      "function": "Colony_Update_Tax_and_Efficiency_a28a",
+      "address_suffix": "a28a",
+      "line": 381,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part032.c",
+      "function": "Colony_Process_Turn_Maintenance_and_Growth_a4ee",
+      "address_suffix": "a4ee",
+      "line": 557,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part033.c",
+      "function": "UI_Build_Item_Sync_Simulator_Resource_Event_bd38",
+      "address_suffix": "bd38",
+      "line": 364,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part034.c",
+      "function": "Simulator_Get_Map_Cell_Data_Wrapper_e0a0",
+      "address_suffix": "e0a0",
+      "line": 814,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part034.c",
+      "function": "Simulator_Object_Clone_from_Manager_e0bc",
+      "address_suffix": "e0bc",
+      "line": 831,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part035.c",
+      "function": "Simulator_Get_Active_Context_Pointer_ebee",
+      "address_suffix": "ebee",
+      "line": 284,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part035.c",
+      "function": "Simulator_Process_Production_Interaction_ed2c",
+      "address_suffix": "ed2c",
+      "line": 315,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part035.c",
+      "function": "Simulator_Process_Entity_Batch_Production_1120",
+      "address_suffix": "1120",
+      "line": 450,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part035.c",
+      "function": "UI_Production_Item_Update_Internal_List_Logic_1be2",
+      "address_suffix": "1be2",
+      "line": 535,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part036.c",
+      "function": "Colony_Initialize_Entity_List_UI_Logic",
+      "address_suffix": null,
+      "line": 448,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part036.c",
+      "function": "Colony_Process_Population_Departure_Logic_35a4",
+      "address_suffix": "35a4",
+      "line": 685,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part037.c",
+      "function": "Simulator_Factory_Create_Resource_Entry_4594",
+      "address_suffix": "4594",
+      "line": 194,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part037.c",
+      "function": "Simulator_Factory_Create_Specialized_Entity_Entry_4628",
+      "address_suffix": "4628",
+      "line": 241,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part037.c",
+      "function": "Simulator_Factory_Create_Building_Entry_Logic_4782",
+      "address_suffix": "4782",
+      "line": 328,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part038.c",
+      "function": "Simulator_World_Populate_Entity_Metadata_and_Polygons",
+      "address_suffix": null,
+      "line": 82,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part038.c",
+      "function": "Simulator_Map_Context_ctor_init_615a",
+      "address_suffix": "615a",
+      "line": 154,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part038.c",
+      "function": "Simulator_Map_Execute_Action_at_Coords_6222",
+      "address_suffix": "6222",
+      "line": 230,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part038.c",
+      "function": "UI_Component_Upsert_Resource_SubObject_6a2c",
+      "address_suffix": "6a2c",
+      "line": 697,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part039.c",
+      "function": "UI_Component_Execute_Resource_Action_and_Notify_6c66",
+      "address_suffix": "6c66",
+      "line": 16,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part039.c",
+      "function": "UI_Component_Batch_Spawn_SubEntities_Logic_7c50",
+      "address_suffix": "7c50",
+      "line": 529,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part039.c",
+      "function": "UI_Component_Calculate_Entity_Resource_Output_Logic_7fd6",
+      "address_suffix": "7fd6",
+      "line": 750,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part039.c",
+      "function": "Simulator_Global_State_ctor_init_8128",
+      "address_suffix": "8128",
+      "line": 815,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part040.c",
+      "function": "Simulator_Entity_Collection_Find_and_Set_Item_Logic_861a",
+      "address_suffix": "861a",
+      "line": 271,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part040.c",
+      "function": "Simulator_Entity_Collection_Upsert_Item_Logic_8660",
+      "address_suffix": "8660",
+      "line": 298,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 16
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part040.c",
+      "function": "Simulator_Map_Get_Metadata_from_Bitmap_8c66",
+      "address_suffix": "8c66",
+      "line": 719,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part040.c",
+      "function": "Simulator_Batch_Process_Entities_vcall_14_8d08",
+      "address_suffix": "8d08",
+      "line": 777,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part040.c",
+      "function": "Simulator_Factory_Spawn_Entity_and_Process_Logic_8e3c",
+      "address_suffix": "8e3c",
+      "line": 849,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part041.c",
+      "function": "Simulator_Process_Site_Adjacency_Validation_9048",
+      "address_suffix": "9048",
+      "line": 119,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part042.c",
+      "function": "UI_Build_Item_Find_Adjacent_Group46_Coord_a3ae",
+      "address_suffix": "a3ae",
+      "line": 171,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part042.c",
+      "function": "UI_Build_Item_Find_Adjacent_Building_Coord_aa18",
+      "address_suffix": "aa18",
+      "line": 563,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part045.c",
+      "function": "Simulator_Count_Nearby_Entities_in_Collections_01c0",
+      "address_suffix": "01c0",
+      "line": 500,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part046.c",
+      "function": "Simulator_Object_Clone_Logic_0cf0",
+      "address_suffix": "0cf0",
+      "line": 469,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part046.c",
+      "function": "Simulator_Process_Turn_Construction_Batch_Dispatcher_0e78",
+      "address_suffix": "0e78",
+      "line": 561,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part046.c",
+      "function": "Simulator_Transfer_Resources_between_Entity_Lists_0f8c",
+      "address_suffix": "0f8c",
+      "line": 648,
+      "registers": [
+        "in_EDX"
+      ],
+      "register_count": 8
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part047.c",
+      "function": "Simulator_Process_Turn_Resource_Migration_Logic_1220",
+      "address_suffix": "1220",
+      "line": 16,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part047.c",
+      "function": "Simulator_Process_Mining_Supply_Chain_Logic_1940",
+      "address_suffix": "1940",
+      "line": 540,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part047.c",
+      "function": "Simulator_Process_Mine_to_Smelter_Maintenance_Logic_19a0",
+      "address_suffix": "19a0",
+      "line": 575,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part048.c",
+      "function": "Simulator_Process_Entity_Batch_Efficiency_Loss_1d68",
+      "address_suffix": "1d68",
+      "line": 16,
+      "registers": [
+        "in_EDX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part048.c",
+      "function": "Simulator_Object_Clone_Logic_2944",
+      "address_suffix": "2944",
+      "line": 839,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part049.c",
+      "function": "Colony_Distribute_Resources_to_Builders_3cc0",
+      "address_suffix": "3cc0",
+      "line": 605,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part050.c",
+      "function": "Colony_Process_Population_Growth_Turn_Step_42cc",
+      "address_suffix": "42cc",
+      "line": 193,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part050.c",
+      "function": "Simulator_Calculate_Colony_Safety_Rating_4760",
+      "address_suffix": "4760",
+      "line": 553,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part051.c",
+      "function": "Simulator_Calculate_Total_Medical_Capacity_4c1a",
+      "address_suffix": "4c1a",
+      "line": 76,
+      "registers": [
+        "in_EDX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part051.c",
+      "function": "Colony_Batch_Init_Production_Items_by_Type_Logic_4d6e",
+      "address_suffix": "4d6e",
+      "line": 147,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part051.c",
+      "function": "Colony_Batch_Init_Production_Items_General_Logic_4e78",
+      "address_suffix": "4e78",
+      "line": 234,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part053.c",
+      "function": "Colony_Process_Resource_Allocation_Logic_6f5a",
+      "address_suffix": "6f5a",
+      "line": 261,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part053.c",
+      "function": "Colony_Process_Complex_Resource_Delta_Logic_709c",
+      "address_suffix": "709c",
+      "line": 351,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 10
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part054.c",
+      "function": "UI_SubDialog_TypeA0B6_Draw_Entity_Summary_9ffa",
+      "address_suffix": "9ffa",
+      "line": 117,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part054.c",
+      "function": "UI_SubDialog_Type237E_ctor_init_1f5a",
+      "address_suffix": "1f5a",
+      "line": 453,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part054.c",
+      "function": "UI_SubDialog_Type2E26_ctor_init_29c2",
+      "address_suffix": "29c2",
+      "line": 498,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part054.c",
+      "function": "UI_SubDialog_Type3D5E_OnPaint_Logic_3d5e",
+      "address_suffix": "3d5e",
+      "line": 530,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part054.c",
+      "function": "UI_SubDialog_Type5A06_OnPaint_Logic_5a06",
+      "address_suffix": "5a06",
+      "line": 678,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 9
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part055.c",
+      "function": "UI_Window_Show_Help_800c",
+      "address_suffix": "800c",
+      "line": 430,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part055.c",
+      "function": "UI_Main_View_Initialize_Palette_from_Resource_807e",
+      "address_suffix": "807e",
+      "line": 477,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part055.c",
+      "function": "UI_SubDialog_Type8DDC_ctor_VarArgs_Logic_8520",
+      "address_suffix": "8520",
+      "line": 556,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part055.c",
+      "function": "UI_Complex_Control_ctor_9fb8",
+      "address_suffix": "9fb8",
+      "line": 684,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/sim/outpost.simulator_world.part056.c",
+      "function": "UI_TreeNode_Init_Layout_Logic_c630",
+      "address_suffix": "c630",
+      "line": 15,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part001.c",
+      "function": "memcpy_words_near",
+      "address_suffix": null,
+      "line": 49,
+      "registers": [
+        "in_AX",
+        "in_BX",
+        "in_DX"
+      ],
+      "register_count": 10
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part001.c",
+      "function": "UI_Window_Init_Child_Objects_Logic",
+      "address_suffix": null,
+      "line": 539,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part003.c",
+      "function": "UI_Switch_Active_View_Panel_Logic",
+      "address_suffix": null,
+      "line": 18,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part003.c",
+      "function": "UI_Set_Primary_View_Panel_Logic",
+      "address_suffix": null,
+      "line": 116,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part003.c",
+      "function": "UI_Save_As_Game_Logic",
+      "address_suffix": null,
+      "line": 246,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part003.c",
+      "function": "media_mci_open_and_prepare_playback",
+      "address_suffix": null,
+      "line": 698,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part004.c",
+      "function": "UI_Window_Register_Child_Event_Handler",
+      "address_suffix": null,
+      "line": 195,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part004.c",
+      "function": "UI_Control_Instance_Data_MessageHandler",
+      "address_suffix": null,
+      "line": 531,
+      "registers": [
+        "in_DX",
+        "in_EAX"
+      ],
+      "register_count": 8
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part004.c",
+      "function": "UI_SpinControl_WindowProc_1008_84f4",
+      "address_suffix": "84f4",
+      "line": 611,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part004.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 648,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part004.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 666,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part004.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 706,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part005.c",
+      "function": "UI_Element_Message_Dispatcher_Logic",
+      "address_suffix": null,
+      "line": 269,
+      "registers": [
+        "in_BX",
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part005.c",
+      "function": "UI_Component_Set_SubComponent_at_Offset_1A_Logic",
+      "address_suffix": null,
+      "line": 894,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part006.c",
+      "function": "UI_Component_Set_SubComponent_at_Offset_1E_Logic",
+      "address_suffix": null,
+      "line": 13,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part006.c",
+      "function": "UI_Relationship_Manager_Activate_Link_Logic",
+      "address_suffix": null,
+      "line": 573,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part006.c",
+      "function": "UI_Subclass_EF9C_ctor",
+      "address_suffix": null,
+      "line": 698,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part006.c",
+      "function": "UI_Element_Lazy_Init_Offset_56",
+      "address_suffix": null,
+      "line": 750,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part006.c",
+      "function": "UI_Element_Lookup_Node_at_5C_ee72",
+      "address_suffix": "ee72",
+      "line": 769,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part006.c",
+      "function": "UI_Window_Update_Placement_and_Translate_Logic",
+      "address_suffix": null,
+      "line": 818,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part007.c",
+      "function": "UI_Window_Update_Placement_from_VTable_1C_Logic",
+      "address_suffix": null,
+      "line": 8,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part007.c",
+      "function": "UI_Icon_Window_Dispatch_Resource_45_Action",
+      "address_suffix": null,
+      "line": 87,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part008.c",
+      "function": "UI_TreeNode_Control_Factory_3680",
+      "address_suffix": "3680",
+      "line": 84,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part009.c",
+      "function": "UI_Specialized_Dialog_Factory_Logic",
+      "address_suffix": null,
+      "line": 347,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 33
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part010.c",
+      "function": "UI_Window_Subclass_ctor_9566",
+      "address_suffix": "9566",
+      "line": 228,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part010.c",
+      "function": "UI_Element_Lazy_Init_Offset_56_Subclass958E",
+      "address_suffix": null,
+      "line": 263,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part010.c",
+      "function": "UI_Object_Init_State_at_Offset_1A_Logic",
+      "address_suffix": null,
+      "line": 403,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part012.c",
+      "function": "UI_Build_Site_Window_Initialize_and_Create_Sprite_598c",
+      "address_suffix": "598c",
+      "line": 188,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part012.c",
+      "function": "UI_Planet_Summary_View_ctor_init_Window_and_Child_Component",
+      "address_suffix": null,
+      "line": 513,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part013.c",
+      "function": "UI_Panel_OnPaint_Movie_Dispatcher_742e",
+      "address_suffix": "742e",
+      "line": 264,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type38_ctor_init",
+      "address_suffix": null,
+      "line": 133,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type39_ctor_init",
+      "address_suffix": null,
+      "line": 156,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type40_ctor_init",
+      "address_suffix": null,
+      "line": 180,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type41_ctor_init",
+      "address_suffix": null,
+      "line": 208,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type42_ctor_init",
+      "address_suffix": null,
+      "line": 232,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type43_ctor_init",
+      "address_suffix": null,
+      "line": 260,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type44_ctor_init",
+      "address_suffix": null,
+      "line": 283,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type45_ctor_init",
+      "address_suffix": null,
+      "line": 307,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type47_ctor_init",
+      "address_suffix": null,
+      "line": 360,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type48_ctor_init",
+      "address_suffix": null,
+      "line": 384,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type49_ctor_init",
+      "address_suffix": null,
+      "line": 408,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type50_ctor_init",
+      "address_suffix": null,
+      "line": 431,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type51_ctor_init",
+      "address_suffix": null,
+      "line": 455,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Build_Item_Type52_ctor_init",
+      "address_suffix": null,
+      "line": 477,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Window_Initialize_and_Create_Control_Type54_df40",
+      "address_suffix": "df40",
+      "line": 720,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part016.c",
+      "function": "UI_Colony_Summary_Panel_Open_VrMode_View_Logic_e2cc",
+      "address_suffix": "e2cc",
+      "line": 841,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part017.c",
+      "function": "UI_Colony_Summary_View_ctor_init_Window_and_Child_Component_e384",
+      "address_suffix": "e384",
+      "line": 14,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part017.c",
+      "function": "UI_Planet_View_ctor_init_Window_and_Child_Component",
+      "address_suffix": null,
+      "line": 181,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part017.c",
+      "function": "UI_Planet_Surface_View_ctor_init_Window_and_Child_Component_eada",
+      "address_suffix": "eada",
+      "line": 396,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part018.c",
+      "function": "UI_Window_Initialize_and_Create_Control_Type7_09ba",
+      "address_suffix": "09ba",
+      "line": 65,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part018.c",
+      "function": "UI_PC_PopupMenu_Initialize_Children_and_State",
+      "address_suffix": null,
+      "line": 270,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part018.c",
+      "function": "UI_Colony_Morale_Dialog_Handle_Interaction",
+      "address_suffix": null,
+      "line": 613,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part018.c",
+      "function": "UI_Colony_Morale_Dialog_Execute_Command",
+      "address_suffix": null,
+      "line": 681,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part018.c",
+      "function": "UI_Colony_Morale_Dialog_Check_State_Logic",
+      "address_suffix": null,
+      "line": 787,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part019.c",
+      "function": "UI_Report_View_ctor_init_Window_and_Child_Component_2642",
+      "address_suffix": "2642",
+      "line": 83,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part019.c",
+      "function": "UI_VrMode_PopupMenu_Switch_Selected_Structure_29d8",
+      "address_suffix": "29d8",
+      "line": 279,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part020.c",
+      "function": "UI_Lab_View_Spawn_Child_Window_Logic_536e",
+      "address_suffix": "536e",
+      "line": 702,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part022.c",
+      "function": "UI_View_Process_Command_Logic_694c",
+      "address_suffix": "694c",
+      "line": 257,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part023.c",
+      "function": "UI_Navigation_Panel_Open_VrMode_View_Logic",
+      "address_suffix": null,
+      "line": 15,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part023.c",
+      "function": "UI_Navigation_View_ctor_init_Window_and_Child_Component",
+      "address_suffix": null,
+      "line": 72,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part023.c",
+      "function": "UI_Item_List_Find_Item_FarPtr_Logic",
+      "address_suffix": null,
+      "line": 888,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part024.c",
+      "function": "UI_Item_List_Upsert_Item_Logic",
+      "address_suffix": null,
+      "line": 61,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 18
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part029.c",
+      "function": "UI_Build_Item_List_Manager_ctor_init_d22e",
+      "address_suffix": "d22e",
+      "line": 660,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part030.c",
+      "function": "UI_Production_Item_Factory_and_List_Add_ec36",
+      "address_suffix": "ec36",
+      "line": 112,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part030.c",
+      "function": "UI_Colony_Component_Factory_and_List_Add_ecac",
+      "address_suffix": "ecac",
+      "line": 157,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part030.c",
+      "function": "Simulator_Process_Item_Base_Interaction_ef00",
+      "address_suffix": "ef00",
+      "line": 208,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part030.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 231,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part031.c",
+      "function": "Simulator_Context_Initialize_Coordinate_Offsets_3b28",
+      "address_suffix": "3b28",
+      "line": 14,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part031.c",
+      "function": "UI_Component_Get_Vector_Tracker_Ptr_6d4e",
+      "address_suffix": "6d4e",
+      "line": 697,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part032.c",
+      "function": "UI_Component_Set_List_Value_at_22_Logic_7d1c",
+      "address_suffix": "7d1c",
+      "line": 14,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part032.c",
+      "function": "UI_Component_Set_List_Value_at_26_Logic_7d7c",
+      "address_suffix": "7d7c",
+      "line": 52,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part032.c",
+      "function": "UI_Component_Add_Value_to_List_at_22_Logic_7ddc",
+      "address_suffix": "7ddc",
+      "line": 90,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part032.c",
+      "function": "UI_Build_Item_Execute_Complex_Adjacency_Placement_Logic_a278",
+      "address_suffix": "a278",
+      "line": 238,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part032.c",
+      "function": "UI_Build_Item_Process_Truck_Resource_Loading_b9da",
+      "address_suffix": "b9da",
+      "line": 499,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part032.c",
+      "function": "UI_Item_TypeBC1C_Factory_bc1c",
+      "address_suffix": "bc1c",
+      "line": 650,
+      "registers": [
+        "in_BX",
+        "in_DX",
+        "in_OF",
+        "in_SF",
+        "in_ZF"
+      ],
+      "register_count": 15
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part033.c",
+      "function": "UI_Build_Item_Conditional_Set_20_c8da",
+      "address_suffix": "c8da",
+      "line": 134,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part034.c",
+      "function": "Simulator_Object_Clone_Logic_2b9a",
+      "address_suffix": "2b9a",
+      "line": 233,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part034.c",
+      "function": "UI_Colony_Window_Init_SubItem_and_Check_Active_354a",
+      "address_suffix": "354a",
+      "line": 514,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part034.c",
+      "function": "UI_Colony_Window_Init_SubItem_and_Resolve_String_35a8",
+      "address_suffix": "35a8",
+      "line": 550,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part035.c",
+      "function": "UI_Component_Add_B932_to_Manager_79b2",
+      "address_suffix": "79b2",
+      "line": 39,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part035.c",
+      "function": "UI_File_Selection_Dialog_Update_Button_States_806a",
+      "address_suffix": "806a",
+      "line": 326,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part035.c",
+      "function": "UI_File_Selection_Update_Status_Text_8358",
+      "address_suffix": "8358",
+      "line": 380,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part035.c",
+      "function": "UI_File_Selection_On_Primary_List_Change_8618",
+      "address_suffix": "8618",
+      "line": 518,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part035.c",
+      "function": "UI_File_Selection_On_Secondary_List_Change_87b2",
+      "address_suffix": "87b2",
+      "line": 609,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part036.c",
+      "function": "UI_Resource_Exchange_Dialog_Commit_and_Close_977a",
+      "address_suffix": "977a",
+      "line": 354,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part036.c",
+      "function": "UI_SubDialog_Handle_Custom_CTLCOLOR_Logic_9dcc",
+      "address_suffix": "9dcc",
+      "line": 748,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part037.c",
+      "function": "UI_SubDialog_TypeA428_Show_Logic_a396",
+      "address_suffix": "a396",
+      "line": 94,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part037.c",
+      "function": "UI_SubDialog_TypeA62E_Show_Logic_a4ee",
+      "address_suffix": "a4ee",
+      "line": 174,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part037.c",
+      "function": "UI_Dialog_Handle_Custom_CTLCOLOR_with_Palette_Logic_ac38",
+      "address_suffix": "ac38",
+      "line": 623,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part038.c",
+      "function": "UI_SubDialog_Factory_Create_and_Show_by_ID_af40",
+      "address_suffix": "af40",
+      "line": 16,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 74
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part038.c",
+      "function": "UI_Navigation_Search_Dialog_On_Command_b922",
+      "address_suffix": "b922",
+      "line": 574,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part039.c",
+      "function": "UI_SubDialog_TypeCC9A_Show_Logic_cb5c",
+      "address_suffix": "cb5c",
+      "line": 715,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part040.c",
+      "function": "UI_Window_Property_Event_Handler_d118",
+      "address_suffix": "d118",
+      "line": 131,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part040.c",
+      "function": "UI_SubDialog_Complex_Controls_Initialize_d2a2",
+      "address_suffix": "d2a2",
+      "line": 258,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part040.c",
+      "function": "UI_SubDialog_TypeD6EA_On_Command_d400",
+      "address_suffix": "d400",
+      "line": 347,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part040.c",
+      "function": "UI_Colony_Summary_Dialog_Initialize_and_Layout_d8ae",
+      "address_suffix": "d8ae",
+      "line": 625,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 10
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part040.c",
+      "function": "UI_Colony_Dialog_On_Command_da68",
+      "address_suffix": "da68",
+      "line": 721,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 9
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part040.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 753,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part040.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 818,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part041.c",
+      "function": "UI_Colony_Handle_Event_Outcome_Notification_dcb0",
+      "address_suffix": "dcb0",
+      "line": 16,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part041.c",
+      "function": "UI_Colony_Dispatch_Building_Event_Dialog_de20",
+      "address_suffix": "de20",
+      "line": 127,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part041.c",
+      "function": "UI_SubDialog_TypeE92E_Show_Logic_e71c",
+      "address_suffix": "e71c",
+      "line": 643,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part041.c",
+      "function": "UI_SubDialog_TypeEB32_Show_Logic_ea18",
+      "address_suffix": "ea18",
+      "line": 808,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part042.c",
+      "function": "UI_SubDialog_Type0000_Initialize_and_Spawn_SubDialog_17",
+      "address_suffix": null,
+      "line": 187,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part042.c",
+      "function": "UI_SubDialog_Type0000_On_Command_0170",
+      "address_suffix": "0170",
+      "line": 285,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part042.c",
+      "function": "UI_Dialog_Update_Item_Status_and_Label_0558",
+      "address_suffix": "0558",
+      "line": 461,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part042.c",
+      "function": "UI_SubDialog_Entity_Action_On_Command_07dc",
+      "address_suffix": "07dc",
+      "line": 639,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part042.c",
+      "function": "UI_Window_SetFocus_6_and_Return_1_09a0",
+      "address_suffix": "09a0",
+      "line": 757,
+      "registers": [
+        "in_BX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part043.c",
+      "function": "UI_SubDialog_Type162A_On_Command_162a",
+      "address_suffix": "162a",
+      "line": 581,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part043.c",
+      "function": "UI_SubDialog_TypeA832_On_Command_1ab0",
+      "address_suffix": "1ab0",
+      "line": 848,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part044.c",
+      "function": "UI_SubDialog_Type1EEE_On_Command_1e80",
+      "address_suffix": "1e80",
+      "line": 176,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part044.c",
+      "function": "UI_Navigation_Search_Dialog_On_Command_2512",
+      "address_suffix": "2512",
+      "line": 398,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 7
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part046.c",
+      "function": "UI_SubDialog_Type410E_On_Command_42b2",
+      "address_suffix": "42b2",
+      "line": 139,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part046.c",
+      "function": "UI_SubDialog_Type4824_ctor_init_44d2",
+      "address_suffix": "44d2",
+      "line": 244,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part046.c",
+      "function": "UI_SubDialog_Type4AE4_Refresh_and_Get_Name_4cb2",
+      "address_suffix": "4cb2",
+      "line": 587,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part047.c",
+      "function": "UI_SubDialog_Type6386_ctor_init_5626",
+      "address_suffix": "5626",
+      "line": 371,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part048.c",
+      "function": "UI_Dialog_Create_Button_Control_Alternative_6eae",
+      "address_suffix": "6eae",
+      "line": 316,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part048.c",
+      "function": "UI_Dialog_Create_Button_Control_7620",
+      "address_suffix": "7620",
+      "line": 736,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part049.c",
+      "function": "UI_SubDialog_Type8DDC_ctor_init_8478",
+      "address_suffix": "8478",
+      "line": 642,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part050.c",
+      "function": "UI_Window_Create_and_Subclass_92dc",
+      "address_suffix": "92dc",
+      "line": 296,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 3
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part050.c",
+      "function": "UI_Dialog_Sync_Object_Dimensions_9618",
+      "address_suffix": "9618",
+      "line": 445,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part050.c",
+      "function": "UI_Window_Subclass_Redirector_WindowProc",
+      "address_suffix": null,
+      "line": 466,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part051.c",
+      "function": "UI_OPButton_WndProc",
+      "address_suffix": null,
+      "line": 15,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 9
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part051.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 87,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part051.c",
+      "function": "UI_Window_Subclass_Action_Redirector_WindowProc",
+      "address_suffix": null,
+      "line": 408,
+      "registers": [
+        "in_AX",
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part051.c",
+      "function": "UI_SubDialog_TypeAC08_Handle_CTLCOLOR_a67e",
+      "address_suffix": "a67e",
+      "line": 523,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part052.c",
+      "function": "UI_SubDialog_Complex_Command_Handler_b54a",
+      "address_suffix": "b54a",
+      "line": 140,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part053.c",
+      "function": "UI_Trade_Request_Dialog_On_Command_cc8c",
+      "address_suffix": "cc8c",
+      "line": 483,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/modules/ui/outpost.ui_windows.part053.c",
+      "function": "if",
+      "address_suffix": null,
+      "line": 495,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 1
+    },
+    {
+      "file": "outpost_recompiled_c/src/platform/win16/outpost.system_runtime.part001.c",
+      "function": "query_global_memory_block",
+      "address_suffix": null,
+      "line": 41,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/platform/win16/outpost.system_runtime.part001.c",
+      "function": "iterate_memory_callback_far",
+      "address_suffix": null,
+      "line": 160,
+      "registers": [
+        "in_AX",
+        "in_BX"
+      ],
+      "register_count": 4
+    },
+    {
+      "file": "outpost_recompiled_c/src/platform/win16/outpost.system_runtime.part001.c",
+      "function": "win16_app_main_loop_init_internal",
+      "address_suffix": null,
+      "line": 207,
+      "registers": [
+        "in_AX",
+        "in_BX",
+        "in_CX",
+        "in_DX"
+      ],
+      "register_count": 10
+    },
+    {
+      "file": "outpost_recompiled_c/src/platform/win16/outpost.system_runtime.part001.c",
+      "function": "win16_app_exit_with_cleanup",
+      "address_suffix": null,
+      "line": 314,
+      "registers": [
+        "in_CX"
+      ],
+      "register_count": 8
+    },
+    {
+      "file": "outpost_recompiled_c/src/platform/win16/outpost.system_runtime.part001.c",
+      "function": "runtime_stack_check_fail_handler",
+      "address_suffix": null,
+      "line": 395,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/platform/win16/outpost.system_runtime.part001.c",
+      "function": "set_internal_error_code_from_ax",
+      "address_suffix": null,
+      "line": 613,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 6
+    },
+    {
+      "file": "outpost_recompiled_c/src/platform/win16/outpost.system_runtime.part001.c",
+      "function": "handle_open_file_internal",
+      "address_suffix": null,
+      "line": 715,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 2
+    },
+    {
+      "file": "outpost_recompiled_c/src/platform/win16/outpost.system_runtime.part001.c",
+      "function": "handle_allocate_buffer",
+      "address_suffix": null,
+      "line": 859,
+      "registers": [
+        "in_DX"
+      ],
+      "register_count": 5
+    },
+    {
+      "file": "outpost_recompiled_c/src/platform/win16/outpost.system_runtime.part003.c",
+      "function": "dos_get_system_time_to_internal_struct_far",
+      "address_suffix": null,
+      "line": 440,
+      "registers": [
+        "in_CX",
+        "in_DX"
+      ],
+      "register_count": 14
+    },
+    {
+      "file": "outpost_recompiled_c/src/platform/win16/outpost.system_runtime.part004.c",
+      "function": "mem_swap_bytes_internal",
+      "address_suffix": null,
+      "line": 177,
+      "registers": [
+        "in_AX"
+      ],
+      "register_count": 14
+    }
+  ]
+}

@@ -1,9 +1,0 @@
-//
-// Created by cyrex on 2/3/23.
-//
-
-#ifndef OUTPOST_1_SRC_STRUCTS_STRUCTS_45_H_STRUCT_380_H_
-#define OUTPOST_1_SRC_STRUCTS_STRUCTS_45_H_STRUCT_380_H_
-
-// #include "op_int.h"
-#endif // OUTPOST_1_SRC_STRUCTS_STRUCTS_45_H_STRUCT_380_H_

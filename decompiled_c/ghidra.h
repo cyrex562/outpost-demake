@@ -37,6 +37,7 @@ typedef void*    pointer;
 #endif
 #define __stdcall16far
 #define __cdecl16near
+#define __cdecl16far
 #define __fastcall16far
 #define _far
 #define _near

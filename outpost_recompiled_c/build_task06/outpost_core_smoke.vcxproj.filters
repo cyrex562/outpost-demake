@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_modules.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\ui_vtable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\placeholders\missing_deps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_modules.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\missing_deps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0C397850-47CB-3DCF-B5C2-9AE568B9C8D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ECB7536A-6EA1-3C31-8683-3E839D306303}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

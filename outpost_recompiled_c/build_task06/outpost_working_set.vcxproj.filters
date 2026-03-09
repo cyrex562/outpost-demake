@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_main_runtime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_modules.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part010.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part011.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part012.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part013.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part014.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part015.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part016.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part017.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part018.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part019.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part004.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part005.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part006.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part007.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part008.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part009.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\media\outpost.graphics_media.part001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\media\outpost.graphics_media.part002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\media\outpost.graphics_media.part003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part004.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part005.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part006.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part007.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part008.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part009.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part010.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part011.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part012.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part013.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part004.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part005.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part006.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part007.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part008.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part009.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part010.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part011.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part012.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part013.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part014.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part015.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part016.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part017.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part018.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part019.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part020.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part021.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part022.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part023.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part024.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part025.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part026.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part027.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part028.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part029.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part030.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part031.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part032.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part033.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part034.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part035.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part036.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part037.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part038.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part039.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part040.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part041.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part042.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part043.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part044.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part045.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part046.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part047.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part048.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part049.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part050.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part051.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part052.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part053.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part054.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part055.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part056.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part004.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part005.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part006.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part007.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part008.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part009.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part010.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part011.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part012.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part013.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part014.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part015.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part016.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part017.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part018.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part019.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part020.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part021.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part022.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part023.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part024.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part025.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part026.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part027.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part028.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part029.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part030.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part031.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part032.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part033.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part034.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part035.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part036.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part037.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part038.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part039.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part040.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part041.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part042.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part043.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part044.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part045.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part046.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part047.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part048.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part049.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part050.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part051.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part052.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part053.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part054.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16\outpost.system_runtime.part001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16\outpost.system_runtime.part002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16\outpost.system_runtime.part003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16\outpost.system_runtime.part004.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\generated\misc\outpost.misc.part001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\generated\misc\outpost.misc.part002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\generated\misc\outpost.misc.part003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\missing_deps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_modules.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\text\outpost.strings_text.part001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\ui_vtable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\generated\misc\outpost.misc.part001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\io\outpost.file_io.part001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\media\outpost.graphics_media.part001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\memory\outpost.memory_heap.part001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\sim\outpost.simulator_world.part001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\sim\outpost.simulator_world.part002.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\sim\outpost.simulator_world.part003.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\sim\outpost.simulator_world.part004.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\sim\outpost.simulator_world.part005.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part002.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part003.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part004.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part005.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part006.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part007.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part008.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part009.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part010.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part011.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part012.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part013.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part014.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part015.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part016.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part017.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part018.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part019.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part020.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part021.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part022.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part023.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part024.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part025.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part026.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part027.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part028.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part029.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part030.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part031.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part032.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part033.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part034.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part035.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part036.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part037.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part038.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part039.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part040.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part041.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part042.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part043.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part044.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part045.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part046.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part047.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part048.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part049.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part050.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part051.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part052.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part053.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part054.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part055.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part056.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part057.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part058.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part059.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part060.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part061.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part062.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part063.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part064.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part065.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part066.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part067.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part068.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part069.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part070.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part071.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part072.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part073.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part074.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part075.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part076.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part077.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part078.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part079.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part080.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part081.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part082.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part002.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part003.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part004.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part005.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part006.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part007.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\outpost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform\win16\outpost.system_runtime.part001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform\win16_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0C397850-47CB-3DCF-B5C2-9AE568B9C8D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ECB7536A-6EA1-3C31-8683-3E839D306303}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

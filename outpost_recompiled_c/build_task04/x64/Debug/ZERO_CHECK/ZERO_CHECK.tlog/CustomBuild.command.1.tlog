@@ -1,0 +1,10 @@
+^C:\USERS\CYREX\FILES\PROJECTS\OUTPOST-RS\OUTPOST_RECOMPILED_C\BUILD_TASK04\CMAKEFILES\12D296F904776F61C0EB53D47E7C13CD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c -BC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/outpost_recompiled_c.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

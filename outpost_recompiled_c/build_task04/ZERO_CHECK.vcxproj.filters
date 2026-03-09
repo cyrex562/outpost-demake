@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\12d296f904776f61c0eb53d47e7c13cd\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FB7D2165-69AB-329D-B99B-70D47C293CE5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

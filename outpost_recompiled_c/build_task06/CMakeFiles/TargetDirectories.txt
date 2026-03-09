@@ -1,0 +1,6 @@
+C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06/CMakeFiles/outpost_source_index.dir
+C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06/CMakeFiles/outpost_working_set.dir
+C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06/CMakeFiles/outpost_core_smoke.dir
+C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06/CMakeFiles/outpost_main_smoke.dir
+C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06/CMakeFiles/ALL_BUILD.dir
+C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06/CMakeFiles/ZERO_CHECK.dir

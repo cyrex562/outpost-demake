@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_main_runtime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_modules.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\ui_vtable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part004.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part005.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part006.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part007.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part008.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part009.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16_api_stubs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\placeholders\missing_deps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ECB7536A-6EA1-3C31-8683-3E839D306303}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

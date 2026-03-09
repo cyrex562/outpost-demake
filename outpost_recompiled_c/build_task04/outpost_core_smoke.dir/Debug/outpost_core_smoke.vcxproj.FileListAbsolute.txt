@@ -1,0 +1,1 @@
+C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\outpost_core_smoke.dir\Debug\outpost_core_smoke.lib

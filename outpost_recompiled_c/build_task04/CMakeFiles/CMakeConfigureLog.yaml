@@ -1,0 +1,1802 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Calibre2\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Topaz Labs LLC\\Topaz Gigapixel\\bin\\"
+        - "C:\\Program Files (x86)\\Universal Extractor"
+        - "C:\\Program Files (x86)\\Universal Extractor\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Users\\cyrex\\.cargo\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\ProgramData\\cyrex\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\cyrex\\.dotnet\\tools"
+        - "c:\\users\\cyrex\\.local\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\texlive\\2025\\bin\\windows"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\ms-python.debugpy-2025.19.2026022601-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.23+b0019275e for .NET Framework
+      Build started 2026-03-07 09:20:07.
+      
+      Project "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.24
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/4.1.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/Calibre2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/cyrex/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/"
+      - "C:/Program Files (x86)/Universal Extractor/"
+      - "C:/Program Files (x86)/Universal Extractor/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Users/cyrex/files/projects/vcpkg/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/"
+      - "C:/Users/cyrex/.cargo/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/ProgramData/cyrex/gitkraken/bin/"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/"
+      - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/cyrex/.dotnet/tools/"
+      - "C:/Users/cyrex/.local/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/texlive/2025/bin/windows/"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Calibre2\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Topaz Labs LLC\\Topaz Gigapixel\\bin\\"
+        - "C:\\Program Files (x86)\\Universal Extractor"
+        - "C:\\Program Files (x86)\\Universal Extractor\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Users\\cyrex\\.cargo\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\ProgramData\\cyrex\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\cyrex\\.dotnet\\tools"
+        - "c:\\users\\cyrex\\.local\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\texlive\\2025\\bin\\windows"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\ms-python.debugpy-2025.19.2026022601-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/Calibre2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/cyrex/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/"
+      - "C:/Program Files (x86)/Universal Extractor/"
+      - "C:/Program Files (x86)/Universal Extractor/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Users/cyrex/files/projects/vcpkg/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/"
+      - "C:/Users/cyrex/.cargo/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/ProgramData/cyrex/gitkraken/bin/"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/"
+      - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/cyrex/.dotnet/tools/"
+      - "C:/Users/cyrex/.local/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/texlive/2025/bin/windows/"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/lld-link.com"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/lld-link.exe"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link.com"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link.exe"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/PuTTY/lld-link.com"
+      - "C:/Program Files/PuTTY/lld-link.exe"
+      - "C:/Program Files/PuTTY/lld-link"
+      - "C:/Program Files/Tailscale/lld-link.com"
+      - "C:/Program Files/Tailscale/lld-link.exe"
+      - "C:/Program Files/Tailscale/lld-link"
+      - "C:/Program Files/Calibre2/lld-link.com"
+      - "C:/Program Files/Calibre2/lld-link.exe"
+      - "C:/Program Files/Calibre2/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Local/nvm/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/nvm/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/nvm/lld-link"
+      - "C:/nvm4w/nodejs/lld-link.com"
+      - "C:/nvm4w/nodejs/lld-link.exe"
+      - "C:/nvm4w/nodejs/lld-link"
+      - "C:/Program Files/WireGuard/lld-link.com"
+      - "C:/Program Files/WireGuard/lld-link.exe"
+      - "C:/Program Files/WireGuard/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/lld-link.com"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/lld-link.exe"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/lld-link"
+      - "C:/Program Files (x86)/Universal Extractor/lld-link.com"
+      - "C:/Program Files (x86)/Universal Extractor/lld-link.exe"
+      - "C:/Program Files (x86)/Universal Extractor/lld-link"
+      - "C:/Program Files (x86)/Universal Extractor/bin/lld-link.com"
+      - "C:/Program Files (x86)/Universal Extractor/bin/lld-link.exe"
+      - "C:/Program Files (x86)/Universal Extractor/bin/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Users/cyrex/files/projects/vcpkg/lld-link.com"
+      - "C:/Users/cyrex/files/projects/vcpkg/lld-link.exe"
+      - "C:/Users/cyrex/files/projects/vcpkg/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/lld-link"
+      - "C:/Users/cyrex/.cargo/bin/lld-link.com"
+      - "C:/Users/cyrex/.cargo/bin/lld-link.exe"
+      - "C:/Users/cyrex/.cargo/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/lld-link"
+      - "C:/ProgramData/cyrex/gitkraken/bin/lld-link.com"
+      - "C:/ProgramData/cyrex/gitkraken/bin/lld-link.exe"
+      - "C:/ProgramData/cyrex/gitkraken/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/lld-link"
+      - "C:/Program Files (x86)/Nmap/lld-link.com"
+      - "C:/Program Files (x86)/Nmap/lld-link.exe"
+      - "C:/Program Files (x86)/Nmap/lld-link"
+      - "C:/Users/cyrex/.dotnet/tools/lld-link.com"
+      - "C:/Users/cyrex/.dotnet/tools/lld-link.exe"
+      - "C:/Users/cyrex/.dotnet/tools/lld-link"
+      - "C:/Users/cyrex/.local/bin/lld-link.com"
+      - "C:/Users/cyrex/.local/bin/lld-link.exe"
+      - "C:/Users/cyrex/.local/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/lld-link"
+      - "C:/texlive/2025/bin/windows/lld-link.com"
+      - "C:/texlive/2025/bin/windows/lld-link.exe"
+      - "C:/texlive/2025/bin/windows/lld-link"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Calibre2\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Topaz Labs LLC\\Topaz Gigapixel\\bin\\"
+        - "C:\\Program Files (x86)\\Universal Extractor"
+        - "C:\\Program Files (x86)\\Universal Extractor\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Users\\cyrex\\.cargo\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\ProgramData\\cyrex\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\cyrex\\.dotnet\\tools"
+        - "c:\\users\\cyrex\\.local\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\texlive\\2025\\bin\\windows"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\ms-python.debugpy-2025.19.2026022601-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/Calibre2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/cyrex/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/"
+      - "C:/Program Files (x86)/Universal Extractor/"
+      - "C:/Program Files (x86)/Universal Extractor/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Users/cyrex/files/projects/vcpkg/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/"
+      - "C:/Users/cyrex/.cargo/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/ProgramData/cyrex/gitkraken/bin/"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/"
+      - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/cyrex/.dotnet/tools/"
+      - "C:/Users/cyrex/.local/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/texlive/2025/bin/windows/"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Calibre2\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Topaz Labs LLC\\Topaz Gigapixel\\bin\\"
+        - "C:\\Program Files (x86)\\Universal Extractor"
+        - "C:\\Program Files (x86)\\Universal Extractor\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Users\\cyrex\\.cargo\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\ProgramData\\cyrex\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\cyrex\\.dotnet\\tools"
+        - "c:\\users\\cyrex\\.local\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\texlive\\2025\\bin\\windows"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\ms-python.debugpy-2025.19.2026022601-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/Calibre2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/cyrex/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/"
+      - "C:/Program Files (x86)/Universal Extractor/"
+      - "C:/Program Files (x86)/Universal Extractor/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Users/cyrex/files/projects/vcpkg/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/"
+      - "C:/Users/cyrex/.cargo/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/ProgramData/cyrex/gitkraken/bin/"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/"
+      - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/cyrex/.dotnet/tools/"
+      - "C:/Users/cyrex/.local/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/texlive/2025/bin/windows/"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/mt.com"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/mt.exe"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/mt"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.com"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.exe"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt.com"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt.exe"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/mt.com"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/mt.exe"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/Program Files/PuTTY/mt.com"
+      - "C:/Program Files/PuTTY/mt.exe"
+      - "C:/Program Files/PuTTY/mt"
+      - "C:/Program Files/Tailscale/mt.com"
+      - "C:/Program Files/Tailscale/mt.exe"
+      - "C:/Program Files/Tailscale/mt"
+      - "C:/Program Files/Calibre2/mt.com"
+      - "C:/Program Files/Calibre2/mt.exe"
+      - "C:/Program Files/Calibre2/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/cyrex/AppData/Local/nvm/mt.com"
+      - "C:/Users/cyrex/AppData/Local/nvm/mt.exe"
+      - "C:/Users/cyrex/AppData/Local/nvm/mt"
+      - "C:/nvm4w/nodejs/mt.com"
+      - "C:/nvm4w/nodejs/mt.exe"
+      - "C:/nvm4w/nodejs/mt"
+      - "C:/Program Files/WireGuard/mt.com"
+      - "C:/Program Files/WireGuard/mt.exe"
+      - "C:/Program Files/WireGuard/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/mt.com"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/mt.exe"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/mt"
+      - "C:/Program Files (x86)/Universal Extractor/mt.com"
+      - "C:/Program Files (x86)/Universal Extractor/mt.exe"
+      - "C:/Program Files (x86)/Universal Extractor/mt"
+      - "C:/Program Files (x86)/Universal Extractor/bin/mt.com"
+      - "C:/Program Files (x86)/Universal Extractor/bin/mt.exe"
+      - "C:/Program Files (x86)/Universal Extractor/bin/mt"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt"
+      - "C:/Users/cyrex/files/projects/vcpkg/mt.com"
+      - "C:/Users/cyrex/files/projects/vcpkg/mt.exe"
+      - "C:/Users/cyrex/files/projects/vcpkg/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/mt.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/mt.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/mt"
+      - "C:/Users/cyrex/.cargo/bin/mt.com"
+      - "C:/Users/cyrex/.cargo/bin/mt.exe"
+      - "C:/Users/cyrex/.cargo/bin/mt"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/mt.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/mt.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/mt"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/mt.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/mt.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/mt"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/mt.com"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/mt.exe"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/mt"
+      - "C:/ProgramData/cyrex/gitkraken/bin/mt.com"
+      - "C:/ProgramData/cyrex/gitkraken/bin/mt.exe"
+      - "C:/ProgramData/cyrex/gitkraken/bin/mt"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/mt.com"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/mt.exe"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/mt"
+      - "C:/Program Files (x86)/Nmap/mt.com"
+      - "C:/Program Files (x86)/Nmap/mt.exe"
+      - "C:/Program Files (x86)/Nmap/mt"
+      - "C:/Users/cyrex/.dotnet/tools/mt.com"
+      - "C:/Users/cyrex/.dotnet/tools/mt.exe"
+      - "C:/Users/cyrex/.dotnet/tools/mt"
+      - "C:/Users/cyrex/.local/bin/mt.com"
+      - "C:/Users/cyrex/.local/bin/mt.exe"
+      - "C:/Users/cyrex/.local/bin/mt"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/mt.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/mt.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/mt"
+      - "C:/texlive/2025/bin/windows/mt.com"
+      - "C:/texlive/2025/bin/windows/mt.exe"
+      - "C:/texlive/2025/bin/windows/mt"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/mt.com"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/mt.exe"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Calibre2\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Topaz Labs LLC\\Topaz Gigapixel\\bin\\"
+        - "C:\\Program Files (x86)\\Universal Extractor"
+        - "C:\\Program Files (x86)\\Universal Extractor\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Users\\cyrex\\.cargo\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\ProgramData\\cyrex\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\cyrex\\.dotnet\\tools"
+        - "c:\\users\\cyrex\\.local\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\texlive\\2025\\bin\\windows"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\ms-python.debugpy-2025.19.2026022601-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/Calibre2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/cyrex/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/"
+      - "C:/Program Files (x86)/Universal Extractor/"
+      - "C:/Program Files (x86)/Universal Extractor/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Users/cyrex/files/projects/vcpkg/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/"
+      - "C:/Users/cyrex/.cargo/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/ProgramData/cyrex/gitkraken/bin/"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/"
+      - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/cyrex/.dotnet/tools/"
+      - "C:/Users/cyrex/.local/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/texlive/2025/bin/windows/"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Calibre2\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Topaz Labs LLC\\Topaz Gigapixel\\bin\\"
+        - "C:\\Program Files (x86)\\Universal Extractor"
+        - "C:\\Program Files (x86)\\Universal Extractor\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Users\\cyrex\\.cargo\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\ProgramData\\cyrex\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\cyrex\\.dotnet\\tools"
+        - "c:\\users\\cyrex\\.local\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\texlive\\2025\\bin\\windows"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\ms-python.debugpy-2025.19.2026022601-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Calibre2\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Topaz Labs LLC\\Topaz Gigapixel\\bin\\"
+        - "C:\\Program Files (x86)\\Universal Extractor"
+        - "C:\\Program Files (x86)\\Universal Extractor\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Users\\cyrex\\.cargo\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\ProgramData\\cyrex\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\cyrex\\.dotnet\\tools"
+        - "c:\\users\\cyrex\\.local\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\texlive\\2025\\bin\\windows"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\ms-python.debugpy-2025.19.2026022601-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.23+b0019275e for .NET Framework
+      Build started 2026-03-07 09:20:09.
+      
+      Project "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.96
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/4.1.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/Calibre2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/cyrex/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/"
+      - "C:/Program Files (x86)/Universal Extractor/"
+      - "C:/Program Files (x86)/Universal Extractor/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Users/cyrex/files/projects/vcpkg/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/"
+      - "C:/Users/cyrex/.cargo/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/ProgramData/cyrex/gitkraken/bin/"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/"
+      - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/cyrex/.dotnet/tools/"
+      - "C:/Users/cyrex/.local/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/texlive/2025/bin/windows/"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/lld-link.com"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/lld-link.exe"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link.com"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link.exe"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/PuTTY/lld-link.com"
+      - "C:/Program Files/PuTTY/lld-link.exe"
+      - "C:/Program Files/PuTTY/lld-link"
+      - "C:/Program Files/Tailscale/lld-link.com"
+      - "C:/Program Files/Tailscale/lld-link.exe"
+      - "C:/Program Files/Tailscale/lld-link"
+      - "C:/Program Files/Calibre2/lld-link.com"
+      - "C:/Program Files/Calibre2/lld-link.exe"
+      - "C:/Program Files/Calibre2/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Local/nvm/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/nvm/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/nvm/lld-link"
+      - "C:/nvm4w/nodejs/lld-link.com"
+      - "C:/nvm4w/nodejs/lld-link.exe"
+      - "C:/nvm4w/nodejs/lld-link"
+      - "C:/Program Files/WireGuard/lld-link.com"
+      - "C:/Program Files/WireGuard/lld-link.exe"
+      - "C:/Program Files/WireGuard/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/lld-link.com"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/lld-link.exe"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/lld-link"
+      - "C:/Program Files (x86)/Universal Extractor/lld-link.com"
+      - "C:/Program Files (x86)/Universal Extractor/lld-link.exe"
+      - "C:/Program Files (x86)/Universal Extractor/lld-link"
+      - "C:/Program Files (x86)/Universal Extractor/bin/lld-link.com"
+      - "C:/Program Files (x86)/Universal Extractor/bin/lld-link.exe"
+      - "C:/Program Files (x86)/Universal Extractor/bin/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Users/cyrex/files/projects/vcpkg/lld-link.com"
+      - "C:/Users/cyrex/files/projects/vcpkg/lld-link.exe"
+      - "C:/Users/cyrex/files/projects/vcpkg/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/lld-link"
+      - "C:/Users/cyrex/.cargo/bin/lld-link.com"
+      - "C:/Users/cyrex/.cargo/bin/lld-link.exe"
+      - "C:/Users/cyrex/.cargo/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/lld-link"
+      - "C:/ProgramData/cyrex/gitkraken/bin/lld-link.com"
+      - "C:/ProgramData/cyrex/gitkraken/bin/lld-link.exe"
+      - "C:/ProgramData/cyrex/gitkraken/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/lld-link"
+      - "C:/Program Files (x86)/Nmap/lld-link.com"
+      - "C:/Program Files (x86)/Nmap/lld-link.exe"
+      - "C:/Program Files (x86)/Nmap/lld-link"
+      - "C:/Users/cyrex/.dotnet/tools/lld-link.com"
+      - "C:/Users/cyrex/.dotnet/tools/lld-link.exe"
+      - "C:/Users/cyrex/.dotnet/tools/lld-link"
+      - "C:/Users/cyrex/.local/bin/lld-link.com"
+      - "C:/Users/cyrex/.local/bin/lld-link.exe"
+      - "C:/Users/cyrex/.local/bin/lld-link"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/lld-link.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/lld-link.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/lld-link"
+      - "C:/texlive/2025/bin/windows/lld-link.com"
+      - "C:/texlive/2025/bin/windows/lld-link.exe"
+      - "C:/texlive/2025/bin/windows/lld-link"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Calibre2\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Topaz Labs LLC\\Topaz Gigapixel\\bin\\"
+        - "C:\\Program Files (x86)\\Universal Extractor"
+        - "C:\\Program Files (x86)\\Universal Extractor\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Users\\cyrex\\.cargo\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\ProgramData\\cyrex\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\cyrex\\.dotnet\\tools"
+        - "c:\\users\\cyrex\\.local\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\texlive\\2025\\bin\\windows"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\ms-python.debugpy-2025.19.2026022601-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:574 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:547 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/Calibre2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/cyrex/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/"
+      - "C:/Program Files (x86)/Universal Extractor/"
+      - "C:/Program Files (x86)/Universal Extractor/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Users/cyrex/files/projects/vcpkg/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/"
+      - "C:/Users/cyrex/.cargo/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/ProgramData/cyrex/gitkraken/bin/"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/"
+      - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/cyrex/.dotnet/tools/"
+      - "C:/Users/cyrex/.local/bin/"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/texlive/2025/bin/windows/"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/outpost_recompiled_c/bin/"
+      - "C:/Program Files (x86)/outpost_recompiled_c/sbin/"
+      - "C:/Program Files (x86)/outpost_recompiled_c/"
+    searched_directories:
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/rc.com"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/rc.exe"
+      - "C:/Users/cyrex/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/rc"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc.com"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc.exe"
+      - "C:/Users/cyrex/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/rc.com"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/rc.exe"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/Program Files/PuTTY/rc.com"
+      - "C:/Program Files/PuTTY/rc.exe"
+      - "C:/Program Files/PuTTY/rc"
+      - "C:/Program Files/Tailscale/rc.com"
+      - "C:/Program Files/Tailscale/rc.exe"
+      - "C:/Program Files/Tailscale/rc"
+      - "C:/Program Files/Calibre2/rc.com"
+      - "C:/Program Files/Calibre2/rc.exe"
+      - "C:/Program Files/Calibre2/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/cyrex/AppData/Local/nvm/rc.com"
+      - "C:/Users/cyrex/AppData/Local/nvm/rc.exe"
+      - "C:/Users/cyrex/AppData/Local/nvm/rc"
+      - "C:/nvm4w/nodejs/rc.com"
+      - "C:/nvm4w/nodejs/rc.exe"
+      - "C:/nvm4w/nodejs/rc"
+      - "C:/Program Files/WireGuard/rc.com"
+      - "C:/Program Files/WireGuard/rc.exe"
+      - "C:/Program Files/WireGuard/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/rc.com"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/rc.exe"
+      - "C:/Program Files/Topaz Labs LLC/Topaz Gigapixel/bin/rc"
+      - "C:/Program Files (x86)/Universal Extractor/rc.com"
+      - "C:/Program Files (x86)/Universal Extractor/rc.exe"
+      - "C:/Program Files (x86)/Universal Extractor/rc"
+      - "C:/Program Files (x86)/Universal Extractor/bin/rc.com"
+      - "C:/Program Files (x86)/Universal Extractor/bin/rc.exe"
+      - "C:/Program Files (x86)/Universal Extractor/bin/rc"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc"
+      - "C:/Users/cyrex/files/projects/vcpkg/rc.com"
+      - "C:/Users/cyrex/files/projects/vcpkg/rc.exe"
+      - "C:/Users/cyrex/files/projects/vcpkg/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/rc.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/rc.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft/jdk-25.0.0.36-hotspot/bin/rc"
+      - "C:/Users/cyrex/.cargo/bin/rc.com"
+      - "C:/Users/cyrex/.cargo/bin/rc.exe"
+      - "C:/Users/cyrex/.cargo/bin/rc"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/rc.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/rc.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/Scripts/rc"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/rc.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/rc.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Python/Python313/rc"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/cyrex/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/rc.com"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/rc.exe"
+      - "C:/Users/cyrex/AppData/Local/JetBrains/Toolbox/scripts/rc"
+      - "C:/ProgramData/cyrex/gitkraken/bin/rc.com"
+      - "C:/ProgramData/cyrex/gitkraken/bin/rc.exe"
+      - "C:/ProgramData/cyrex/gitkraken/bin/rc"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/rc.com"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/rc.exe"
+      - "C:/Users/cyrex/AppData/Local/gitkraken/bin/rc"
+      - "C:/Program Files (x86)/Nmap/rc.com"
+      - "C:/Program Files (x86)/Nmap/rc.exe"
+      - "C:/Program Files (x86)/Nmap/rc"
+      - "C:/Users/cyrex/.dotnet/tools/rc.com"
+      - "C:/Users/cyrex/.dotnet/tools/rc.exe"
+      - "C:/Users/cyrex/.dotnet/tools/rc"
+      - "C:/Users/cyrex/.local/bin/rc.com"
+      - "C:/Users/cyrex/.local/bin/rc.exe"
+      - "C:/Users/cyrex/.local/bin/rc"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/rc.com"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/rc.exe"
+      - "C:/Users/cyrex/AppData/Local/Programs/Antigravity/bin/rc"
+      - "C:/texlive/2025/bin/windows/rc.com"
+      - "C:/texlive/2025/bin/windows/rc.exe"
+      - "C:/texlive/2025/bin/windows/rc"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/rc.com"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/rc.exe"
+      - "C:/Users/cyrex/.vscode/extensions/ms-python.debugpy-2025.19.2026022601-win32-x64/bundled/scripts/noConfigScripts/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/outpost_recompiled_c/bin/rc.com"
+      - "C:/Program Files (x86)/outpost_recompiled_c/bin/rc.exe"
+      - "C:/Program Files (x86)/outpost_recompiled_c/bin/rc"
+      - "C:/Program Files (x86)/outpost_recompiled_c/sbin/rc.com"
+      - "C:/Program Files (x86)/outpost_recompiled_c/sbin/rc.exe"
+      - "C:/Program Files (x86)/outpost_recompiled_c/sbin/rc"
+      - "C:/Program Files (x86)/outpost_recompiled_c/rc.com"
+      - "C:/Program Files (x86)/outpost_recompiled_c/rc.exe"
+      - "C:/Program Files (x86)/outpost_recompiled_c/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\cyrex\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\Calibre2\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Topaz Labs LLC\\Topaz Gigapixel\\bin\\"
+        - "C:\\Program Files (x86)\\Universal Extractor"
+        - "C:\\Program Files (x86)\\Universal Extractor\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft\\jdk-25.0.0.36-hotspot\\bin"
+        - "C:\\Users\\cyrex\\.cargo\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\ProgramData\\cyrex\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\cyrex\\.dotnet\\tools"
+        - "c:\\users\\cyrex\\.local\\bin"
+        - "C:\\Users\\cyrex\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\texlive\\2025\\bin\\windows"
+        - "C:\\Users\\cyrex\\files\\projects\\vcpkg"
+        - "c:\\Users\\cyrex\\.vscode\\extensions\\ms-python.debugpy-2025.19.2026022601-win32-x64\\bundled\\scripts\\noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/outpost_recompiled_c"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/outpost_recompiled_c"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/CMakeScratch/TryCompile-d1eezs"
+      binary: "C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/CMakeScratch/TryCompile-d1eezs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/CMakeScratch/TryCompile-d1eezs'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_adafe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 2026-03-07 09:20:10.
+        
+        Project "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-d1eezs\\cmTC_adafe.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_adafe.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-d1eezs\\Debug\\".
+          Creating directory "cmTC_adafe.dir\\Debug\\cmTC_adafe.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_adafe.dir\\Debug\\cmTC_adafe.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_adafe.dir\\Debug\\cmTC_adafe.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_adafe.dir\\Debug\\\\" /Fd"cmTC_adafe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35217 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_adafe.dir\\Debug\\\\" /Fd"cmTC_adafe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-d1eezs\\Debug\\cmTC_adafe.exe" /INCREMENTAL /ILK:"cmTC_adafe.dir\\Debug\\cmTC_adafe.ilk" /NOLOGO /LIBPATH:"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/CMakeScratch/TryCompile-d1eezs/Debug/cmTC_adafe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/CMakeScratch/TryCompile-d1eezs/Debug/cmTC_adafe.lib" /MACHINE:X64  /machine:x64 cmTC_adafe.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_adafe.vcxproj -> C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-d1eezs\\Debug\\cmTC_adafe.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-d1eezs\\Debug\\cmTC_adafe.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_adafe.dir\\Debug\\cmTC_adafe.tlog\\cmTC_adafe.write.1u.tlog" "cmTC_adafe.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-d1eezs\\Debug\\cmTC_adafe.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_adafe.dir\\Debug\\cmTC_adafe.tlog\\cmTC_adafe.write.1u.tlog" "cmTC_adafe.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-d1eezs\\Debug\\cmTC_adafe.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_adafe.dir\\Debug\\cmTC_adafe.tlog\\cmTC_adafe.write.1u.tlog" "cmTC_adafe.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_adafe.dir\\Debug\\cmTC_adafe.tlog\\unsuccessfulbuild".
+          Touching "cmTC_adafe.dir\\Debug\\cmTC_adafe.tlog\\cmTC_adafe.lastbuildstate".
+        Done Building Project "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-d1eezs\\cmTC_adafe.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.04
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35217.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/CMakeScratch/TryCompile-9qvj8n"
+      binary: "C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/CMakeScratch/TryCompile-9qvj8n"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/CMakeScratch/TryCompile-9qvj8n'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bae97.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 2026-03-07 09:20:11.
+        
+        Project "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-9qvj8n\\cmTC_bae97.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_bae97.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-9qvj8n\\Debug\\".
+          Creating directory "cmTC_bae97.dir\\Debug\\cmTC_bae97.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_bae97.dir\\Debug\\cmTC_bae97.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_bae97.dir\\Debug\\cmTC_bae97.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_bae97.dir\\Debug\\\\" /Fd"cmTC_bae97.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35217 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_bae97.dir\\Debug\\\\" /Fd"cmTC_bae97.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-9qvj8n\\Debug\\cmTC_bae97.exe" /INCREMENTAL /ILK:"cmTC_bae97.dir\\Debug\\cmTC_bae97.ilk" /NOLOGO /LIBPATH:"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/CMakeScratch/TryCompile-9qvj8n/Debug/cmTC_bae97.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/CMakeScratch/TryCompile-9qvj8n/Debug/cmTC_bae97.lib" /MACHINE:X64  /machine:x64 cmTC_bae97.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_bae97.vcxproj -> C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-9qvj8n\\Debug\\cmTC_bae97.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-9qvj8n\\Debug\\cmTC_bae97.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_bae97.dir\\Debug\\cmTC_bae97.tlog\\cmTC_bae97.write.1u.tlog" "cmTC_bae97.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-9qvj8n\\Debug\\cmTC_bae97.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_bae97.dir\\Debug\\cmTC_bae97.tlog\\cmTC_bae97.write.1u.tlog" "cmTC_bae97.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\cyrex\\files\\projects\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-9qvj8n\\Debug\\cmTC_bae97.exe" "C:\\Users\\cyrex\\files\\projects\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_bae97.dir\\Debug\\cmTC_bae97.tlog\\cmTC_bae97.write.1u.tlog" "cmTC_bae97.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_bae97.dir\\Debug\\cmTC_bae97.tlog\\unsuccessfulbuild".
+          Touching "cmTC_bae97.dir\\Debug\\cmTC_bae97.tlog\\cmTC_bae97.lastbuildstate".
+        Done Building Project "C:\\Users\\cyrex\\files\\projects\\outpost-rs\\outpost_recompiled_c\\build_task04\\CMakeFiles\\CMakeScratch\\TryCompile-9qvj8n\\cmTC_bae97.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.96
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35217.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...

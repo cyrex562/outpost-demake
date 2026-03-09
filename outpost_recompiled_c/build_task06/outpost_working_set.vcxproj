@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DE3C91B-6406-33BD-9094-03607F797DDB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>outpost_working_set</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">outpost_working_set.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">outpost_working_set.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">outpost_working_set</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">outpost_working_set.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">outpost_working_set.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">outpost_working_set</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">outpost_working_set.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">outpost_working_set.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">outpost_working_set</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">outpost_working_set.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">outpost_working_set.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">outpost_working_set</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>core/outpost_common.h;core/outpost_platform.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>core/outpost_common.h;core/outpost_platform.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>core/outpost_common.h;core/outpost_platform.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>core/outpost_common.h;core/outpost_platform.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c -BC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06 --check-stamp-file C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeRCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeSystem.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c -BC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06 --check-stamp-file C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeRCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeSystem.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c -BC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06 --check-stamp-file C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeRCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeSystem.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c -BC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06 --check-stamp-file C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeRCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\4.1.1\CMakeSystem.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_main.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_main_runtime.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\outpost_modules.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part010.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part011.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part012.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part013.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part014.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part015.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part016.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part017.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part018.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part019.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part001.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part002.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part003.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part004.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part005.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part006.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part007.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part008.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\io\outpost.file_io.part009.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\media\outpost.graphics_media.part001.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\media\outpost.graphics_media.part002.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\media\outpost.graphics_media.part003.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part001.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part002.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part003.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part004.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part005.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part006.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part007.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part008.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part009.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part010.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part011.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part012.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part013.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part001.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part002.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part003.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part004.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part005.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part006.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part007.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part008.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part009.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part010.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part011.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part012.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part013.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part014.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part015.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part016.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part017.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part018.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part019.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part020.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part021.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part022.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part023.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part024.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part025.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part026.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part027.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part028.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part029.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part030.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part031.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part032.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part033.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part034.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part035.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part036.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part037.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part038.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part039.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part040.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part041.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part042.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part043.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part044.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part045.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part046.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part047.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part048.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part049.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part050.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part051.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part052.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part053.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part054.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part055.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\sim\outpost.simulator_world.part056.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part001.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part002.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part003.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part004.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part005.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part006.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part007.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part008.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part009.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part010.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part011.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part012.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part013.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part014.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part015.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part016.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part017.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part018.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part019.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part020.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part021.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part022.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part023.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part024.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part025.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part026.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part027.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part028.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part029.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part030.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part031.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part032.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part033.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part034.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part035.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part036.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part037.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part038.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part039.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part040.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part041.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part042.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part043.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part044.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part045.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part046.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part047.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part048.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part049.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part050.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part051.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part052.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part053.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\ui\outpost.ui_windows.part054.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16\outpost.system_runtime.part001.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16\outpost.system_runtime.part002.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16\outpost.system_runtime.part003.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16\outpost.system_runtime.part004.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\generated\misc\outpost.misc.part001.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\generated\misc\outpost.misc.part002.c" />
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\generated\misc\outpost.misc.part003.c" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\missing_deps.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_common.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_main.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_modules.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\outpost_platform.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\text\outpost.strings_text.part001.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core\ui_vtable.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\generated\misc\outpost.misc.part001.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\io\outpost.file_io.part001.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\media\outpost.graphics_media.part001.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\memory\outpost.memory_heap.part001.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\sim\outpost.simulator_world.part001.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\sim\outpost.simulator_world.part002.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\sim\outpost.simulator_world.part003.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\sim\outpost.simulator_world.part004.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\sim\outpost.simulator_world.part005.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part001.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part002.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part003.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part004.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part005.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part006.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part007.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part008.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part009.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part010.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part011.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part012.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part013.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part014.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part015.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part016.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part017.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part018.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part019.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part020.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part021.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part022.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part023.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part024.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part025.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part026.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part027.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part028.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part029.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part030.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part031.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part032.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part033.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part034.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part035.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part036.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part037.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part038.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part039.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part040.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part041.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part042.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part043.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part044.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part045.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part046.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part047.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part048.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part049.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part050.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part051.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part052.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part053.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part054.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part055.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part056.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part057.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part058.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part059.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part060.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part061.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part062.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part063.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part064.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part065.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part066.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part067.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part068.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part069.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part070.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part071.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part072.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part073.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part074.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part075.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part076.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part077.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part078.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part079.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part080.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part081.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost.types_structs.part082.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types\outpost_types.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part001.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part002.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part003.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part004.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part005.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part006.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\ui\outpost.ui_windows.part007.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\outpost.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform\win16\outpost.system_runtime.part001.h" />
+    <ClInclude Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform\win16_api.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task06\ZERO_CHECK.vcxproj">
+      <Project>{4CC7EC40-8891-327D-A677-952A07C4AEA3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{404A45C6-893E-37A4-A658-6C92B5DE75C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>outpost_themed_sources</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c -BC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04 --check-stamp-file C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeCXXCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeRCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeSystem.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c -BC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04 --check-stamp-file C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeCXXCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeRCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeSystem.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c -BC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04 --check-stamp-file C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeCXXCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeRCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeSystem.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c -BC:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04 --check-stamp-file C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task04/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeCXXCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeRCCompiler.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\4.1.1\CMakeSystem.cmake;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\file_io\outpost.file_io.part001.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\file_io\outpost.file_io.part002.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\file_io\outpost.file_io.part003.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\file_io\outpost.file_io.part004.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\file_io\outpost.file_io.part005.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\file_io\outpost.file_io.part006.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\file_io\outpost.file_io.part007.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\file_io\outpost.file_io.part008.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\file_io\outpost.file_io.part009.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\graphics_media\outpost.graphics_media.part001.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\graphics_media\outpost.graphics_media.part002.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\graphics_media\outpost.graphics_media.part003.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part001.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part002.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part003.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part004.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part005.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part006.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part007.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part008.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part009.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part010.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part011.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part012.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\memory_heap\outpost.memory_heap.part013.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\misc\outpost.misc.part001.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\misc\outpost.misc.part002.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\misc\outpost.misc.part003.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part001.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part002.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part003.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part004.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part005.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part006.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part007.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part008.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part009.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part010.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part011.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part012.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part013.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part014.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part015.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part016.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part017.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part018.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part019.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part020.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part021.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part022.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part023.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part024.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part025.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part026.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part027.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part028.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part029.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part030.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part031.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part032.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part033.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part034.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part035.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part036.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part037.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part038.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part039.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part040.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part041.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part042.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part043.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part044.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part045.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part046.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part047.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part048.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part049.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part050.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part051.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part052.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part053.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part054.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part055.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\simulator_world\outpost.simulator_world.part056.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part001.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part002.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part003.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part004.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part005.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part006.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part007.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part008.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part009.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part010.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part011.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part012.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part013.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part014.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part015.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part016.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part017.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part018.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\strings_text\outpost.strings_text.part019.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\system_runtime\outpost.system_runtime.part001.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\system_runtime\outpost.system_runtime.part002.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\system_runtime\outpost.system_runtime.part003.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\system_runtime\outpost.system_runtime.part004.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part001.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part002.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part003.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part004.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part005.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part006.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part007.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part008.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part009.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part010.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part011.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part012.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part013.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part014.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part015.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part016.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part017.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part018.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part019.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part020.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part021.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part022.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part023.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part024.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part025.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part026.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part027.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part028.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part029.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part030.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part031.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part032.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part033.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part034.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part035.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part036.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part037.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part038.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part039.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part040.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part041.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part042.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part043.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part044.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part045.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part046.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part047.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part048.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part049.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part050.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part051.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part052.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part053.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_c\ui_windows\outpost.ui_windows.part054.c">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\file_io\outpost.file_io.part001.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\graphics_media\outpost.graphics_media.part001.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\memory_heap\outpost.memory_heap.part001.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\misc\outpost.misc.part001.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\simulator_world\outpost.simulator_world.part001.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\simulator_world\outpost.simulator_world.part002.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\simulator_world\outpost.simulator_world.part003.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\simulator_world\outpost.simulator_world.part004.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\simulator_world\outpost.simulator_world.part005.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\strings_text\outpost.strings_text.part001.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\system_runtime\outpost.system_runtime.part001.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part001.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part002.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part003.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part004.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part005.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part006.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part007.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part008.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part009.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part010.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part011.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part012.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part013.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part014.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part015.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part016.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part017.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part018.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part019.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part020.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part021.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part022.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part023.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part024.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part025.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part026.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part027.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part028.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part029.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part030.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part031.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part032.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part033.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part034.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part035.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part036.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part037.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part038.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part039.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part040.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part041.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part042.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part043.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part044.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part045.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part046.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part047.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part048.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part049.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part050.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part051.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part052.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part053.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part054.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part055.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part056.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part057.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part058.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part059.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part060.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part061.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part062.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part063.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part064.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part065.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part066.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part067.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part068.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part069.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part070.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part071.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part072.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part073.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part074.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part075.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part076.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part077.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part078.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part079.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part080.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part081.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\types_structs\outpost.types_structs.part082.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\ui_windows\outpost.ui_windows.part001.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\ui_windows\outpost.ui_windows.part002.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\ui_windows\outpost.ui_windows.part003.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\ui_windows\outpost.ui_windows.part004.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\ui_windows\outpost.ui_windows.part005.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\ui_windows\outpost.ui_windows.part006.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\themed\outpost_h\ui_windows\outpost.ui_windows.part007.h">
+    </None>
+    <None Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\ghidra.h">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\build_task04\ZERO_CHECK.vcxproj">
+      <Project>{BB173CDF-4E70-374E-86A9-26BBE768D228}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
