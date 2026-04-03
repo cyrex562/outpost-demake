@@ -1,19 +1,32 @@
 /*
  * outpost_main.c
  *
- * Application-level entry hook.  Mirrors the original game's WinMain/task-init
- * sequence in flat-model terms.
+ * Flat-model Win32 entry shim.  Bypasses the two Win16 loader stubs that are
+ * unsuitable for direct reconstruction:
  *
- * Blocking items before OUTPOST_WIRE_WIN16_ENTRY can be enabled:
- *   - win16_main_init_and_run_loop: vtable dispatch artifacts still present
- *     (raw `(*(code *)*puVar1)(...)` calls, two CONCAT22 segment-half args)
- *   - win16_app_main_loop_init_internal: reg_si/reg_di/in_stack_00000000
- *     register artifacts not yet promoted
- *   - outpost_main_smoke CMake target does not yet link
- *     src/platform/win16/ or src/modules/ object files
+ *   'entry'
+ *       Cannot be decompiled at all (Ghidra: "Symbol $$undef extends beyond
+ *       the end of the address space").  It is the raw DOS/Win16 loader thunk
+ *       whose sole purpose was to hand control to win16_app_main_loop_init_internal.
  *
- * Once those are cleared, flip OUTPOST_WIRE_WIN16_ENTRY to 1 in CMakeLists
- * and the whole chain calls through.
+ *   win16_app_main_loop_init_internal  (the "taskinit")
+ *       Calls InitTask16() / InitApp16() / LockSegment16() and scrapes the
+ *       Win16 register-argument ABI (in_AX, in_CX, unaff_SI, unaff_DI, …)
+ *       to populate the g_Task* globals.  In Win32 those same values come
+ *       directly from WinMain parameters (hInstance, hPrevInstance, lpCmdLine).
+ *
+ * Shim design:
+ *   Win32 main()
+ *     -> outpost_main_entry(hInstance, NULL, lpCmdLine, 0)
+ *         -> sets g_Task* from Win32 params  [replaces InitTask16 output]
+ *         -> calls win16_call_app_main()
+ *              -> win16_main_init_and_run_loop(g_TaskDX, g_TaskBX, ...)
+ *
+ * OUTPOST_WIRE_WIN16_ENTRY=1 enables the call chain above once the
+ * platform/memory source files are linked in.
+ *
+ * OUTPOST_WIRE_DIRECT_LOOP=1 (future) will call win16_main_init_and_run_loop
+ * directly with Win32-mapped args, removing the g_Task* globals entirely.
  */
 #include "core/outpost_main.h"
 #include "core/outpost_common.h"

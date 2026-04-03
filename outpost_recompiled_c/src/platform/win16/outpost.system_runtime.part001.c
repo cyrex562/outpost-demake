@@ -6,9 +6,26 @@
  * Boundaries: top-level declarations/definitions only
  */
 
+#include "core/outpost_common.h"
+#include "core/outpost_platform.h"
+#include "outpost.h"
+/* NOTE: not including outpost.system_runtime.part001.h to avoid HANDLE16/Win16 API redefinition
+ * conflicts with missing_deps.h and win16_api.h.  Forward-declare only the functions called
+ * before their definitions within this translation unit instead. */
+
+/* Forward declarations: functions called before their definition in this file */
+void invoke_error_handler(void);
+void __cdecl16far win16_call_app_main(void);
+void __cdecl16near call_runtime_initializers_backward(void *start, void *end);
+char * __stdcall16far lookup_runtime_error_string_ptr(int error_code);
+void __stdcall16far log_runtime_error_string(int error_code);
+void __cdecl16near set_internal_error_code_from_ax(int error_code);
+void __cdecl16near handle_free_buffer(void *handle_ptr);
+void __cdecl16near handle_allocate_buffer(void *handle_ptr);
+
 string s_HeapVersion;
-undefined _SHI_INVOKEERRORHANDLER1;
-undefined2 _SHI_INVOKEERRORHANDLER1+1;
+/* _SHI_INVOKEERRORHANDLER1 is a function declared in the header; removed variable decl */
+undefined2 _SHI_INVOKEERRORHANDLER1_1; /* Ghidra +1 offset artefact — renamed */
 pointer p_ErrorHandlerCallback_Segment;
 pointer g_TaskDI;
 pointer g_TaskBX;
@@ -177,7 +194,7 @@ long iterate_memory_callback_far(long size,void *ptr,void *callback)
     do
     {
       uVar4 = (uint)size;
-      if (size._2_2_ != 0x0)
+      if ((u16)((u32)size >> 16) != 0x0) /* ._2_2_: high 16 bits of 32-bit far size */
       {
         uVar4 = 0xffff;
       }
@@ -186,7 +203,7 @@ long iterate_memory_callback_far(long size,void *ptr,void *callback)
         uVar4 = -(int)ptr;
       }
       uVar1 = (uint)size - uVar4;
-      iVar2 = size._2_2_ - (uint)((uint)size < uVar4);
+      iVar2 = (int)(u16)((u32)size >> 16) - (uint)((u16)size < uVar4);
       size = CONCAT22(iVar2,uVar1);
       uVar3 = (*callback_fn)(uVar4,callback_ctx,ptr,callback);
       if (uVar3 != 0x0)
@@ -224,10 +241,8 @@ long iterate_memory_callback_far(long size,void *ptr,void *callback)
 
 void win16_app_main_loop_init_internal(void)
 {
-  code *pcVar1;
   BOOL16 BVar3;
   undefined1 uVar6;
-  undefined *puVar4;
   int16_t iVar5;
   undefined *puVar8;
 
@@ -282,17 +297,9 @@ void win16_app_main_loop_init_internal(void)
   uVar6 = (undefined1)(BVar3 >> 0x8);
   /* CONCAT11: pack Win version major (low byte of BVar3) into high byte */
   g_WinVersion = (undefined *)(uintptr_t)(u16)((((uint8_t)BVar3) << 8) | (uint8_t)uVar6);
-  /* Condition was: (u16_1000_22f6 & 1) == 0; always true (flag = 0x88) */
-  if (true)
-  {
-    pcVar1 = (code *)swi(0x21);
-    puVar8 = (undefined *)(*pcVar1)();
-  }
-  else
-  {
-    Dos3Call(CONTEXT_ptr_context);
-    puVar8 = (undefined *)(uintptr_t)(u16)(0x3000 | (uint8_t)uVar6);
-  }
+  /* DOS INT 21h version query (always-taken path in Win16) — flat model: not available.
+   * g_DosVersion is unused in the rebuild; set to NULL. */
+  puVar8 = NULL;
   /* uVar7 was segment half (Win16 far-ptr) of puVar8 — drop in flat model */
   g_DosVersion = (undefined *)puVar8;
   /* CONCAT11: pack low two bytes of DOS version result into g_DosVersionPacked */
@@ -307,8 +314,8 @@ void win16_app_main_loop_init_internal(void)
     return;
   }
   win16_init_env_and_interrupts();
-  /* uVar7 (DOS-version segment half) -> 0 in flat; tile2.bmp path literal retained */
-  win16_parse_command_line_and_init_task((char *)s_tile2_bmp_1050_1538, 0, 0x238d, (u32)CONTEXT_ptr_context);
+  /* flat model: Win16 register args (tile2.bmp in CS, etc.) not used in rewritten (void) version */
+  win16_parse_command_line_and_init_task();
   win16_init_env_vars_from_dos();
   nop_near_stub_3();
   win16_call_app_main();
@@ -434,6 +441,7 @@ void __cdecl16far runtime_stack_check_fail_handler(void)
   undefined2 in_stack_00000000;
   undefined2 in_stack_00000002;
   int in_stack_00000006;
+  undefined2 stack0x0004;   /* Win16 stack frame reference point (BP+4 in original) */
   
   puVar1 = (undefined1 *)(stack_probe_ax + 0x1U & 0xfffe);
   if ((puVar1 < &stack0x0004) &&
@@ -502,7 +510,7 @@ undefined ** fatal_runtime_error_handler(u16 param_1,u8 *param_2)
   }
   FatalAppExit16((char *)CONCAT22(iVar3,pcVar4),0x0);
   FatalExit16(0xff);
-  ppuVar6 = (u8 **)((char *)s_<<NMSG>>_1050_63f6 + 0x8);
+  ppuVar6 = (u8 **)((char *)s_NMSG_1050_63f6 + 0x8);
   do
   {
     ppuVar1 = ppuVar6;
@@ -535,7 +543,7 @@ char * __stdcall16far lookup_runtime_error_string_ptr(int error_code)
   int *piVar3;
   int *piVar4;
   
-  piVar3 = (int *)((char *)s_<<NMSG>>_1050_63f6 + 0x8);
+  piVar3 = (int *)((char *)s_NMSG_1050_63f6 + 0x8);
   do
   {
     piVar1 = piVar3;
@@ -611,7 +619,7 @@ check_error_flag_and_set_internal_err_u8_2(byte result,u16 param_2,bool param_3)
     set_internal_error_code_from_ax(param_2);
     return (byte)param_2;
   }
-  param_2._0_1_ = 0x0;
+  param_2 = param_2 & 0xFF00u; /* ._0_1_: clear low byte */
   return (byte)param_2;
 }
 
@@ -647,14 +655,14 @@ void __cdecl16near set_internal_error_code_from_ax(int error_code)
   char cVar1;
   uint reg_ax;
   
-  PTR_DAT_1050_0000_1050_5f88._0_1_ = (byte)reg_ax;
+  PTR_DAT_1050_0000_1050_5f88 = (undefined *)(uintptr_t)(uint8_t)reg_ax; /* ._0_1_: store error byte in ptr-sized var */
   cVar1 = (char)(reg_ax >> 0x8);
   if (cVar1 != '\0') goto LAB_1000_29d2;
-  if ((byte)PTR_DAT_1050_0000_1050_5f88 < 0x22)
+  if ((uint8_t)(uintptr_t)PTR_DAT_1050_0000_1050_5f88 < 0x22)
   {
-    if ((byte)PTR_DAT_1050_0000_1050_5f88 < 0x20)
+    if ((uint8_t)(uintptr_t)PTR_DAT_1050_0000_1050_5f88 < 0x20)
     {
-      if (0x13 < (byte)PTR_DAT_1050_0000_1050_5f88) goto LAB_1000_29cc;
+      if (0x13 < (uint8_t)PTR_DAT_1050_0000_1050_5f88) goto LAB_1000_29cc;
     }
     else
     {

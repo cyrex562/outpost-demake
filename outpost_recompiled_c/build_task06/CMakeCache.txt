@@ -212,8 +212,9 @@ OUTPOST_STRICT_WARNINGS:BOOL=OFF
 //Build/link Win16 API stub implementations
 OUTPOST_WIN16_USE_STUBS:BOOL=ON
 
-//No help, variable specified on the command line.
-OUTPOST_WIRE_WIN16_ENTRY:UNINITIALIZED=0
+//Wire Win16 init chain from outpost_main_entry (requires system_runtime.part001
+// graduated)
+OUTPOST_WIRE_WIN16_ENTRY:BOOL=0
 
 //Value Computed by CMake
 outpost_recompiled_c_BINARY_DIR:STATIC=C:/Users/cyrex/files/projects/outpost-rs/outpost_recompiled_c/build_task06

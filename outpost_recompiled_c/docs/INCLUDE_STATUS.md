@@ -181,6 +181,7 @@ These counts are for **whole files** — the critical-path functions within them
 ## Next batch (depth-2 callees)
 
 Key call-tree depth-2 functions from `win16_main_init_and_run_loop` that still need cleanup:
+
 - `Resource_Manager_Initialize_Global_Ptr_2024` (simulator_world)
 - `Global_Resource_Manager_ctor_init_1010_7e40` (simulator_world)
 - `UI_SubDialog_Manager_ctor_init_aeca` (ui_windows)
@@ -188,3 +189,91 @@ Key call-tree depth-2 functions from `win16_main_init_and_run_loop` that still n
 - `UI_MainWindow_ctor` (ui_windows)
 - `Simulator_Global_State_ctor_init_8128` (simulator_world)
 
+---
+
+# Task 27 — Working-Set Compile Validation Checkpoint
+
+## Date
+
+2025-07-11
+
+## Scope
+
+Full build of `outpost_working_set` after Phase 2b (Tasks 30–38) completion.
+
+## outpost_main_smoke status (critical path)
+
+| Metric | Value |
+| --- | ---: |
+| Build result | ✅ Exit 0 |
+| Exe size | 253,952 bytes |
+| Compile errors | 0 |
+| Critical-path functions clean | 15 (Tasks 30–37) |
+
+## outpost_working_set diagnostics
+
+| Metric | Value |
+| --- | ---: |
+| Total .c source files | 167 |
+| Files with compile errors | 146 |
+| Files compiling cleanly | ~21 |
+| Total error lines (`error C*`) | 10,286 |
+
+### Top undeclared identifiers
+
+| Identifier | Error count | Category |
+| --- | ---: | --- |
+| `uVar1` | 595 | Local var (type cascade from undeclared struct) |
+| `_p_GlobalResourceManager` | 449 | Global pointer — needs declaration |
+| `_p_ResourceManager` | 373 | Global pointer — needs declaration |
+| `uVar2` | 297 | Local var cascade |
+| `uVar3` | 286 | Local var cascade |
+| `_p_SimulatorWorldContext` | 275 | Global pointer — needs declaration |
+| `_p_StringPropertyTable` | 250 | Global pointer — needs declaration |
+| `s_1_1050_389a` | 235 | String literal global (already in missing_deps.c) |
+| `uVar4` | 215 | Local var cascade |
+| `_this` | 187 | Overlap alias — needs declaration |
+| `g_LastFileErrorMsgID` | 166 | Named global — needs declaration |
+| `_p_SimulatorGlobalState` | 146 | Global pointer — needs declaration |
+| `_this_ptr` | 120 | Overlap alias — needs declaration |
+| `_p_UISubDialogTable` | 100 | Global pointer — needs declaration |
+
+### Files with errors by bucket
+
+| Bucket | Files |
+| --- | ---: |
+| `core/text` (parts 10–19) | 10 |
+| `generated/misc` | 3 |
+| `modules/io` (parts 1–9) | 9 |
+| `modules/media` | 3 |
+| `modules/memory` (non-graduated parts) | 7 |
+| `modules/sim` | 8+ |
+| `modules/ui` | 50+ |
+
+## Phase 2 success criteria check (Task 27)
+
+| Criterion | Status |
+| --- | --- |
+| `outpost_main_smoke` builds to exe | ✅ Met |
+| Critical-path functions (Tasks 30–37) artifact-free | ✅ Met |
+| Include-file failures (`C1083`) | ✅ 0 |
+| Baseline include coverage via CMake enforcement | ✅ On |
+| Decompiler artifact classes tracked in MISSING_DEPENDENCIES.md | ✅ Met |
+| Meaningful reduction in critical-path errors | ✅ Met (critical path: 0 errors) |
+
+## Phase 3 blockers identified
+
+The highest-impact issues for Phase 3 (working-set compile hardening) are:
+
+1. **8 high-frequency global pointers** (`_p_GlobalResourceManager`, `_p_ResourceManager`,
+   `_p_SimulatorWorldContext`, `_p_StringPropertyTable`, `_p_SimulatorGlobalState`,
+   `_p_UISubDialogTable`, `_this`, `_this_ptr`) — each block hundreds of non-graduated files.
+   Fix: forward-declare in `missing_deps.h` or add to `missing_deps.c`.
+
+2. **Undeclared struct types** (`astruct_22`, `astruct_486/487/488`, etc.) cascading into
+   `uVarN` local-variable failures. Fix: add minimal forward typedef stubs.
+
+3. **`s_1_1050_389a`** (235 occurrences) — string literal global already partially handled
+   in graduated files; needs `extern` exposed in a shared header.
+
+4. **`g_LastFileErrorMsgID`** (166 occurrences) — named global; add to `missing_deps.c`.

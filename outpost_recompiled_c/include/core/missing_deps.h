@@ -61,6 +61,19 @@ extern int g_outpost_missing_dep_counter;
 // Generic fallback function for temporarily wiring unresolved callsites.
 int outpost_missing_dep_stub(const char *symbol_name);
 
+/* ── Placeholder global externs (defined in missing_deps.c) ─────────────────
+ * Add an extern here whenever a .c file needs a symbol from missing_deps.c.
+ * TODO(graduate): remove once the real definition file is graduated. */
+extern uint      g_MaxFileHandles;
+extern void     *p_SystemIO_Active;
+extern uint      g_AllocFlags;
+extern void     *p_AllocStrategyCode;
+extern uint8_t  *PTR_DAT_1050_0000_1050_5f78;
+extern uint8_t  *PTR_DAT_1050_0000_1050_5f88;
+extern char     *s___1050_5fea;
+extern char     *s___1050_5fec;
+extern void     *s_NMSG_1050_63f6;
+
 #ifdef __cplusplus
 }
 #endif

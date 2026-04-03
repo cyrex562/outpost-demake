@@ -96,12 +96,12 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;OUTPOST_WIRE_WIN16_ENTRY=0;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;OUTPOST_WIRE_WIN16_ENTRY=0;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -135,14 +135,14 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;OUTPOST_WIRE_WIN16_ENTRY=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;OUTPOST_WIRE_WIN16_ENTRY=0;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -176,14 +176,14 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;OUTPOST_WIRE_WIN16_ENTRY=0;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;OUTPOST_WIRE_WIN16_ENTRY=0;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -218,12 +218,12 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;OUTPOST_WIRE_WIN16_ENTRY=0;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OUTPOST_ENABLE_WINDOWS_PLATFORM=1;OUTPOST_WIN16_USE_STUBS=1;OUTPOST_WIRE_WIN16_ENTRY=0;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\core;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\modules\types;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\include\platform;C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>

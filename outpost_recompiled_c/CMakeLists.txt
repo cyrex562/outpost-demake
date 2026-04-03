@@ -21,6 +21,7 @@ option(OUTPOST_BUILD_CORE_SMOKE "Compile minimal core entry files" ON)
 option(OUTPOST_BUILD_MAIN_SMOKE "Link minimal executable through outpost_main_entry" ON)
 option(OUTPOST_BUILD_WORKING_SET "Enable object target for rewired src tree" ON)
 option(OUTPOST_BUILD_THEMED_REFERENCE "Enable reference build target for themed corpus" OFF)
+option(OUTPOST_WIRE_WIN16_ENTRY "Wire Win16 init chain from outpost_main_entry (requires system_runtime.part001 graduated)" ON)
 
 # Location-aware source/include layout for active rewiring workspace.
 file(GLOB_RECURSE OUTPOST_PROJECT_HEADERS CONFIGURE_DEPENDS
@@ -83,6 +84,12 @@ if(OUTPOST_WIN16_USE_STUBS)
     target_compile_definitions(outpost_compile_config INTERFACE OUTPOST_WIN16_USE_STUBS=1)
 else()
     target_compile_definitions(outpost_compile_config INTERFACE OUTPOST_WIN16_USE_STUBS=0)
+endif()
+
+if(OUTPOST_WIRE_WIN16_ENTRY)
+    target_compile_definitions(outpost_compile_config INTERFACE OUTPOST_WIRE_WIN16_ENTRY=1)
+else()
+    target_compile_definitions(outpost_compile_config INTERFACE OUTPOST_WIRE_WIN16_ENTRY=0)
 endif()
 
 if(OUTPOST_STRICT_WARNINGS)
@@ -155,7 +162,15 @@ set(OUTPOST_GRADUATED_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/core/text/outpost.strings_text.part007.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/core/text/outpost.strings_text.part008.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/core/text/outpost.strings_text.part009.c
+    # ── memory_heap ──
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/modules/memory/outpost.memory_heap.part003.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/modules/memory/outpost.memory_heap.part004.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/modules/memory/outpost.memory_heap.part005.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/modules/memory/outpost.memory_heap.part007.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/modules/memory/outpost.memory_heap.part009.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/modules/memory/outpost.memory_heap.part013.c
     # ── platform ── (win16_api_stubs guarded by OUTPOST_WIN16_USE_STUBS)
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/platform/win16/outpost.system_runtime.part001.c
     # ── generated / modules / sim / ui ── add files here as they are cleaned
 )
 if(OUTPOST_WIN16_USE_STUBS)

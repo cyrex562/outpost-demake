@@ -6,6 +6,46 @@
  * Boundaries: top-level declarations/definitions only
  */
 
+/* ── part007 fixup ── */
+/* Struct types needed by this file */
+#include "core/outpost_common.h"
+#include "outpost.types_structs.part021.h"   /* astruct_444 */
+#include "outpost.types_structs.part045.h"   /* astruct_454 typedef */
+#include "outpost.types_structs.part046.h"   /* astruct_454 definition */
+#include "outpost.types_structs.part064.h"   /* astruct_481 */
+#include "outpost.types_structs.part077.h"   /* astruct_491 */
+
+/* _puStack_e: Ghidra '_'-prefixed global alias for a local far-pointer composite
+ * (uVar4 << 16 | puVar2). Declared file-scope so '_puStack_e = CONCAT22(...)' compiles.
+ * TODO(ghidra-verify): Replace with local variable + explicit cast once calling
+ * convention is confirmed. */
+static u16 *_puStack_e = NULL;
+
+/* _g_AllocatedBlock_Offset: Ghidra '_'-prefixed alias overlapping g_AllocatedBlock_Offset
+ * at the same address.  In flat Win32 model they are the same global. */
+#define _g_AllocatedBlock_Offset  g_AllocatedBlock_Offset
+
+/* _p_SimulatorGlobalState: Ghidra '_'-prefixed alias */
+#define _p_SimulatorGlobalState  p_SimulatorGlobalState
+
+/* _p_GlobalResourceManager: Ghidra '_'-prefixed alias */
+#define _p_GlobalResourceManager  p_GlobalResourceManager
+
+/* _PTR_DAT_1050_0000_1050_3962: Ghidra '_'-prefixed alias */
+#define _PTR_DAT_1050_0000_1050_3962  PTR_DAT_1050_0000_1050_3962
+
+/* Globals defined in missing_deps.c, referenced in this file */
+extern void       *g_AllocatedBlock_Offset;
+extern void       *g_AllocatedBlock_Segment;
+extern const char  s_1_1050_389a[];
+extern void       *p_SimulatorGlobalState;
+extern int         PTR_DAT_1050_0000_1050_3960;
+extern void       *PTR_DAT_1050_0000_1050_3962;
+extern const char  s_582_bmp_1050_1871[];
+extern const char  s_589_bmp_1050_18a9[];
+extern pointer     p_GlobalResourceManager;
+/* ── end part007 fixup ── */
+
 
 
 
@@ -100,7 +140,7 @@ UI_Object_Add_Type_Value_Pair_to_Collection_at_Offset_12_Logic
   undefined2 in_stack_0000000a;
   undefined4 in_stack_0000ffec;
   long size;
-  undefined4 uStack_a;
+  u32 uStack_a;
   undefined2 *puStack_6;
   
   uVar5 = (undefined2)((ulong)in_stack_0000ffec >> 0x10);
@@ -123,18 +163,18 @@ UI_Object_Add_Type_Value_Pair_to_Collection_at_Offset_12_Logic
     }
   }
   puVar3 = allocate_memory(CONCAT22(uVar5,0x8));
-  uStack_a = (undefined2 *)CONCAT22(uVar4,puVar3);
+  uStack_a = (u32)CONCAT22(uVar4,(u32)puVar3);
   if (uVar4 == 0x0 && puVar3 == NULL)
   {
     puStack_6 = NULL;
   }
   else
   {
-    *uStack_a = (char *)s_1_1050_389a;
+    *(u16 *)uStack_a = (u16)(uintptr_t)(char *)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
-    *uStack_a = 0xa1c4;
+    *(u16 *)uStack_a = 0xa1c4;
     puVar3[0x1] = 0x1010;
-    puStack_6 = uStack_a;
+    puStack_6 = (undefined2 *)uStack_a;
   }
   uVar5 = (undefined2)((ulong)puStack_6 >> 0x10);
   puVar3 = (undefined2 *)puStack_6;
@@ -174,9 +214,9 @@ void __stdcall16far Simulator_Object_Subclass_dtor_0558(long this_ref)
   
   uVar4 = (undefined2)((ulong)this_ref >> 0x10);
   uVar3 = (astruct_481 *)this_ref;
-  *(undefined2 *)this_ref = 0x558;
+  *(undefined2 *)this_ref = 0x558; // vtable at 1018:558
   uVar3->field2_0x2 = 0x1018;
-  uVar3->field9_0xa = 0x568;
+  uVar3->field9_0xa = 0x568; // vtable at 1018:568
   uVar3->field10_0xc = 0x1018;
   if (uVar3->field12_0x10 != 0x0 || uVar3->field11_0xe != NULL)
   {
@@ -281,11 +321,11 @@ void __stdcall16far UI_Main_View_Controller_dtor_1874_Logic(long this_ref)
   undefined2 uVar3;
   void *this_00;
   undefined2 uVar4;
-  undefined4 uStack_1a;
+  u32 uStack_1a;
   
   uVar4 = (undefined2)((ulong)this_ref >> 0x10);
   this_00 = (void *)this_ref;
-  *(char **)this_ref = (char *)s_582_bmp_1050_1871 + 0x3;
+  *(char **)this_ref = (char *)s_582_bmp_1050_1871 + 0x3; // vtable at 1018:1874
   *(undefined2 *)((int)this_00 + 0x2) = 0x1018;
   *(undefined2 *)((int)this_00 + 0x20) = (char *)s_589_bmp_1050_18a9 + 0x7;
   *(undefined2 *)((int)this_00 + 0x22) = 0x1018;
@@ -350,8 +390,8 @@ void __stdcall16far UI_Main_View_Controller_dtor_1874_Logic(long this_ref)
   {
     puVar2 = (undefined2 *)((int)this_00 + 0x20);
   }
-  uStack_1a = (undefined2 *)CONCAT22(uVar4,puVar2);
-  *uStack_1a = (char *)s_1_1050_389a;
+  uStack_1a = (u32)CONCAT22(uVar4,(u32)puVar2);
+  *(u16 *)uStack_1a = (u16)(uintptr_t)(char *)s_1_1050_389a; // vtable at 1008:389a
   puVar2[0x1] = 0x1008;
   Base_Object_dtor_2014_Logic(this_00);
   return;
@@ -383,7 +423,7 @@ UI_Ship_View_Extract_ID_List_from_History_Logic(undefined4 param_1,undefined4 *p
   undefined2 unaff_SI;
   undefined2 uVar7;
   long lVar8;
-  undefined4 uStack_12;
+  u32 uStack_12;
   int iStack_6;
   
   *param_2 = 0x0;
@@ -393,7 +433,7 @@ UI_Ship_View_Extract_ID_List_from_History_Logic(undefined4 param_1,undefined4 *p
   if (iVar1 != 0x0)
   {
     puVar4 = allocate_memory(CONCAT22(unaff_SI,0x6));
-    uStack_12 = (undefined4 *)CONCAT22(reg_dx,puVar4);
+    uStack_12 = (u32)CONCAT22(reg_dx,(u32)puVar4);
     uVar6 = reg_dx | (uint)puVar4;
     if (uVar6 == 0x0)
     {
@@ -401,9 +441,9 @@ UI_Ship_View_Extract_ID_List_from_History_Logic(undefined4 param_1,undefined4 *p
     }
     else
     {
-      *uStack_12 = 0x0;
+      *(undefined4 *)uStack_12 = 0x0;
       *(undefined2 *)(puVar4 + 0x1) = 0x0;
-      *param_2 = uStack_12;
+      *param_2 = (undefined4)uStack_12;
     }
     pvVar5 = allocate_memory(CONCAT22(unaff_SI,iVar1 * 0x2));
     puVar3 = (undefined2 *)*param_2;
@@ -435,7 +475,7 @@ void __stdcall16far UI_Trade_Manager_dtor_470C_Logic(long this_ref)
   
   uVar3 = (undefined2)((ulong)this_ref >> 0x10);
   uVar2 = (astruct_454 *)this_ref;
-  *(undefined2 *)this_ref = 0x470c;
+  *(undefined2 *)this_ref = 0x470c; // vtable at 0x1018:470c
   uVar2->field2_0x2 = 0x1018;
   if (uVar2->field304_0x138 != 0x0 || uVar2->field303_0x136 != NULL)
   {
@@ -461,7 +501,7 @@ void __stdcall16far UI_Transaction_Item_Base_dtor_4AA6_Logic(long this_ref)
   
   uVar2 = (undefined2)((ulong)this_ref >> 0x10);
   uVar1 = (astruct_444 *)this_ref;
-  *(undefined2 *)this_ref = 0x4aa6;
+  *(undefined2 *)this_ref = 0x4aa6; // vtable at 1018:4aa6
   uVar1->field2_0x2 = 0x1018;
   free_if_not_null((void *)uVar1->field3_0x4);
   *(char **)this_ref = (char *)s_1_1050_389a;
@@ -479,7 +519,7 @@ void __stdcall16far UI_Transaction_Item_Type4_dtor(long this_ref)
   undefined2 uVar1;
   
   uVar1 = (undefined2)((ulong)this_ref >> 0x10);
-  *(undefined2 *)this_ref = 0x4a8e;
+  *(undefined2 *)this_ref = 0x4a8e; // vtable at 1018:4a8e
   *(undefined2 *)((int)this_ref + 0x2) = 0x1018;
   free_if_not_null((void *)(void *)*(undefined4 *)((int)this_ref + 0x10));
   UI_Transaction_Item_Base_dtor_4AA6_Logic(this_ref);
@@ -570,6 +610,9 @@ UI_Transaction_Item_Type6_dtor_Scalar_Deleting(long this_ref,byte flags)
 // Scalar deleting destructor for Build Site internal object. Calls specific destructor
 // and optionally frees memory.
 
+/* NOTE: Build_Site_Object_dtor_Scalar_Deleting already defined in
+ * memory_heap.part005.c (graduated). Suppress duplicate here. */
+#if 0
 long __stdcall16far Build_Site_Object_dtor_Scalar_Deleting(long this_ref,byte flags)
 {
   Build_Site_Object_dtor_Internal(this_ref);
@@ -579,6 +622,7 @@ long __stdcall16far Build_Site_Object_dtor_Scalar_Deleting(long this_ref,byte fl
   }
   return this_ref;
 }
+#endif
 
 
 
@@ -827,7 +871,7 @@ Gameplay_Object_Factory_Create_From_Type_ID
   undefined2 in_stack_0000fff2;
   
   pvVar1 = Resource_Manager_Get_or_Create_Entry_Logic
-                     ((void *)_p_GlobalResourceManager,0x0,param_4._2_2_);
+                     ((void *)_p_GlobalResourceManager,0x0,(undefined2)((ulong)(param_4) >> 0x10));
   iVar2 = reg_dx;
   this = allocate_memory(CONCAT22(in_stack_0000fff2,0x46));
   if (iVar2 == 0x0 && this == NULL)
@@ -838,7 +882,7 @@ Gameplay_Object_Factory_Create_From_Type_ID
   else
   {
     pvVar1 = Gameplay_Object_ctor
-                       (this,iVar2,param_3,(int)param_4,param_4._2_2_,pvVar1,reg_dx,0x0,
+                       (this,iVar2,param_3,(int)param_4,(undefined2)((ulong)(param_4) >> 0x10),pvVar1,reg_dx,0x0,
                         0x0);
   }
   Gameplay_Object_Refresh_Graphic_Logic(this);

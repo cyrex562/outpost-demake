@@ -6,7 +6,27 @@
  * Boundaries: top-level declarations/definitions only
  */
 
+/* ── part009 fixup ── */
+#include "core/outpost_common.h"
+#include "outpost.types_structs.part077.h"   /* astruct_491 */
+#include "outpost.types_structs.part080.h"   /* astruct_314 */
 
+/* _this_ptr: Ghidra '_'-prefixed file-scope near-ptr alias (vtable seg reg).
+ * Written as a u16 half of a far pointer composite.
+ * TODO(ghidra-verify): Confirm calling convention; may become a parameter. */
+static u16 *_this_ptr = NULL;
+
+/* _p_SimulatorGlobalState: Ghidra '_'-prefixed alias */
+#ifndef _p_SimulatorGlobalState
+#define _p_SimulatorGlobalState  p_SimulatorGlobalState
+#endif
+
+/* Globals defined in missing_deps.c, referenced in this file */
+extern const char  s_1_1050_389a[];
+extern void       *p_SimulatorGlobalState;
+extern void       *p_SimulatorWorldContext;
+extern void       *PTR_DAT_1050_0000_1050_65e4;
+/* ── end part009 fixup ── */
 
 
 // Internal destructor for build item 0x8FB0. Frees an internal far pointer at offset
@@ -38,11 +58,11 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_8ea6(undefined4 param_1
   undefined2 unaff_SI;
   undefined4 *puVar7;
   undefined2 uVar8;
-  undefined4 local_a;
+  u32 local_a;
   undefined2 *local_6;
   
   puVar3 = allocate_memory(CONCAT22(unaff_SI,0x118));
-  local_a = (undefined2 *)CONCAT22(reg_dx,puVar3);
+  local_a = (u32)CONCAT22(reg_dx,(u32)puVar3);
   iVar6 = (int)param_1;
   uVar8 = (undefined2)((ulong)param_1 >> 0x10);
   if (reg_dx == 0x0 && puVar3 == NULL)
@@ -51,7 +71,7 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_8ea6(undefined4 param_1
   }
   else
   {
-    *local_a = (char *)s_1_1050_389a;
+    *(u16 *)local_a = (u16)(uintptr_t)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     *(undefined4 *)(puVar3 + 0x2) = *(undefined4 *)(iVar6 + 0x4);
     puVar4 = (undefined4 *)(iVar6 + 0x8);
@@ -64,15 +84,15 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_8ea6(undefined4 param_1
       puVar4 = puVar4 + 0x1;
       *puVar2 = *puVar1;
     }
-    *local_a = 0x6ad2;
+    *(u16 *)local_a = 0x6ad2;
     puVar3[0x1] = 0x1028;
     *(undefined4 *)(puVar3 + 0x84) = *(undefined4 *)(iVar6 + 0x108);
     *(undefined4 *)(puVar3 + 0x86) = *(undefined4 *)(iVar6 + 0x10c);
     *(undefined4 *)(puVar3 + 0x88) = *(undefined4 *)(iVar6 + 0x110);
     *(undefined4 *)(puVar3 + 0x8a) = *(undefined4 *)(iVar6 + 0x114);
-    *local_a = 0x8fb0;
+    *(u16 *)local_a = 0x8fb0;
     puVar3[0x1] = 0x1028;
-    local_6 = local_a;
+    local_6 = (undefined2 *)local_a;
   }
   *(undefined4 *)(iVar6 + 0x114) = 0x0;
   return local_6;
@@ -92,18 +112,18 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_8fea(undefined4 param_1
   undefined2 unaff_SI;
   undefined4 *puVar7;
   undefined2 uVar8;
-  undefined4 local_a;
+  u32 local_a;
   undefined2 *local_6;
   
   puVar3 = allocate_memory(CONCAT22(unaff_SI,0x110));
-  local_a = (undefined2 *)CONCAT22(reg_dx,puVar3);
+  local_a = (u32)CONCAT22(reg_dx,(u32)puVar3);
   if (reg_dx == 0x0 && puVar3 == NULL)
   {
     local_6 = NULL;
   }
   else
   {
-    *local_a = (char *)s_1_1050_389a;
+    *(u16 *)local_a = (u16)(uintptr_t)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     uVar8 = (undefined2)((ulong)param_1 >> 0x10);
     iVar6 = (int)param_1;
@@ -118,15 +138,15 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_8fea(undefined4 param_1
       puVar4 = puVar4 + 0x1;
       *puVar2 = *puVar1;
     }
-    *local_a = 0x6ad2;
+    *(u16 *)local_a = 0x6ad2;
     puVar3[0x1] = 0x1028;
     *(undefined4 *)(puVar3 + 0x84) = *(undefined4 *)(iVar6 + 0x108);
     *(undefined4 *)(puVar3 + 0x86) = *(undefined4 *)(iVar6 + 0x10c);
-    *local_a = 0x6e50;
+    *(u16 *)local_a = 0x6e50;
     puVar3[0x1] = 0x1028;
-    *local_a = 0x90d6;
+    *(u16 *)local_a = 0x90d6;
     puVar3[0x1] = 0x1028;
-    local_6 = local_a;
+    local_6 = (undefined2 *)local_a;
   }
   return local_6;
 }
@@ -145,18 +165,18 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_9264(undefined4 param_1
   undefined2 unaff_SI;
   undefined4 *puVar7;
   undefined2 uVar8;
-  undefined4 local_a;
+  u32 local_a;
   undefined2 *local_6;
   
   puVar3 = allocate_memory(CONCAT22(unaff_SI,0x10a));
-  local_a = (undefined2 *)CONCAT22(reg_dx,puVar3);
+  local_a = (u32)CONCAT22(reg_dx,(u32)puVar3);
   if (reg_dx == 0x0 && puVar3 == NULL)
   {
     local_6 = NULL;
   }
   else
   {
-    *local_a = (char *)s_1_1050_389a;
+    *(u16 *)local_a = (u16)(uintptr_t)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     uVar8 = (undefined2)((ulong)param_1 >> 0x10);
     iVar6 = (int)param_1;
@@ -171,12 +191,12 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_9264(undefined4 param_1
       puVar4 = puVar4 + 0x1;
       *puVar2 = *puVar1;
     }
-    *local_a = 0x6ad2;
+    *(u16 *)local_a = 0x6ad2;
     puVar3[0x1] = 0x1028;
     puVar3[0x84] = *(undefined2 *)(iVar6 + 0x108);
-    *local_a = 0x932c;
+    *(u16 *)local_a = 0x932c;
     puVar3[0x1] = 0x1028;
-    local_6 = local_a;
+    local_6 = (undefined2 *)local_a;
   }
   return local_6;
 }
@@ -195,18 +215,18 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_94e4(undefined4 param_1
   undefined2 unaff_SI;
   undefined4 *puVar7;
   undefined2 uVar8;
-  undefined4 local_a;
+  u32 local_a;
   undefined2 *local_6;
   
   puVar3 = allocate_memory(CONCAT22(unaff_SI,0x124));
-  local_a = (undefined2 *)CONCAT22(reg_dx,puVar3);
+  local_a = (u32)CONCAT22(reg_dx,(u32)puVar3);
   if (reg_dx == 0x0 && puVar3 == NULL)
   {
     local_6 = NULL;
   }
   else
   {
-    *local_a = (char *)s_1_1050_389a;
+    *(u16 *)local_a = (u16)(uintptr_t)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     uVar8 = (undefined2)((ulong)param_1 >> 0x10);
     iVar6 = (int)param_1;
@@ -221,7 +241,7 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_94e4(undefined4 param_1
       puVar4 = puVar4 + 0x1;
       *puVar2 = *puVar1;
     }
-    *local_a = 0x6ad2;
+    *(u16 *)local_a = 0x6ad2;
     puVar3[0x1] = 0x1028;
     *(undefined4 *)(puVar3 + 0x84) = *(undefined4 *)(iVar6 + 0x108);
     *(undefined4 *)(puVar3 + 0x86) = *(undefined4 *)(iVar6 + 0x10c);
@@ -232,9 +252,9 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_94e4(undefined4 param_1
     puVar3[0x8e] = *(undefined2 *)(iVar6 + 0x11c);
     *(undefined4 *)(puVar3 + 0x8f) = *(undefined4 *)(iVar6 + 0x11e);
     puVar3[0x91] = *(undefined2 *)(iVar6 + 0x122);
-    *local_a = 0x9934;
+    *(u16 *)local_a = 0x9934;
     puVar3[0x1] = 0x1028;
-    local_6 = local_a;
+    local_6 = (undefined2 *)local_a;
   }
   return local_6;
 }
@@ -270,11 +290,11 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_9b48(undefined4 param_1
   undefined2 unaff_SI;
   undefined4 *puVar7;
   undefined2 uVar8;
-  undefined4 local_a;
+  u32 local_a;
   undefined2 *local_6;
   
   puVar3 = allocate_memory(CONCAT22(unaff_SI,0x118));
-  local_a = (undefined2 *)CONCAT22(reg_dx,puVar3);
+  local_a = (u32)CONCAT22(reg_dx,(u32)puVar3);
   iVar6 = (int)param_1;
   uVar8 = (undefined2)((ulong)param_1 >> 0x10);
   if (reg_dx == 0x0 && puVar3 == NULL)
@@ -283,7 +303,7 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_9b48(undefined4 param_1
   }
   else
   {
-    *local_a = (char *)s_1_1050_389a;
+    *(u16 *)local_a = (u16)(uintptr_t)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     *(undefined4 *)(puVar3 + 0x2) = *(undefined4 *)(iVar6 + 0x4);
     puVar4 = (undefined4 *)(iVar6 + 0x8);
@@ -296,15 +316,15 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_9b48(undefined4 param_1
       puVar4 = puVar4 + 0x1;
       *puVar2 = *puVar1;
     }
-    *local_a = 0x6ad2;
+    *(u16 *)local_a = 0x6ad2;
     puVar3[0x1] = 0x1028;
     *(undefined4 *)(puVar3 + 0x84) = *(undefined4 *)(iVar6 + 0x108);
     *(undefined4 *)(puVar3 + 0x86) = *(undefined4 *)(iVar6 + 0x10c);
     *(undefined4 *)(puVar3 + 0x88) = *(undefined4 *)(iVar6 + 0x110);
     *(undefined4 *)(puVar3 + 0x8a) = *(undefined4 *)(iVar6 + 0x114);
-    *local_a = 0x9c52;
+    *(u16 *)local_a = 0x9c52;
     puVar3[0x1] = 0x1028;
-    local_6 = local_a;
+    local_6 = (undefined2 *)local_a;
   }
   *(undefined4 *)(iVar6 + 0x114) = 0x0;
   return local_6;
@@ -387,18 +407,18 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_ad9c(undefined4 param_1
   undefined2 unaff_SI;
   undefined4 *puVar6;
   undefined2 uVar7;
-  undefined4 local_a;
+  u32 local_a;
   undefined2 *local_6;
   
   puVar3 = allocate_memory(CONCAT22(unaff_SI,0x108));
-  local_a = (undefined2 *)CONCAT22(reg_dx,puVar3);
+  local_a = (u32)CONCAT22(reg_dx,(u32)puVar3);
   if (reg_dx == 0x0 && puVar3 == NULL)
   {
     local_6 = NULL;
   }
   else
   {
-    *local_a = (char *)s_1_1050_389a;
+    *(u16 *)local_a = (u16)(uintptr_t)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     uVar7 = (undefined2)((ulong)param_1 >> 0x10);
     *(undefined4 *)(puVar3 + 0x2) = *(undefined4 *)((int)param_1 + 0x4);
@@ -412,11 +432,11 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_ad9c(undefined4 param_1
       puVar4 = puVar4 + 0x1;
       *puVar2 = *puVar1;
     }
-    *local_a = 0x6ad2;
+    *(u16 *)local_a = 0x6ad2;
     puVar3[0x1] = 0x1028;
-    *local_a = 0xae56;
+    *(u16 *)local_a = 0xae56;
     puVar3[0x1] = 0x1028;
-    local_6 = local_a;
+    local_6 = (undefined2 *)local_a;
   }
   return local_6;
 }
@@ -451,18 +471,18 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_afce(undefined4 param_1
   undefined2 unaff_SI;
   undefined4 *puVar7;
   undefined2 uVar8;
-  undefined4 local_a;
+  u32 local_a;
   undefined2 *local_6;
   
   puVar3 = allocate_memory(CONCAT22(unaff_SI,0x116));
-  local_a = (undefined2 *)CONCAT22(reg_dx,puVar3);
+  local_a = (u32)CONCAT22(reg_dx,(u32)puVar3);
   if (reg_dx == 0x0 && puVar3 == NULL)
   {
     local_6 = NULL;
   }
   else
   {
-    *local_a = (char *)s_1_1050_389a;
+    *(u16 *)local_a = (u16)(uintptr_t)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     uVar8 = (undefined2)((ulong)param_1 >> 0x10);
     iVar6 = (int)param_1;
@@ -477,15 +497,15 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_afce(undefined4 param_1
       puVar4 = puVar4 + 0x1;
       *puVar2 = *puVar1;
     }
-    *local_a = 0x6ad2;
+    *(u16 *)local_a = 0x6ad2;
     puVar3[0x1] = 0x1028;
     *(undefined4 *)(puVar3 + 0x84) = *(undefined4 *)(iVar6 + 0x108);
     *(undefined4 *)(puVar3 + 0x86) = *(undefined4 *)(iVar6 + 0x10c);
     *(undefined4 *)(puVar3 + 0x88) = *(undefined4 *)(iVar6 + 0x110);
     puVar3[0x8a] = *(undefined2 *)(iVar6 + 0x114);
-    *local_a = 0xb0ce;
+    *(u16 *)local_a = 0xb0ce;
     puVar3[0x1] = 0x1028;
-    local_6 = local_a;
+    local_6 = (undefined2 *)local_a;
   }
   return local_6;
 }
@@ -520,18 +540,18 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_b108(undefined4 param_1
   undefined2 unaff_SI;
   undefined4 *puVar7;
   undefined2 uVar8;
-  undefined4 local_a;
+  u32 local_a;
   undefined2 *local_6;
   
   puVar3 = allocate_memory(CONCAT22(unaff_SI,0x110));
-  local_a = (undefined2 *)CONCAT22(reg_dx,puVar3);
+  local_a = (u32)CONCAT22(reg_dx,(u32)puVar3);
   if (reg_dx == 0x0 && puVar3 == NULL)
   {
     local_6 = NULL;
   }
   else
   {
-    *local_a = (char *)s_1_1050_389a;
+    *(u16 *)local_a = (u16)(uintptr_t)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     uVar8 = (undefined2)((ulong)param_1 >> 0x10);
     iVar6 = (int)param_1;
@@ -546,15 +566,15 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_b108(undefined4 param_1
       puVar4 = puVar4 + 0x1;
       *puVar2 = *puVar1;
     }
-    *local_a = 0x6ad2;
+    *(u16 *)local_a = 0x6ad2;
     puVar3[0x1] = 0x1028;
     *(undefined4 *)(puVar3 + 0x84) = *(undefined4 *)(iVar6 + 0x108);
     *(undefined4 *)(puVar3 + 0x86) = *(undefined4 *)(iVar6 + 0x10c);
-    *local_a = 0x6e50;
+    *(u16 *)local_a = 0x6e50;
     puVar3[0x1] = 0x1028;
-    *local_a = 0xb1f4;
+    *(u16 *)local_a = 0xb1f4;
     puVar3[0x1] = 0x1028;
-    local_6 = local_a;
+    local_6 = (undefined2 *)local_a;
   }
   return local_6;
 }
@@ -639,7 +659,7 @@ u16 __stdcall16far Data_History_Object_Clear_All_Nodes_Logic_d01a(undefined4 *pa
   int reg_dx;
   int extraout_DX;
   ulong uVar5;
-  undefined4 uStack_e;
+  u32 uStack_e;
   
   node_ptr = (undefined4 *)**(undefined4 **)*param_1;
   puVar4 = node_ptr;
@@ -647,14 +667,14 @@ u16 __stdcall16far Data_History_Object_Clear_All_Nodes_Logic_d01a(undefined4 *pa
   {
     puVar3 = (undefined4 *)puVar4;
     UI_Build_Item_Node_dtor_Logic_d728(node_ptr);
-    uStack_e = (undefined4 *)CONCAT22(reg_dx,puVar3);
+    uStack_e = (u32)CONCAT22(reg_dx,(u32)puVar3);
     if (reg_dx == 0x0 && puVar3 == NULL) break;
-    puVar2 = (undefined2 *)*uStack_e;
+    puVar2 = (undefined2 *)*(u32 *)uStack_e;
     puVar1 = (undefined2 *)puVar2 + 0x2;
     (*(code *)*puVar1)();
     puVar4 = NULL;
     reg_dx = extraout_DX;
-    if (uStack_e != NULL)
+    if ((void *)(uintptr_t)uStack_e != NULL)
     {
       puVar1 = (undefined2 *)puVar2;
       uVar5 = (*(code *)*puVar1)();
@@ -684,7 +704,7 @@ void * __stdcall16far UI_Sorted_Linked_List_Manager_ctor_init_d59c(astruct_314 *
   *(undefined4 *)param_1 = 0x0;
   uVar4->field4_0x4 = NULL;
   uVar4->field5_0x8 = NULL;
-  *(undefined4 *)param_1 = *_p_SimulatorGlobalState;
+  *(undefined4 *)param_1 = *(undefined4 *)_p_SimulatorGlobalState;
   paVar1 = allocate_memory(CONCAT22(in_stack_0000fff2,0xc));
   uVar2 = reg_dx | (uint)paVar1;
   if (uVar2 == 0x0)

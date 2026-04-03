@@ -6,6 +6,23 @@
  * Boundaries: top-level declarations/definitions only
  */
 
+/* ── part013 fixup ── */
+/* Struct types needed by this file */
+#include "outpost.types_structs.part008.h"   /* astruct_93  */
+#include "outpost.types_structs.part046.h"   /* astruct_21  */
+#include "outpost.types_structs.part077.h"   /* astruct_491 */
+
+/* Ghidra artifact: '_this_ptr' = dereferenced alias for the 'this_ptr' parameter.
+ * Every function in this file that uses _this_ptr has 'this_ptr' as its parameter. */
+#define _this_ptr  this_ptr
+
+/* Globals referenced in this file but defined elsewhere */
+extern undefined  *p_SimulatorTurnManager;
+extern void       *PTR_DAT_1050_0000_1050_5a66;
+extern void       *_PTR_DAT_1050_0000_1050_5bcc;
+extern const char  s_1_1050_389a[];
+/* ── end part013 fixup ── */
+
 
 
 
@@ -21,18 +38,18 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_e6c2(undefined4 param_1
   undefined2 unaff_SI;
   undefined4 *puVar7;
   undefined2 uVar8;
-  undefined4 local_a;
+  u32 local_a;
   undefined2 *local_6;
   
   puVar3 = allocate_memory(CONCAT22(unaff_SI,0x10a));
-  local_a = (undefined2 *)CONCAT22(reg_dx,puVar3);
+  local_a = CONCAT22(reg_dx,puVar3);
   if (reg_dx == 0x0 && puVar3 == NULL)
   {
     local_6 = NULL;
   }
   else
   {
-    *local_a = (char *)s_1_1050_389a;
+    *(void **)local_a = (char *)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     uVar8 = (undefined2)((ulong)param_1 >> 0x10);
     iVar6 = (int)param_1;
@@ -47,12 +64,12 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_e6c2(undefined4 param_1
       puVar4 = puVar4 + 0x1;
       *puVar2 = *puVar1;
     }
-    *local_a = 0x6ad2;
+    *(u16 *)local_a = 0x6ad2;
     puVar3[0x1] = 0x1028;
     puVar3[0x84] = *(undefined2 *)(iVar6 + 0x108);
-    *local_a = 0xe78a;
+    *(u16 *)local_a = 0xe78a;
     puVar3[0x1] = 0x1030;
-    local_6 = local_a;
+    local_6 = (undefined2 *)local_a;
   }
   return local_6;
 }
@@ -70,18 +87,18 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_e7d6(undefined4 param_1
   undefined2 unaff_SI;
   undefined4 *puVar6;
   undefined2 uVar7;
-  undefined4 local_a;
+  u32 local_a;
   undefined2 *local_6;
   
   puVar3 = allocate_memory(CONCAT22(unaff_SI,0x108));
-  local_a = (undefined2 *)CONCAT22(reg_dx,puVar3);
+  local_a = CONCAT22(reg_dx,puVar3);
   if (reg_dx == 0x0 && puVar3 == NULL)
   {
     local_6 = NULL;
   }
   else
   {
-    *local_a = (char *)s_1_1050_389a;
+    *(void **)local_a = (char *)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     uVar7 = (undefined2)((ulong)param_1 >> 0x10);
     *(undefined4 *)(puVar3 + 0x2) = *(undefined4 *)((int)param_1 + 0x4);
@@ -95,11 +112,11 @@ undefined2 * __stdcall16far Simulator_Object_Clone_Logic_e7d6(undefined4 param_1
       puVar4 = puVar4 + 0x1;
       *puVar2 = *puVar1;
     }
-    *local_a = 0x6ad2;
+    *(u16 *)local_a = 0x6ad2;
     puVar3[0x1] = 0x1028;
-    *local_a = 0xe890;
+    *(u16 *)local_a = 0xe890;
     puVar3[0x1] = 0x1030;
-    local_6 = local_a;
+    local_6 = (undefined2 *)local_a;
   }
   return local_6;
 }

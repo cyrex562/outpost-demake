@@ -447,7 +447,7 @@ void __stdcall16far UI_Navigation_Manager_dtor_1FB0_Logic(long this_ref)
     puVar2 = &uVar3->field31_0x20;
   }
   _puStack_e = (u16 *)CONCAT22(uVar4,puVar2);
-  *_puStack_e = (u16)(char *)s_1_1050_389a;
+  *_puStack_e = 0x389a;
   puVar2[0x1] = 0x1008;
   Base_Object_dtor_2014_Logic(uVar3);
   return;

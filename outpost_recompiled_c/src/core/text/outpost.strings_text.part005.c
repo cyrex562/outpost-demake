@@ -522,7 +522,7 @@ void __stdcall16far UI_Populate_Ship_Cargo_List_Logic(void *this,void *ship)
   uint uVar9;
   uint uVar10;
   uint extraout_DX_00;
-  undefined2 uVar11;
+  undefined2 segmentAddress;
   ulong uVar12;
   void *pvVar13;
   undefined4 in_stack_00000008;
@@ -554,7 +554,7 @@ void __stdcall16far UI_Populate_Ship_Cargo_List_Logic(void *this,void *ship)
   puVar4 = get_array_element_6bytes
                      ((int *)_p_StringPropertyTable,
                       (int)((ulong)_p_StringPropertyTable >> 0x10));
-  uVar11 = 0x1038;
+  segmentAddress = 0x1038;
   puVar8 = Colony_Batch_Init_Production_Items_General_Logic_4e78
                      ((int)in_stack_00000008,(int)((ulong)in_stack_00000008 >> 0x10),
                       puVar4,uVar7);
@@ -566,7 +566,7 @@ void __stdcall16far UI_Populate_Ship_Cargo_List_Logic(void *this,void *ship)
   bVar2 = false;
   for (uStack_14 = 0x0; uStack_14 < uVar12; uStack_14 += 0x1)
   {
-    uVar11 = 0x1030;
+    segmentAddress = 0x1030;
     pvVar13 = UI_Component_Get_Simulator_Entity_vcall_4_73a8_Logic_1d7c(uStack_a);
     uVar7 = (uint)((ulong)pvVar13 >> 0x10);
     pvVar3 = (void *)pvVar13;
@@ -579,12 +579,12 @@ void __stdcall16far UI_Populate_Ship_Cargo_List_Logic(void *this,void *ship)
       _wsprintf16((void *)CONCAT22(ship,(void *)((int)this + 0x22)),
                   s__s___02ld_1050_0cea,(char *)CONCAT22(uVar10,pcVar5));
       pcVar5 = strdup_allocate((char *)((int)this + 0x22));
-      uVar11 = 0x1000;
+      segmentAddress = 0x1000;
       uVar9 = uVar10;
       pvVar6 = allocate_memory(CONCAT22(puVar14,0x12));
       if (uVar9 != 0x0 || pvVar6 != NULL)
       {
-        uVar11 = 0x1018;
+        segmentAddress = 0x1018;
         UI_Transaction_Item_Type3_ctor
                   ((long)CONCAT22(uVar9,pvVar6),0x1,(long)CONCAT22(uVar10,pcVar5),
                    *(long *)((int)pvVar3 + 0x4));
@@ -601,12 +601,12 @@ void __stdcall16far UI_Populate_Ship_Cargo_List_Logic(void *this,void *ship)
     pcVar5 = Resource_Manager_LoadString_and_Duplicate
                        ((int)_p_GlobalResourceManager,
                         (int)((ulong)_p_GlobalResourceManager >> 0x10),0x441);
-    uVar11 = 0x1000;
+    segmentAddress = 0x1000;
     uVar7 = uVar9;
     pvVar3 = allocate_memory(CONCAT22(puVar14,0x12));
     if (uVar7 != 0x0 || pvVar3 != NULL)
     {
-      uVar11 = 0x1018;
+      segmentAddress = 0x1018;
       UI_Transaction_Item_Type3_ctor
                 ((long)CONCAT22(uVar7,pvVar3),0x0,(long)CONCAT22(uVar9,pcVar5),0x0);
     }
@@ -616,7 +616,7 @@ void __stdcall16far UI_Populate_Ship_Cargo_List_Logic(void *this,void *ship)
   }
   if (puVar8 != NULL || puVar4 != NULL)
   {
-    (*(code *)*(undefined2 *)(undefined2 *)*uStack_a)(uVar11,puVar4,puVar8,0x1);
+    (*(code *)*(undefined2 *)(undefined2 *)*uStack_a)(segmentAddress,puVar4,puVar8,0x1);
   }
   return;
 }
@@ -652,7 +652,7 @@ UI_Populate_Transfer_Shipment_List_Logic(void *this,void *ship_context)
   undefined2 uVar14;
   int iVar15;
   undefined2 unaff_SI;
-  undefined2 uVar16;
+  undefined2 segment_address;
   ulong uVar17;
   void *pvVar18;
   long lVar19;
@@ -661,7 +661,7 @@ UI_Populate_Transfer_Shipment_List_Logic(void *this,void *ship_context)
   undefined2 uStack_3a;
   ulong uStack_14;
   
-  uVar16 = (undefined2)((ulong)in_stack_00000008 >> 0x10);
+  segment_address = (undefined2)((ulong)in_stack_00000008 >> 0x10);
   iVar15 = (int)in_stack_00000008;
   lVar20 = *(long *)(iVar15 + 0x200);
   uVar11 = *(uint *)((int)this + 0x10);
@@ -711,7 +711,7 @@ UI_Populate_Transfer_Shipment_List_Logic(void *this,void *ship_context)
         _wsprintf16((char *)CONCAT22(ship_context,(char *)((int)this + 0x22)),
                     s__s___02ld_1050_0cf4,(char *)CONCAT22(uVar11,pcVar6));
         pcVar6 = strdup_allocate((char *)((int)this + 0x22));
-        uVar16 = 0x1000;
+        segment_address = 0x1000;
         pvVar13 = pvVar12;
         pvVar7 = allocate_memory(CONCAT22(puVar4,0x14));
         if (pvVar13 == NULL && pvVar7 == NULL)
@@ -721,7 +721,7 @@ UI_Populate_Transfer_Shipment_List_Logic(void *this,void *ship_context)
         }
         else
         {
-          uVar16 = 0x1018;
+          segment_address = 0x1018;
           lVar19 = UI_Transaction_Item_Type2_ctor
                              (pvVar7,pvVar13,0x1,0x0,pcVar6,pvVar12,
                               *(undefined2 *)((int)pvVar3 + 0xc),
@@ -732,7 +732,7 @@ UI_Populate_Transfer_Shipment_List_Logic(void *this,void *ship_context)
         }
         puVar1 = (undefined2 *)
                  ((int)*(undefined4 *)*(undefined4 *)((int)this + 0xe) + 0x4);
-        (*(code *)*puVar1)(uVar16,(int)*(undefined4 *)((int)this + 0xe),
+        (*(code *)*puVar1)(segment_address,(int)*(undefined4 *)((int)this + 0xe),
                            (int)((ulong)*(undefined4 *)((int)this + 0xe) >> 0x10),uVar8,
                            uStack_3a);
         bVar2 = true;
@@ -744,7 +744,7 @@ UI_Populate_Transfer_Shipment_List_Logic(void *this,void *ship_context)
     pcVar6 = Resource_Manager_LoadString_and_Duplicate
                        ((int)_p_GlobalResourceManager,
                         (int)((ulong)_p_GlobalResourceManager >> 0x10),0x442);
-    uVar16 = 0x1000;
+    segment_address = 0x1000;
     iVar10 = iVar15;
     pvVar3 = allocate_memory(CONCAT22(puVar4,0x14));
     if (iVar10 == 0x0 && pvVar3 == NULL)
@@ -754,14 +754,14 @@ UI_Populate_Transfer_Shipment_List_Logic(void *this,void *ship_context)
     }
     else
     {
-      uVar16 = 0x1018;
+      segment_address = 0x1018;
       lVar20 = UI_Transaction_Item_Type2_ctor
                          (pvVar3,iVar10,0x0,0x0,pcVar6,iVar15,0x0,0x0,0x0);
       uVar14 = (undefined2)((ulong)lVar20 >> 0x10);
       uVar8 = (undefined2)lVar20;
     }
     puVar1 = (undefined2 *)((int)*(undefined4 *)*(undefined4 *)((int)this + 0xe) + 0x4);
-    (*(code *)*puVar1)(uVar16,(int)*(undefined4 *)((int)this + 0xe),
+    (*(code *)*puVar1)(segment_address,(int)*(undefined4 *)((int)this + 0xe),
                        (int)((ulong)*(undefined4 *)((int)this + 0xe) >> 0x10),uVar8,
                        uVar14);
   }

@@ -6,6 +6,42 @@
  * Boundaries: top-level declarations/definitions only
  */
 
+/* ── part004 fixup ── */
+#include "core/outpost_common.h"
+
+/* Forward declarations for functions defined later in this translation unit */
+void __stdcall16far Data_History_Object_Allocate_Buffer_Logic(void *this);
+
+/* Ghidra "_" overlap-alias externs — same address as non-prefixed version;
+ * in flat-model build these are separate symbols that shadow the pool globals. */
+extern void *_p_GlobalResourceManager;    /* overlap alias for p_GlobalResourceManager */
+extern void *_p_Pool_Type1_Event;          /* overlap alias for pool ptr @ 1050 */
+extern void *_p_Pool_Type2_Component;      /* overlap alias */
+extern void *_p_Pool_Type3_Sprite;         /* overlap alias */
+extern void *_p_Pool_Type4_Timer;          /* overlap alias */
+extern void *_p_Pool_Type5_Entity;         /* overlap alias */
+extern void *_g_AllocatedBlock_Offset;     /* overlap alias for g_AllocatedBlock_Offset */
+extern undefined2 *_this;                  /* Ghidra vtable write temp: pointer to vtable slot */
+extern undefined *PTR_DAT_1050_1000_1050_6066; /* control lock ptr / heap alloc guard */
+
+/* Types needed by functions in this TU */
+typedef struct astruct_491 astruct_491;    /* defined in types_structs.part077.h */
+
+/* String literals defined in missing_deps.c (strings_text.part006 globals) */
+extern const char s_1_1050_389a[];
+
+/* Globals defined in missing_deps.c but not exported via missing_deps.h */
+extern uint      g_AllocFlags;               /* alloc flags register -- strings_text.part002 */
+extern void     *p_AllocStrategyCode;        /* stack guard strategy code ptr -- part004 */
+extern undefined  DAT_1050_1000;             /* code/data label @ 1050:1000 -- memory_heap.part003 */
+extern pointer    p_Pool_Type6_Node;         /* Node pool ptr -- memory_heap.part004 */
+extern void      *g_AllocatedBlock_Segment;  /* alloc block segment -- memory_heap.part004 */
+extern void      *g_AllocatedBlock_Offset;   /* alloc block offset (non-underscore) -- strings_text.part005 */
+
+/* Internal forward declaration: prevents implicit int declaration at first call site */
+void __cdecl16far global_free_wrapper_far(void *ptr);
+/* ── end part004 fixup ── */
+
 /* Win16 task-parameter globals saved at startup (1050:038c region) */
 pointer g_hInstance;            /* hInstance passed to WinMain (1050:038c, g_TaskDI) */
 pointer g_hPrevInstance;        /* hPrevInstance – 0 for first instance (1050:038e) */
@@ -73,10 +109,11 @@ void stack_guarded_indirect_call(void *param_1,u16 param_2,int param_3)
   undefined1 *puVar1;
   undefined *puVar2;
   undefined2 unaff_SS;
+  undefined2 stack_sentinel = 0; /* Ghidra stack0x0002 artifact: Win16 stack-depth guard */
   
   puVar1 = (undefined1 *)(reg_ax + 0x1U & 0xfffe);
-  if ((puVar1 < &stack0x0002) &&
-     (puVar2 = (undefined *)-((int)puVar1 - (int)&stack0x0002),
+  if ((puVar1 < (undefined1 *)&stack_sentinel) &&
+     (puVar2 = (undefined *)-((int)puVar1 - (int)&stack_sentinel),
      (undefined *)*(uint *)&g_AllocFlags <= puVar2))
   {
     if (puVar2 < *(undefined **)&p_AllocStrategyCode)
@@ -85,7 +122,7 @@ void stack_guarded_indirect_call(void *param_1,u16 param_2,int param_3)
     }
                 // WARNING: Could not recover jumptable at 0x100025f0. Too many branches
                 // WARNING: Treating indirect jump as call
-    (*param_1)();
+    ((void (*)(void))param_1)();
     return;
   }
   fatal_app_exit_with_message_lookup_and_terminate(param_2);
@@ -100,7 +137,7 @@ void stack_guarded_indirect_call(void *param_1,u16 param_2,int param_3)
 void * __cdecl16near heap_alloc_safe(long size)
 {
   undefined *puVar1;
-  undefined2 reg_ax;
+  undefined2 reg_ax = 0; /* Ghidra reg artifact: AX = low 16 bits of size param */
   void *pvVar2;
   void *reg_cx;
   int reg_dx;
@@ -368,7 +405,7 @@ void __stdcall16far Sprite_Object_free_internal_buffer(void *this)
 
 /* Read near (offset) half of Win16 vtable slot N from object `obj`. */
 #define VTBL_NEAR(obj, slot) \
-    ((code *)(uintptr_t)((uint16_t *)*(void **)(obj))[(slot) * 2])
+    ((code)(uintptr_t)((uint16_t *)*(void **)(obj))[(slot) * 2])
 
 int __stdcall16far
 win16_main_init_and_run_loop
@@ -685,8 +722,8 @@ Data_History_Object_Set_Point_At_Index(void *this,long value,long index)
   if ((*(ulong *)((int)this + 0xa) <= (ulong)index) ||
      (*(long *)((int)this + 0x6) == 0x0))
   {
-    if ((*(uint *)((int)this + 0x14) <= index._2_2_) &&
-       ((*(uint *)((int)this + 0x14) < index._2_2_ ||
+    if ((*(uint *)((int)this + 0x14) <= (unsigned)(u32)index >> 16) &&
+       ((*(uint *)((int)this + 0x14) < (unsigned)(u32)index >> 16 ||
         (*(uint *)((int)this + 0x12) <= (uint)index))))
     {
       Data_History_Object_Allocate_Buffer_Logic(this);
@@ -696,8 +733,8 @@ Data_History_Object_Set_Point_At_Index(void *this,long value,long index)
     {
       return 0x0;
     }
-    if ((*(uint *)((int)this + 0xc) <= index._2_2_) &&
-       ((*(uint *)((int)this + 0xc) < index._2_2_ ||
+    if ((*(uint *)((int)this + 0xc) <= (unsigned)(u32)index >> 16) &&
+       ((*(uint *)((int)this + 0xc) < (unsigned)(u32)index >> 16 ||
         (*(uint *)((int)this + 0xa) <= (uint)index))))
     {
       *(undefined2 *)((int)this + 0xa) = (int)(index + 0x1);
@@ -707,7 +744,7 @@ Data_History_Object_Set_Point_At_Index(void *this,long value,long index)
   uVar2 = (undefined2)((ulong)*(undefined4 *)((int)this + 0x6) >> 0x10);
   iVar1 = (int)*(undefined4 *)((int)this + 0x6);
   *(undefined2 *)(iVar1 + (uint)index * 0x4) = (undefined2)value;
-  *(undefined2 *)(iVar1 + (uint)index * 0x4 + 0x2) = value._2_2_;
+  *(undefined2 *)(iVar1 + (uint)index * 0x4 + 0x2) = (undefined2)((u32)value >> 16); /* value._2_2_ */
   return 0x1;
 }
 

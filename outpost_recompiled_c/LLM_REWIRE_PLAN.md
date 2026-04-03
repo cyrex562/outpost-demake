@@ -1021,7 +1021,7 @@ counts.
 
 ### Task 27 — Working-set compile validation checkpoint
 
-**Status**: Not started
+**Status**: ✅ Complete
 
 **Objective**: Full build of `outpost_working_set` to measure progress after all
 Phase 2 fixups, and produce an updated status report.
@@ -1137,6 +1137,7 @@ Every Phase 2b task follows this exact protocol:
 6. Record any unresolved dependencies in `docs/MISSING_DEPENDENCIES.md`.
 
 **Done criterion per task:** The target function has:
+
 - Zero `unaff_` references
 - Zero `CONCAT` macro calls (excluding `ghidra.h` definitions)
 - Zero `in_XX` register locals
@@ -1160,7 +1161,7 @@ win16_app_main_loop_init_internal   ← Win16 task entry point (system_runtime/p
 
 ### Task 30 — Fix `win16_call_app_main`
 
-**Status**: Not started
+**Status**: ✅ Complete
 
 **Source**: `src/platform/win16/outpost.system_runtime.part001.c`
 **Reference**: `decompiled_c/split_outpost/themed/outpost_c/system_runtime/outpost.system_runtime.part001.c` (lines 303–306 in themed file)
@@ -1185,13 +1186,14 @@ This is a trivial one-liner dispatcher — likely already clean. First step to e
 
 ### Task 31 — Fix `win16_app_main_loop_init_internal`
 
-**Status**: Not started
+**Status**: ✅ Complete
 
 **Source**: `src/platform/win16/outpost.system_runtime.part001.c`
 **Reference**: `decompiled_c/split_outpost/themed/outpost_c/system_runtime/outpost.system_runtime.part001.c` (lines 207–302 in themed file)
 **Function**: `void win16_app_main_loop_init_internal(void)` — the true Win16 task entry point
 
 **Known artifacts**:
+
 - `in_AX`, `in_CX`, `in_DX`, `in_BX` — register-passed Win16 task parameters
 - `unaff_SI`, `unaff_DI` — saved task context registers (`g_TaskSI`, `g_TaskDI`)
 - `unaff_ES` — segment register (remove in flat model)
@@ -1220,13 +1222,14 @@ This is a trivial one-liner dispatcher — likely already clean. First step to e
 
 ### Task 32 — Fix `win16_main_init_and_run_loop`
 
-**Status**: Not started
+**Status**: ✅ Complete
 
 **Source**: `src/modules/memory/outpost.memory_heap.part004.c`
 **Reference**: `decompiled_c/split_outpost/themed/outpost_c/memory_heap/outpost.memory_heap.part004.c` (lines 362–450 in themed file)
 **Function**: `int __stdcall16far win16_main_init_and_run_loop(param_1..param_5)`
 
 **Known artifacts**:
+
 - `in_AX` — appears to be a random seed value (passed to `srand_seed_internal_far`)
 - `in_DX` — segment component used in multiple `CONCAT22(in_DX, pvVar3)` far-pointer assemblies
 - `unaff_SI` — appears as `CONCAT22(unaff_SI, 0xc)` → size argument to `allocate_memory`
@@ -1252,7 +1255,7 @@ This is a trivial one-liner dispatcher — likely already clean. First step to e
 
 ### Task 33 — Fix `win16_main_message_loop_logic`
 
-**Status**: Not started
+**Status**: ✅ Complete
 
 **Source**: `src/modules/ui/outpost.ui_windows.part004.c`
 **Reference**: `decompiled_c/split_outpost/themed/outpost_c/ui_windows/outpost.ui_windows.part004.c`
@@ -1260,6 +1263,7 @@ This is a trivial one-liner dispatcher — likely already clean. First step to e
 The Win16 `GetMessage`/`TranslateMessage`/`DispatchMessage` pump.
 
 **Pre-task**:
+
 - Run `scripts/detect_register_args.py` and `scripts/detect_concat_usage.py` scoped to
   this function to get a precise artifact inventory before editing.
 
@@ -1287,6 +1291,7 @@ The Win16 `GetMessage`/`TranslateMessage`/`DispatchMessage` pump.
 Engine subsystem initialization — registers window class, creates main window, loads initial resources.
 
 **Pre-task**:
+
 - Run artifact detection scripts scoped to this function.
 - Cross-reference hex constants against `resources/ui_control_ids.json`.
 

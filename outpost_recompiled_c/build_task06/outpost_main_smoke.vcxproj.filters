@@ -40,6 +40,27 @@
     <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\core\text\outpost.strings_text.part009.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part004.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part005.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part007.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part009.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\modules\memory\outpost.memory_heap.part013.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16\outpost.system_runtime.part001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\cyrex\files\projects\outpost-rs\outpost_recompiled_c\src\platform\win16_api_stubs.c">
       <Filter>Source Files</Filter>
     </ClCompile>

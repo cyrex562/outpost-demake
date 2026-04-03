@@ -19,9 +19,7 @@ int outpost_missing_dep_stub(const char *symbol_name)
  */
 
 /* strings_text.part001 globals */
-byte    g_LowLevelHandleTable[20]   = {0}; /* TODO: real def in strings_text.part001 */
-pointer g_TaskDI                    = 0;   /* TODO: real def in strings_text.part001 */
-pointer p_RuntimeInit_Callback      = 0;   /* TODO: real def in strings_text.part001 */
+/* NOTE: g_LowLevelHandleTable, g_TaskDI, p_RuntimeInit_Callback — real defs in system_runtime.part001.c (graduated) */
 pointer p_EnvOffset_Base            = 0;   /* TODO: real def in strings_text.part001 */
 pointer p_EnvSegment_Base           = 0;   /* TODO: real def in strings_text.part001 */
 
@@ -52,9 +50,12 @@ u16        u16_1050_61d2                     = 0;    /* TODO: real def in string
 char      *_g_DSTName_Offset                 = NULL; /* TODO: real def in strings_text.part003 */
 dword      p_StrtokNextToken                 = 0;    /* TODO: real def in strings_text.part003 */
 undefined *PTR_DAT_1050_0000_1050_5f78       = NULL; /* TODO: real def in strings_text.part003 */
-undefined *PTR_DAT_1050_0000_1050_5f88       = NULL; /* TODO: real def in strings_text.part003 */
+undefined *PTR_DAT_1050_0000_1050_5f88       = NULL; /* TODO: real def — error code byte stored as ptr-sized value */
 void      *p_AllocStrategyCode               = NULL; /* TODO: real def in strings_text.part003 */
 char      *s_NewFailedMsg                    = NULL; /* TODO: real def in strings_text.part003 */
+char      *s___1050_5fea                     = NULL; /* TODO: verify — path string at 1050:5fea */
+char      *s___1050_5fec                     = NULL; /* TODO: verify — path suffix string at 1050:5fec */
+void      *s_NMSG_1050_63f6                  = NULL; /* TODO: verify — message table at 1050:63f6 */
 /* sprintf format buffer globals */
 undefined  PTR_DAT_1050_0000_1050_68b2       = 0;    /* TODO: real def in strings_text.part003 */
 undefined *PTR_DAT_1050_0000_1050_68ae       = NULL; /* TODO: real def in strings_text.part003 */
@@ -83,20 +84,20 @@ char    g_SaveVersionScratch[64]    = {0}; /* TODO: real def in strings_text.par
  */
 
 /* memory / alloc */
-void *allocate_memory()             { outpost_missing_dep_stub("allocate_memory");            return NULL; }
-void *heap_alloc_safe()             { outpost_missing_dep_stub("heap_alloc_safe");             return NULL; }
-void  free_if_not_null()            { outpost_missing_dep_stub("free_if_not_null"); }
+/* NOTE: allocate_memory — real def in memory_heap.part003.c (graduated) */
+/* NOTE: heap_alloc_safe — real def in memory_heap.part004.c (graduated) */
+/* NOTE: free_if_not_null — real def in memory_heap.part003.c (graduated) */
 
 /* NOTE: sprintf_wrapper defined in part003.c (graduated) — stub removed */
 /* NOTE: getenv_wrapper_far_ptr_search defined in part003.c (graduated) — stub removed */
 
 /* strings_text.part002 I/O function stubs */
-int  check_error_flag_and_set_internal_err_u16() { return (int)outpost_missing_dep_stub("check_error_flag_and_set_internal_err_u16"); }
-void check_error_flag_and_set_internal_err_void() { outpost_missing_dep_stub("check_error_flag_and_set_internal_err_void"); }
+/* NOTE: check_error_flag_and_set_internal_err_u16 — real def in system_runtime.part001.c (graduated) */
+/* NOTE: check_error_flag_and_set_internal_err_void — real def in system_runtime.part001.c (graduated) */
 void handle_low_level_write_dispatch_internal()  { outpost_missing_dep_stub("handle_low_level_write_dispatch_internal"); }
 void fatal_exit_shorthand()                      { outpost_missing_dep_stub("fatal_exit_shorthand"); }
 int  get_stack_space_available_bytes()           { return 0x200; /* safe default */ }
-void runtime_stack_check_fail_handler()          { outpost_missing_dep_stub("runtime_stack_check_fail_handler"); }
+/* NOTE: runtime_stack_check_fail_handler — real def in system_runtime.part001.c (graduated) */
 void handle_update_error_state_wrapper_void()    { outpost_missing_dep_stub("handle_update_error_state_wrapper_void"); }
 
 /* graphics / bitmap */
@@ -124,13 +125,13 @@ int   dos_get_cwd_on_current_drive_wrapper_far() { return (int)outpost_missing_d
 /* strings_text.part003 function stubs */
 long  mul_u32_u32_standard()       { outpost_missing_dep_stub("mul_u32_u32_standard"); return 0L; }
 void  format_string_dispatcher_internal() { outpost_missing_dep_stub("format_string_dispatcher_internal"); }
-void  handle_buffered_write_char()  { outpost_missing_dep_stub("handle_buffered_write_char"); }
+/* NOTE: handle_buffered_write_char — real def in system_runtime.part001.c (graduated) */
 int   dos_get_current_drive_number_internal_far() { return (int)outpost_missing_dep_stub("dos_get_current_drive_number_internal_far"); }
 void  dos_get_set_file_attributes_internal_far() { outpost_missing_dep_stub("dos_get_set_file_attributes_internal_far"); }
-void *heap_alloc_bytes()            { outpost_missing_dep_stub("heap_alloc_bytes"); return NULL; }
+/* NOTE: heap_alloc_bytes — real def in memory_heap.part003.c (graduated) */
 void  UI_Save_As_Game_Logic()       { outpost_missing_dep_stub("UI_Save_As_Game_Logic"); }
 void  UI_Prompt_Save_Game_Dialog()  { outpost_missing_dep_stub("UI_Prompt_Save_Game_Dialog"); }
-void  check_error_flag_and_set_internal_err_u8_2() { outpost_missing_dep_stub("check_error_flag_and_set_internal_err_u8_2"); }
+/* NOTE: check_error_flag_and_set_internal_err_u8_2 — real def in system_runtime.part001.c (graduated) */
 
 /* memory ops */
 void  memset_far()                  { outpost_missing_dep_stub("memset_far"); }
@@ -141,16 +142,27 @@ void *Resource_Manager_Get_Resource_by_ID_Logic()    { outpost_missing_dep_stub(
 void  Resource_Manager_Dispatch_Virtual_Call_6C_6b02() { outpost_missing_dep_stub("Resource_Manager_Dispatch_Virtual_Call_6C_6b02"); }
 
 /* runtime init */
-void  call_runtime_initializers_backward() { outpost_missing_dep_stub("call_runtime_initializers_backward"); }
+/* NOTE: call_runtime_initializers_backward — real def in system_runtime.part001.c (graduated) */
+/* system_runtime.part001.c callee stubs — called from graduated functions; real defs in other system_runtime parts */
+u16   handle_flush_internal_buffer()               { return (u16)outpost_missing_dep_stub("handle_flush_internal_buffer"); }
+void  dos_remove_directory_internal_far()          { outpost_missing_dep_stub("dos_remove_directory_internal_far"); }
+void *handle_get_available_slot()                  { outpost_missing_dep_stub("handle_get_available_slot"); return NULL; }
+void  handle_init_from_mode_string()               { outpost_missing_dep_stub("handle_init_from_mode_string"); }
+void  handle_flush_all_on_exit()                   { outpost_missing_dep_stub("handle_flush_all_on_exit"); }
+int   handle_system_close_all_active_handles_wrapper_far() { return (int)outpost_missing_dep_stub("handle_system_close_all_active_handles_wrapper_far"); }
 void  check_exported_stub_patch_state()    { outpost_missing_dep_stub("check_exported_stub_patch_state"); }
 
 /* platform / process */
 void  win16_terminate_process_dos()  { outpost_missing_dep_stub("win16_terminate_process_dos"); }
+void  nop_near_stub_3(void)          { outpost_missing_dep_stub("nop_near_stub_3"); }
+/* win16_app_exit_with_cleanup — real def in system_runtime.part001.c (graduated) */
+void  win16_app_exit_with_cleanup(void);
+void  win16_app_exit_wrapper(void)   { win16_app_exit_with_cleanup(); }
 
 /* noop stubs (vtable / far call placeholders) */
 void  far_noop_stub_1()             { outpost_missing_dep_stub("far_noop_stub_1"); }
 void  far_noop_stub_2()             { outpost_missing_dep_stub("far_noop_stub_2"); }
-void  UI_Base_Object_dtor_cleanup() { outpost_missing_dep_stub("UI_Base_Object_dtor_cleanup"); }
+/* NOTE: UI_Base_Object_dtor_cleanup — real def in memory_heap.part004.c (graduated) */
 void  UI_Element_DestroyWindow_Wrapper()    { outpost_missing_dep_stub("UI_Element_DestroyWindow_Wrapper"); }
 void  UI_Element_Handle_Custom_Message_199_Logic() { outpost_missing_dep_stub("UI_Element_Handle_Custom_Message_199_Logic"); }
 void  UI_Element_Message_Dispatcher_Logic() { outpost_missing_dep_stub("UI_Element_Message_Dispatcher_Logic"); }
@@ -185,7 +197,7 @@ long  UI_Transaction_Item_Type2_ctor()      { outpost_missing_dep_stub("UI_Trans
 void *UI_Relationship_Manager_Find_Link_by_Strings_Logic() { outpost_missing_dep_stub("UI_Relationship_Manager_Find_Link_by_Strings_Logic"); return NULL; }
 void *Colony_Batch_Init_Production_Items_General_Logic_4e78() { outpost_missing_dep_stub("Colony_Batch_Init_Production_Items_General_Logic_4e78"); return NULL; }
 int   search_array_for_value()      { return (int)outpost_missing_dep_stub("search_array_for_value"); }
-void *alloc_with_hooks()            { outpost_missing_dep_stub("alloc_with_hooks");            return NULL; }
+/* NOTE: alloc_with_hooks — real def in memory_heap.part003.c (graduated) */
 /* Resource_Manager_LoadString_and_Duplicate — real def in strings_text.part007.c */
 
 /* strings_text.part006 globals */
@@ -250,8 +262,8 @@ char  *Entity_Format_Full_Name_Label_Logic()                  { outpost_missing_
 char       s__lu_1050_381f[0x200]            = {0};  /* writable scratch buffer @ 1050:381F */
 void      *p_SmallBlockFreeList              = NULL; /* small-block allocator head */
 void      *PTR_DAT_1048_0000_1048_3820       = NULL; /* UI string buffer @ 1048:3820 */
-const char s_HeapVersion[]                   = "HeapVersion"; /* heap version sentinel */
-undefined *g_ModeVersion_13AE                = NULL; /* mode/version flag */
+/* NOTE: s_HeapVersion — real def in system_runtime.part001.c (graduated) */
+/* NOTE: g_ModeVersion_13AE — real def in system_runtime.part001.c (graduated) */
 
 /* ── strings_text.part009 function stubs ── */
 void * UI_Component_Resolve_and_Cache_Entity_Ptr_73a8()       { outpost_missing_dep_stub("UI_Component_Resolve_and_Cache_Entity_Ptr_73a8");       return NULL; }
@@ -260,14 +272,34 @@ void * UI_Component_Find_Item_in_List_22_Logic_7c28()         { outpost_missing_
 void   UI_Dispatch_Global_Event_Logic()                       { outpost_missing_dep_stub("UI_Dispatch_Global_Event_Logic"); }
 void   UI_Broadcast_Virtual_Notification_Wrapper()            { outpost_missing_dep_stub("UI_Broadcast_Virtual_Notification_Wrapper"); }
 void * Bitmap_Object_Copy_Region_To_New_Bitmap()              { outpost_missing_dep_stub("Bitmap_Object_Copy_Region_To_New_Bitmap");               return NULL; }
-void * Bitmap_Object_Subclass_ctor_with_alloc()               { outpost_missing_dep_stub("Bitmap_Object_Subclass_ctor_with_alloc");                return NULL; }
+/* NOTE: Bitmap_Object_Subclass_ctor_with_alloc — real def in memory_heap.part004.c (graduated) */
 void   Bitmap_Object_Clear_with_Color_Logic()                 { outpost_missing_dep_stub("Bitmap_Object_Clear_with_Color_Logic"); }
 void * pack_3words_alt()                                      { outpost_missing_dep_stub("pack_3words_alt");                                       return NULL; }
 void   pack_3words_reverse()                                  { outpost_missing_dep_stub("pack_3words_reverse"); }
 void * UI_Vector_Tracker_Object_ctor()                        { outpost_missing_dep_stub("UI_Vector_Tracker_Object_ctor");                        return NULL; }
-void   UI_Object_Add_Type_Value_Pair_to_Collection_at_Offset_12_Logic() { outpost_missing_dep_stub("UI_Object_Add_Type_Value_Pair_to_Collection_at_Offset_12_Logic"); }
+/* NOTE: UI_Object_Add_Type_Value_Pair_to_Collection_at_Offset_12_Logic — real def in memory_heap.part007.c (graduated) */
 u16    Simulator_Get_Planet_Resource_Metric_6db4()            { outpost_missing_dep_stub("Simulator_Get_Planet_Resource_Metric_6db4");            return 0; }
 long   UI_Get_Entity_Resource_Data_at_Offset_16_Logic()       { outpost_missing_dep_stub("UI_Get_Entity_Resource_Data_at_Offset_16_Logic");       return 0; }
+
+/* ── memory_heap.part005 function stubs ── */
+/* Base_Object_ctor_init_2014_Logic — real def in strings_text.part006.c (graduated) */
+/* Base_Object_dtor_2014_Logic      — real def in strings_text.part006.c (graduated) */
+void   zero_init_struct_6bytes(void *s)                      { outpost_missing_dep_stub("zero_init_struct_6bytes"); }
+void  *heap_alloc_with_flags(int f, long sz, void *ctx)      { outpost_missing_dep_stub("heap_alloc_with_flags"); return NULL; }
+void   qsort_far_array_with_callback_internal()              { outpost_missing_dep_stub("qsort_far_array_with_callback_internal"); }
+void  *UI_Subclass_EFC4_ctor(void *this_)                    { outpost_missing_dep_stub("UI_Subclass_EFC4_ctor"); return NULL; }
+void   Game_Settings_Manager_dtor(void *this_)               { outpost_missing_dep_stub("Game_Settings_Manager_dtor"); }
+void   Build_Site_Object_dtor_Internal(void *this_)          { outpost_missing_dep_stub("Build_Site_Object_dtor_Internal"); }
+void  *UI_TreeNode_Control_ctor_init_c54a()                  { outpost_missing_dep_stub("UI_TreeNode_Control_ctor_init_c54a"); return NULL; }
+
+/* ── memory_heap.part013 globals ── */
+undefined *p_SimulatorTurnManager             = NULL; /* TODO: real def in memory_heap (TurnManager ctor) */
+void      *PTR_DAT_1050_0000_1050_5a66        = NULL; /* TODO: real def – TurnManager primary list ptr */
+void      *_PTR_DAT_1050_0000_1050_5bcc       = NULL; /* TODO: real def – TurnManager secondary list ptr */
+
+/* ── memory_heap.part013 function stubs ── */
+void UI_Item_List_Free_Data_Pointer_Logic(void *list)            { outpost_missing_dep_stub("UI_Item_List_Free_Data_Pointer_Logic"); }
+void call_function_ptr_n_times_simple(void *fn, int msg, u16 n)  { outpost_missing_dep_stub("call_function_ptr_n_times_simple"); }
 u16    UI_Component_Get_Entity_Resource_Field4_7f5a()         { outpost_missing_dep_stub("UI_Component_Get_Entity_Resource_Field4_7f5a");         return 0; }
 u16    UI_Component_Get_Entity_Resource_Field2_7f98()         { outpost_missing_dep_stub("UI_Component_Get_Entity_Resource_Field2_7f98");         return 0; }
 u16    UI_Component_Get_Entity_Resource_A_Output_6fd4()       { outpost_missing_dep_stub("UI_Component_Get_Entity_Resource_A_Output_6fd4");       return 0; }
@@ -300,4 +332,98 @@ char * UI_Entity_Get_SubCategory_Name_Logic()                 { outpost_missing_
 char * UI_Entity_Format_Status_Value_Label_Logic()            { outpost_missing_dep_stub("UI_Entity_Format_Status_Value_Label_Logic");            return NULL; }
 void   UI_Window_Manager_Destroy_Entity_Window_Logic()        { outpost_missing_dep_stub("UI_Window_Manager_Destroy_Entity_Window_Logic"); }
 void   UI_Window_Broadcast_Msg_EB_Logic()                     { outpost_missing_dep_stub("UI_Window_Broadcast_Msg_EB_Logic"); }
+
+/* ── memory_heap.part007 globals ── */
+void      *p_SimulatorGlobalState          = NULL; /* TODO: real def in memory_heap – sim global state far ptr */
+int        PTR_DAT_1050_0000_1050_3960     = 0;    /* TODO: Main view controller active-instance ref counter */
+void      *PTR_DAT_1050_0000_1050_3962     = NULL; /* TODO: Main view controller instance array ptr */
+const char s_582_bmp_1050_1871[]           = "582.bmp"; /* resource name @ 1050:1871 */
+const char s_589_bmp_1050_18a9[]           = "589.bmp"; /* resource name @ 1050:18A9 */
+
+/* ── memory_heap.part007 function stubs ── */
+void  *heap_realloc()                              { outpost_missing_dep_stub("heap_realloc");                              return NULL; }
+void   copy_struct_6bytes()                        { outpost_missing_dep_stub("copy_struct_6bytes"); }
+void   UI_Container_Remove_Item_at_Offset_4_Logic(){ outpost_missing_dep_stub("UI_Container_Remove_Item_at_Offset_4_Logic"); }
+/* NOTE: Sprite_Object_free_internal_buffer — real def in memory_heap.part004.c (graduated) */
+long   Data_History_Object_Get_Point_At_Index()    { outpost_missing_dep_stub("Data_History_Object_Get_Point_At_Index");    return 0L; }
+void   UI_Element_Subclass_dtor_D71A_Wrapper()     { outpost_missing_dep_stub("UI_Element_Subclass_dtor_D71A_Wrapper"); }
+void   heap_free_descriptor()                      { outpost_missing_dep_stub("heap_free_descriptor"); }
+void   Build_Site_List_Item_dtor_Internal()        { outpost_missing_dep_stub("Build_Site_List_Item_dtor_Internal"); }
+void   UI_Object_Destroy_SubObject_at_Offset_12_Logic_Duplicate() { outpost_missing_dep_stub("UI_Object_Destroy_SubObject_at_Offset_12_Logic_Duplicate"); }
+long   Simulator_Global_Get_Entity_Object_Wrapper_8344() { outpost_missing_dep_stub("Simulator_Global_Get_Entity_Object_Wrapper_8344"); return 0L; }
+void   UI_Allocation_Tab_Manager_dtor_Internal_Cleanup_logic() { outpost_missing_dep_stub("UI_Allocation_Tab_Manager_dtor_Internal_Cleanup_logic"); }
+/* NOTE: UI_Control_Sub_dtor_logic — real def in strings_text.part004.c (graduated) */
+void   UI_Slider_Component_dtor_Internal_vtable_revert() { outpost_missing_dep_stub("UI_Slider_Component_dtor_Internal_vtable_revert"); }
+void   UI_Build_Item_Base_dtor_Internal()          { outpost_missing_dep_stub("UI_Build_Item_Base_dtor_Internal"); }
+long   Gameplay_Object_ctor()                      { outpost_missing_dep_stub("Gameplay_Object_ctor");                      return 0L; }
+void   Gameplay_Object_Refresh_Graphic_Logic()     { outpost_missing_dep_stub("Gameplay_Object_Refresh_Graphic_Logic"); }
+long   Resource_Manager_Get_or_Create_Entry_Logic(){ outpost_missing_dep_stub("Resource_Manager_Get_or_Create_Entry_Logic"); return 0L; }
+
+/* ── memory_heap.part003 globals ── */
+int        g_HeapRefCount              = 0;    /* integer refcount — MSVC disallows void*+int arithmetic */
+undefined *g_HeapPoolCount             = NULL; /* TODO: real def — pool count pointer @ 1050:5f22 */
+undefined *p_GlobalPoolList_Offset     = NULL; /* TODO: real def — global pool list offset ptr */
+undefined *p_GlobalPoolList_Segment    = NULL; /* TODO: real def — global pool list segment ptr */
+char      *p_GlobalPoolDescriptor      = NULL; /* TODO: real def — global pool descriptor ptr */
+/* NOTE: p_ErrorHandlerCallback_Segment — real def in system_runtime.part001.c (graduated) */
+undefined *p_AllocHook_Default         = NULL; /* TODO: real def — default alloc hook @ 1050:5f34 */
+undefined *p_AllocHook_HighPriority    = NULL; /* TODO: real def — high-priority hook @ 1050:5f38 */
+undefined *p_AllocHook_Critical        = NULL; /* TODO: real def — critical alloc hook @ 1050:5f3c */
+undefined *PTR_DAT_1050_0000_1050_5f3a = NULL; /* TODO: real def — hook companion ptr @ 5f3a */
+undefined *PTR_DAT_1050_0000_1050_5f36 = NULL; /* TODO: real def — hook companion ptr @ 5f36 */
+undefined *PTR_DAT_1050_0000_1050_5f3e = NULL; /* TODO: real def — hook companion ptr @ 5f3e */
+const char s_554_bmp_1050_1f77[]       = "554.bmp"; /* resource name / error handler anchor */
+undefined  DAT_1050_1000               = 0;    /* TODO: real def — code/data label at 1050:1000 */
+
+/* ── memory_heap.part003 function stubs ── */
+void  heap_free_core()               { outpost_missing_dep_stub("heap_free_core"); }
+void  heap_free_block()              { outpost_missing_dep_stub("heap_free_block"); }
+void  heap_set_alloc_params()        { outpost_missing_dep_stub("heap_set_alloc_params"); }
+/* NOTE: invoke_error_handler — real def in system_runtime.part001.c (graduated) */
+/* NOTE: heap_set_pool_hook — real def in system_runtime.part001.c (graduated) */
+void  heap_reserve_bytes()           { outpost_missing_dep_stub("heap_reserve_bytes"); }
+/* NOTE: query_global_memory_block — real def in system_runtime.part001.c (graduated) */
+/* NOTE: heap_unlink_pool_from_global_list — real def in memory_heap.part004.c (graduated) */
+int   validate_ptr_read_access()     { return (int)outpost_missing_dep_stub("validate_ptr_read_access"); }
+int   validate_mem_access_ext()      { return (int)outpost_missing_dep_stub("validate_mem_access_ext"); }
+void  display_error_dialog()         { outpost_missing_dep_stub("display_error_dialog"); }
+
+/* ── memory_heap.part009 globals ── */
+void  *PTR_DAT_1050_0000_1050_65e4 = NULL; /* Simulator Context secondary arg ptr (1050:65E4) */
+
+/* ── memory_heap.part009 function stubs ── */
+void   UI_Build_Item_Node_dtor_Logic_d728(void *p)  { outpost_missing_dep_stub("UI_Build_Item_Node_dtor_Logic_d728"); }
+void  *Simulator_Map_Context_ctor_init_615a(void *p){ outpost_missing_dep_stub("Simulator_Map_Context_ctor_init_615a"); return p; }
+void  *Simulator_Map_Context_ctor_init_44be(void *p){ outpost_missing_dep_stub("Simulator_Map_Context_ctor_init_44be"); return p; }
+/* NOTE: res_init_string_property_table_logic — real def in strings_text.part005.c (graduated) */
+void  *UI_Managed_List_Base_ctor_init_11aa(void *p, void *a, void *b) { outpost_missing_dep_stub("UI_Managed_List_Base_ctor_init_11aa"); return p; }
+
+/* ── memory_heap.part004 globals ── */
+void       *_p_GlobalResourceManager         = NULL; /* Ghidra overlap alias — global resource mgr */
+void       *_p_Pool_Type1_Event              = NULL; /* Ghidra overlap alias — Event pool ptr */
+void       *_p_Pool_Type2_Component          = NULL; /* Ghidra overlap alias — Component pool ptr */
+void       *_p_Pool_Type3_Sprite             = NULL; /* Ghidra overlap alias — Sprite pool ptr */
+void       *_p_Pool_Type4_Timer              = NULL; /* Ghidra overlap alias — Timer pool ptr */
+void       *_p_Pool_Type5_Entity             = NULL; /* Ghidra overlap alias — Entity pool ptr */
+void       *_g_AllocatedBlock_Offset         = NULL; /* Ghidra overlap alias — alloc block offset */
+undefined2 *_this                            = NULL; /* Ghidra vtable write temp: ptr to vtable slot */
+undefined  *PTR_DAT_1050_1000_1050_6066      = NULL; /* heap alloc lock ptr @ 1050:6066 */
+pointer     p_Pool_Type6_Node                = NULL; /* Node pool ptr @ 1050 */
+/* NOTE: p_AllocStrategyCode — already defined in strings_text.part003 globals */ 
+/* NOTE: g_AllocatedBlock_Segment — already defined in strings_text.part005 globals */
+
+/* ── memory_heap.part004 function stubs ── */
+long  heap_validate_and_sweep()                            { outpost_missing_dep_stub("heap_validate_and_sweep"); return 0L; }
+void  fatal_app_exit_with_message_lookup_and_terminate()   { outpost_missing_dep_stub("fatal_app_exit_with_message_lookup_and_terminate"); }
+int   handle_table_remove_entry_internal()                 { return (int)outpost_missing_dep_stub("handle_table_remove_entry_internal"); }
+void  Global_Resource_Manager_Release_Object_67C_7fd6()    { outpost_missing_dep_stub("Global_Resource_Manager_Release_Object_67C_7fd6"); }
+void  dos_get_system_time_to_internal_struct_far()         { outpost_missing_dep_stub("dos_get_system_time_to_internal_struct_far"); }
+void  srand_seed_internal_far()                            { outpost_missing_dep_stub("srand_seed_internal_far"); }
+void *Bitmap_Object_ctor_basic()                           { outpost_missing_dep_stub("Bitmap_Object_ctor_basic"); return NULL; }
+/* NOTE: HMemCpy — already declared via win16_api.h / win16_api_stubs.c */
+/* NOTE: construct_object_with_vtable — real def in strings_text.part004.c (graduated) */
+void  Turn_Manager_ctor()                                  { outpost_missing_dep_stub("Turn_Manager_ctor"); }
+/* NOTE: strdup_allocate — real def in strings_text.part004.c (graduated) */
+void *Simulator_ctor()                                     { outpost_missing_dep_stub("Simulator_ctor"); return NULL; }
+int   win16_main_message_loop_logic()                      { return (int)outpost_missing_dep_stub("win16_main_message_loop_logic"); }
 

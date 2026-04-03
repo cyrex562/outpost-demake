@@ -6,6 +6,45 @@
  * Boundaries: top-level declarations/definitions only
  */
 
+/* ── part003 fixup ── */
+#include "core/outpost_common.h"
+
+/* Forward declarations for functions defined later in this translation unit.
+ * Required because heap_create_pool, _SHI_INVOKEERRORHANDLER1, and
+ * heap_dispatch_error_handler all call functions that appear later in the file. */
+int  __stdcall16far _SHI_INVOKEERRORHANDLER1(void);
+int  __stdcall16far heap_destroy_pool_internal(undefined2 param_1, void *param_2);
+int  heap_check_pool_count_limit(void *pool_ctx, int count);
+void __cdecl16far   heap_system_decrement_refcount(void);
+u16  __stdcall16far heap_is_valid_pool_ptr(int param_1, u16 param_2);
+void __cdecl16far   heap_free_bytes(void *ptr);
+void __cdecl16far   heap_free_public(void *ptr);
+void * __stdcall16far heap_create_pool(int flags, int initial_size, int limit, int bucket_size);
+
+/* Globals defined in missing_deps.c, referenced in this file */
+/* from strings_text.part002 block */
+extern uint   g_HeapContext;
+extern void  *p_CurrentHeapContext;
+/* from strings_text.part005 block */
+extern void  *g_AllocatedBlock_Offset;
+extern void  *g_AllocatedBlock_Segment;
+/* memory_heap.part003 globals (new — defined in missing_deps.c bottom block) */
+extern int        g_HeapRefCount;     /* integer refcount — void*+int not valid in MSVC */
+extern undefined *g_HeapPoolCount;
+extern undefined *p_GlobalPoolList_Offset;
+extern undefined *p_GlobalPoolList_Segment;
+extern char      *p_GlobalPoolDescriptor;
+extern undefined *p_ErrorHandlerCallback_Segment;
+extern undefined *p_AllocHook_Default;
+extern undefined *p_AllocHook_HighPriority;
+extern undefined *p_AllocHook_Critical;
+extern undefined *PTR_DAT_1050_0000_1050_5f3a;
+extern undefined *PTR_DAT_1050_0000_1050_5f36;
+extern undefined *PTR_DAT_1050_0000_1050_5f3e;
+extern const char  s_554_bmp_1050_1f77[];
+extern undefined   DAT_1050_1000;
+/* ── end part003 fixup ── */
+
 
 
 
@@ -31,10 +70,10 @@ void * __cdecl16near heap_enter_lock_context(u16 param_1,u16 param_2)
     {
       while( true )
       {
-        fVar3 = GlobalDosAlloc16(uStack_a);
-        fVar3._0_2_ = (void *)fVar3;
-        if ((void *)fVar3 == NULL) break;
-        *NULL = 0x0;
+        fVar3 = (void *)(uintptr_t)GlobalDosAlloc16(uStack_a);
+        /* fVar3._0_2_ = (void *)fVar3; — suppressed: Ghidra Win16 near-offset extraction artifact */
+        if (fVar3 == NULL) break;
+        /* *NULL = 0x0; — suppressed: Ghidra segment-register artifact (Win16 mov [BX],0) */
         *(undefined **)&p_CurrentHeapContext = puStack_c;
         puStack_c = (void *)fVar3;
       }
@@ -176,7 +215,7 @@ LAB_1000_1724:
     pvVar1 = (void *)(in_stack_0000000c | (uint)heap_ctx);
     if ((pvVar1 != NULL) &&
        (pvVar3 = heap_alloc_with_flags
-                           (flags,(undefined2)size,size._2_2_,heap_ctx,in_stack_0000000c
+                           (flags,(undefined2)size,(undefined2)((u32)size >> 16),heap_ctx,in_stack_0000000c
                            ), pvVar3 != NULL || pvVar1 != NULL))
     {
       return pvVar1;
@@ -465,7 +504,7 @@ heap_create_pool(int flags,int initial_size,int limit,int bucket_size)
         }
         return ptr;
       }
-      heap_destroy_pool_internal();
+      heap_destroy_pool_internal(0x0, NULL);  /* 0-arg call patched: prototype requires 2 args */
     }
   }
   return NULL;
@@ -512,8 +551,8 @@ int __stdcall16far heap_validate_and_set_size_params(void *heap_ctx,long new_siz
 
 long __cdecl16near heap_round_up_size(long size)
 {
-  uint reg_ax;
-  undefined2 reg_dx;
+  uint reg_ax = (uint)(u16)size;          /* Ghidra reg artifact: AX = low 16 bits of size */
+  undefined2 reg_dx = (undefined2)((u32)size >> 16); /* Ghidra reg artifact: DX = high 16 bits */
   uint uVar1;
   
   if (reg_ax == 0x2000)
@@ -564,7 +603,7 @@ int __stdcall16far heap_destroy_pool(void *heap_ctx)
     invoke_error_handler();
     return 0x0;
   }
-  iVar1 = heap_destroy_pool_internal(0x0,heap_ctx,in_stack_00000006);
+  iVar1 = heap_destroy_pool_internal(0x0,heap_ctx);  /* 3rd arg: Win16 seg half — flat model: 0 */
   return iVar1;
 }
 
@@ -581,7 +620,7 @@ int __stdcall16far heap_destroy_pool_internal(undefined2 param_1,void *param_2)
   int iVar2;
   void *heap_ctx;
   undefined2 uVar3;
-  undefined4 uStack_8;
+  u32 uStack_8; /* was undefined4; CONCAT22 target — stores flat 32-bit address */
   uint uStack_4;
   
   uVar3 = (undefined2)((ulong)param_2 >> 0x10);
@@ -606,9 +645,10 @@ int __stdcall16far heap_destroy_pool_internal(undefined2 param_1,void *param_2)
   ptr = (undefined2 *)*(undefined2 *)((int)heap_ctx + 0x10);
   while( true )
   {
-    uStack_8 = (undefined2 *)CONCAT22(iVar2,ptr);
+    uStack_8 = (u32)CONCAT22(iVar2,(u32)ptr); /* was: (undefined2*)CONCAT22 — C2100 fix */
     if (iVar2 == 0x0 && ptr == NULL) break;
-    puVar1 = (undefined2 *)*uStack_8;
+    puVar1 = (undefined2 *)*(u32 *)uStack_8; /* was: *uStack_8 — dereference as flat ptr */
+    (void)uStack_8;
     iVar2 = ptr[0x1];
     heap_free_block(ptr);
     ptr = puVar1;
@@ -751,7 +791,7 @@ heap_dispatch_error_handler(u16 param_1,u16 param_2,u16 param_3,u16 param_4)
 
 int heap_check_pool_count_limit(void *pool_ctx,int count)
 {
-  uint reg_ax;
+  uint reg_ax = (uint)count; /* Ghidra reg artifact: AX = count param */
   
   if (reg_ax < *(uint *)((int)pool_ctx + 0xc))
   {
@@ -770,9 +810,9 @@ int heap_check_pool_count_limit(void *pool_ctx,int count)
 
 void __cdecl16far heap_system_decrement_refcount(void)
 {
-  if ((true) && (g_HeapRefCount = g_HeapRefCount + -0x1, (int)g_HeapRefCount < 0x0))
+  if ((true) && (g_HeapRefCount = g_HeapRefCount + -0x1, g_HeapRefCount < 0x0))
   {
-    g_HeapRefCount = NULL;
+    g_HeapRefCount = 0;
   }
   return;
 }
@@ -833,7 +873,7 @@ void heap_pool_cleanup_list(u16 param_1,u16 param_2)
       else
       {
         heap_destroy_pool_internal
-                  (0x1,*(undefined2 *)(param_2 + 0x4),*(undefined2 *)(param_2 + 0x6));
+                  (0x1,(void *)(uintptr_t)*(undefined2 *)(param_2 + 0x4));  /* 3rd arg removed: Win16 seg half */
       }
     } while (*(int *)(param_2 + 0x6) != 0x0 || *(int *)(param_2 + 0x4) != 0x0);
   }

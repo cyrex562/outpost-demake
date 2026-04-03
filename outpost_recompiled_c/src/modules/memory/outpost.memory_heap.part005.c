@@ -6,6 +6,29 @@
  * Boundaries: top-level declarations/definitions only
  */
 
+/* ── part005 fixup ── */
+/* Struct types needed by this file */
+#include "outpost.types_structs.part077.h"   /* astruct_491 */
+
+/* _this: Ghidra far-ptr alias for 'this' near ptr (lower 16-bit word of Win16 far ptr).
+ * In flat Win32: _this == (undefined2 *)this for every function in this file.
+ * File-scope static so it doesn't bleed across TUs.
+ * TODO(ghidra-verify): Replace each '*_this = vtable' with '*(undefined2*)this = vtable'. */
+static undefined2 *_this;
+
+/* _g_AllocatedBlock_Offset: Ghidra '_'-prefixed alias overlapping g_AllocatedBlock_Offset
+ * at the same address.  In flat Win32 model they are the same global. */
+#define _g_AllocatedBlock_Offset  g_AllocatedBlock_Offset
+
+/* Globals defined in missing_deps.c, referenced in this file */
+extern void       *g_AllocatedBlock_Offset;
+extern void       *g_AllocatedBlock_Segment;
+extern pointer     p_LastAllocatedBlock;
+extern u16         g_ReportFilter_0ECC;
+extern const char  s_573_bmp_1050_200f[];
+extern const char  s_1_1050_389a[];
+/* ── end part005 fixup ── */
+
 
 
 
@@ -453,7 +476,7 @@ UI_Container_Add_Item_at_Offset_4_Logic
   int iVar5;
   undefined2 uVar6;
   undefined2 in_stack_0000ffe2;
-  undefined4 uStack_a;
+  u32 uStack_a;
   undefined2 *puStack_6;
   
   uVar6 = (undefined2)((ulong)param_1 >> 0x10);
@@ -475,20 +498,20 @@ UI_Container_Add_Item_at_Offset_4_Logic
     }
   }
   puVar3 = allocate_memory(CONCAT22(in_stack_0000ffe2,0xa));
-  uStack_a = (undefined2 *)CONCAT22(uVar4,puVar3);
+  uStack_a = CONCAT22(uVar4,puVar3);
   if (uVar4 == 0x0 && puVar3 == NULL)
   {
     puStack_6 = NULL;
   }
   else
   {
-    *uStack_a = (char *)s_1_1050_389a;
+    *(u16 *)uStack_a = (u16)(uintptr_t)(char *)s_1_1050_389a;
     puVar3[0x1] = 0x1008;
     *(undefined4 *)(puVar3 + 0x2) = param_3;
     puVar3[0x4] = param_2;
-    *uStack_a = (char *)s_573_bmp_1050_200f + 0x1;
+    *(u16 *)uStack_a = (u16)(uintptr_t)((char *)s_573_bmp_1050_200f + 0x1);
     puVar3[0x1] = 0x1010;
-    puStack_6 = uStack_a;
+    puStack_6 = (undefined2 *)uStack_a;
   }
   puVar1 = (undefined2 *)((int)*(undefined4 *)*(undefined4 *)(iVar5 + 0x4) + 0x4);
   (*(code *)*puVar1)(0x1000,*(undefined4 *)(iVar5 + 0x4),(undefined2 *)puStack_6,
